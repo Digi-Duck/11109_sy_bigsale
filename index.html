@@ -1,15 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>酉酉咖啡</title>
 </head>
+
 <body>
-  <section id="container">
-    <section id="nav"></section>
-    <section id="banner"></section>
-    </section>
+
+    <nav>
+        <div class="bar-L">
+            <a href=""><span>酉酉故事</span></a>
+            <a href=""><span>特色主打</span></a>
+            <a href=""><span>酉酉飲品</span></a>
+        </div>
+        <div class="bar-logo">
+            <a href="">
+                <img src="./Images/LOGO.png" alt="">
+            </a>
+        </div>
+        <div class="bar-R">
+            <a href=""><span>客製化服務</span></a>
+            <a href=""><span>最新消息</span></a>
+            <a href=""><span>聯絡我們</span></a>
+        </div>
+    </nav>
+    <main>
+        <section id="banner">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./Images/rest-1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./Images/rest-2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./Images/rest-3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./Images/rest-4.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./Images/rest-5.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <div class="dots" style="text-align:center;">
+                    <div class="dots-move"  style = "transition: top 0.5s; top:0px ;">
+                      <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
+                      <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
+                      <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
+                      <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
+                      <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
+                      <span class="dot " data-move="6" onclick="currentSlide(1)"></span>
+                      <span class="dot " data-move="7" onclick="currentSlide(2)"></span>
+                      <span class="dot " data-move="8" onclick="currentSlide(3)"></span>
+                      <span class="dot " data-move="9" onclick="currentSlide(4)"></span>
+                      <span class="dot " data-move="10" onclick="currentSlide(5)"></span>
+                      <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
+                      <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
+                      <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
+                      <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
+                      <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+        <section id="about"></section>
+        <section id="cof"></section>
+        <section id="cof-pic"></section>
+        <section id="dessert"></section>
+        <section id="ig-part"></section>
+    </main>
+    <footer></footer>
+
+    <script>
+        let slideIndex = 1;
+    let dotss = document.querySelectorAll('.dot');
+    let box_move = document.querySelector('.dots-move');
+    let boxPosition = 67 ;
+
+    function clearorder(n,m){
+      boxMoveposition(n);
+      setTimeout(() => {
+        box_move.style.transition = "top 0s";
+        boxMoveposition(m);
+      },510)
+      setTimeout(() => {
+        box_move.style.transition = "top 0.5s"
+      },650)
+    }
+
+    function boxMoveposition(q){
+      position = q * boxPosition;
+      box_move.style.top = `-${position}px`;
+      return position ;
+      
+    }
+    
+
+    dotss.forEach((target) => {
+      target.addEventListener('click', (e, target) => {
+        let move_value = e.target.dataset.move;
+       
+        if(move_value == 1){
+          boxMoveposition(0);
+        }else if(move_value == 2){
+          boxMoveposition(1);
+        }else if(move_value == 3){
+          boxMoveposition(2);
+        }else if(move_value == 4){
+          boxMoveposition(3);
+        }else if(move_value == 5){
+          boxMoveposition(4);
+        }else if(move_value == 6){
+          clearorder(5 , 0);
+        }else if(move_value == 7){
+          clearorder(6 , 1);
+        }else if(move_value == 8){
+          clearorder(7 , 2);
+        }else if(move_value == 9){
+          clearorder(8 , 3);
+        }else if(move_value == 10){
+          clearorder(9 , 4);
+        }       
+
+      })
+
+    })
+
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+       }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+    </script>
+
 </body>
+
 </html>
