@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 nav {
   width: 100%;
   height: 55px;
@@ -161,4 +162,8 @@ main #banner .dots .dots-move .dot .active, main #banner .dots .dots-move .dot:h
   background-color: yellow;
   transform: scale(1.1);
   transition: all 0.5s;
+=======
+.display-none {
+  display: none;
+>>>>>>> 469f0a31bf03bfea7ff3e7120caa62b8f98d96ce
 }/*# sourceMappingURL=index.css.map */

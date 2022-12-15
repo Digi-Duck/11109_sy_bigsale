@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.navlocat{
+    width: 100%;
+    height: 110px;
+    background-color: #61786d;
+}
+.buttonbox{
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    .btn{
+        width: 110px;
+        height: 43px;
+        background-color: #6e786d;
+        border-radius: 20px;
+        margin: 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    .cardbox{
+        width: 70%;    
+        padding-top: 52px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            width: 400px;
+            height: 440px;
+            margin: 50px 15px;
+            .card-img{
+                width: 100%;
+                height: 356px;
+                border-radius: 20px;
+                background-color: darkgray;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.footerlocat{
+    margin-top: 90px;
+    width: 100%;
+    height: 80px;
+    background-color: #6e786d;
+}

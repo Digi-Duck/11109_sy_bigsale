@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":[],"names":[],"mappings":"","file":"customized.css"}
+=======
+{"version":3,"sources":["../SCSS/customized.scss","customized.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,UAAA;EACA,SAAA;ACCJ","file":"customized.css"}
+>>>>>>> 469f0a31bf03bfea7ff3e7120caa62b8f98d96ce
