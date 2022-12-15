@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/customized.css">
     <title>客製活動</title>
 </head>
 <body>
-    <div class="cube3"></div>
+    <nav>
+        <div class="navlocat"></div>
+    </nav>
+    <main>
+        <div class="tittle">
+            <h1>有什麼想法？ 讓我們來幫您解決
+            </h1>
+            <h3>不論是商業攝影、生日祝賀、寵物派對、手作課程 </h3>
+            <h3>我們都能為您想出完整的配套</h3>
+            <h3>​除了場地租借，也歡迎異業合作洽詢</h3>
+        </div>
+        
+        <div class="schematic">
+            <img class="img1" src="https://www.mcdelivery.com.tw/tw//static/1671085190853/assets/886/products/66992.png?" alt="">
+            <img class="img2" src="https://kfcoosfs.kfcclub.com.tw/%E9%9D%92%E8%8A%B1%E6%A4%92%E5%8D%A1%E5%95%A6%E9%9B%9E%E8%85%BF%E5%A0%A1XL%E9%A4%9020220518-pc.jpg" alt="">
+            <img class="img3" src="" alt="">
+            <img class="img4" src="" alt="">
+            <img class="img5" src="" alt="">
+            <img class="img6" src="" alt="">
+            <img class="img7" src="" alt="">
+            <img class="img8" src="" alt="">
+            <img class="img9" src="" alt="">
+            <img class="img10" src="" alt="">
+            <img class="img11" src="" alt="">
+        </div>
+
+        <div class="venue">
+            <h1>場地介紹</h1>
+            <h3>老闆用心親自打造的空間</h3>
+            <h3>大面積落地窗，溫暖又舒適</h3>
+            <h3>非常適合各式聚會</h3>
+            <h3>室內空間約20坪，可容納20~30人</h3>
+            <h3>歡迎洽詢</h3>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.mcdelivery.com.tw/tw//static/1671085190853/assets/886/products/66992.png?" alt=""></div>
+                    <div class="swiper-slide"><img src="https://kfcoosfs.kfcclub.com.tw/%E5%8F%B0%E9%85%92%E9%BA%BB%E6%B2%B9%E7%B4%99%E5%8C%85%E9%9B%9E-XL%E9%A4%90202210251-pc.jpg" alt=""></div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+        <div class="callboss">
+            <div class="formbox">
+                <div class="title">
+                    <h3>客製化服務</h3>
+                    <h3>請洽 04-25220619</h3>
+                </div>
+                <div class="message">
+                    <span>訊息</span>
+                    <input type="text">
+                </div>
+                <div class="info-box">
+                    <div class="name">
+                        <span>姓名</span>
+                        <input type="text">
+                    </div>
+                    <div class="phone">
+                        <span>電話</span>
+                        <input type="text">
+                    </div>
+                    <div class="mail">
+                        <span>E-mail</span>
+                        <input type="text">
+                    </div>
+                </div>
+                .
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footerlocat"></div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4.5,
+    spaceBetween: 30,
+    freeMode: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+
+    // autoplay:true,
+    autoplay: {
+    delay: 1000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
+    speed:2000,
+    loop: true,
+    });
+</script>
+
 </html>
