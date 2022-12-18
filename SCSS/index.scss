@@ -70,6 +70,7 @@ main {
             .mySlides {
                 position: relative;
                 display: none;
+                height: 961px;
 
                 /* Caption text */
                 .text {
@@ -188,11 +189,30 @@ main {
         }
     }
     #about{
+        height: 961px;
+        color: #fff;
+        background-color: #6E786D;
         .about-logo{
+            padding-top: 114px;
+            margin-bottom: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
                 width: 240px;
                 height: 240px;
             }
+        }
+        .about-text{
+            text-align: center;
+            font-size: 20px;
+            line-height: 35px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            .textgp{
+                margin-top: 70px;
+            }
+      
+            
         }
     }
 }
