@@ -177,6 +177,7 @@ main #about .about-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 main #about .about-logo img {
   width: 240px;
