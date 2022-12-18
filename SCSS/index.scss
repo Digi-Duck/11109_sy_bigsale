@@ -188,10 +188,11 @@ main {
         }
     }
     #about{
-        width: 100%;
-        height: 961px;
-        color: #fff;
-        background-color: #6E786D;
-    
+        .about-logo{
+            img{
+                width: 240px;
+                height: 240px;
+            }
+        }
     }
 }
