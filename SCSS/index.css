@@ -183,7 +183,6 @@ main #about .about-logo img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  box-shadow: 10px 10px 20px 5px rgb(77, 55, 28);
 }
 main #about .about-text {
   text-align: center;
@@ -193,4 +192,8 @@ main #about .about-text {
 }
 main #about .about-text .textgp {
   margin-top: 70px;
+}
+main #cof {
+  height: 961px;
+  background-color: #F6DEC3;
 }/*# sourceMappingURL=index.css.map */
