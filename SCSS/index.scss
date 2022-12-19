@@ -300,10 +300,14 @@ main {
             
           }
           .swiper-pagination{
+            width: 90%;
             position: absolute;
             bottom: 90px;
             left: 90px;
-          }
+           
+           
+
+        }
           .swiper-pagination-bullet{
             width: calc((100% - 801px) / 3 - 20px );
             height: 5px;

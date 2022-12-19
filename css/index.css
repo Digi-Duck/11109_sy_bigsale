@@ -258,6 +258,7 @@ main #cof .swiper-slide img {
   aspect-ratio: 16/9;
 }
 main #cof .swiper-pagination {
+  width: 90%;
   position: absolute;
   bottom: 90px;
   left: 90px;

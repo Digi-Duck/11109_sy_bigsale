@@ -71,6 +71,9 @@
     const content = document.querySelector(".cardbox");
 
     let newsClass = '';
+    let cards = 1;
+    let
+
 
     fetch("./datas/news.json").then(function(response){
             return response.json();
@@ -78,11 +81,9 @@
 
             // console.log(dataW[0]);
 
-
             //預設先顯示所有消息
-
             
-
+            cards = 1;
             dataW.forEach(function(data,index){
 
                 if(dataW[index].class == "discount"){
@@ -93,7 +94,13 @@
                 newsClass = '官方公告';
                 }
 
-                content.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
+                console.log(cards);
+                if(cards<=9){
+                    content.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
+
+                    cards ++;
+
+                }
             });
 
 
@@ -107,23 +114,39 @@
                     // content.textContent = contentArray[index];
                     content.innerHTML ="";
 
+                    cards = 1;
                     dataW.forEach(function(data,index){
 
                         // console.log(dataW[index]);
 
                         if(tabindex == 0){
-                            cardOutput();
+
+                            if(cards<=9){
+                                cardOutput();
+                                cards ++;
+                            }
                         }else if(tabindex == 1){
                             if(dataW[index].class == "discount"){
-                                cardOutput();
+
+                                if(cards<=9){
+                                    cardOutput();
+                                    cards ++;
+                                }
                             }
                         }else if(tabindex == 2){
                             if(dataW[index].class == "new"){
-                                cardOutput();
+                                if(cards<=9){
+                                    cardOutput();
+                                    cards ++;
+                                }
                             } 
                         }else if(tabindex == 3){
                             if(dataW[index].class == "announcement"){
-                                cardOutput();
+
+                                if(cards<=9){
+                                    cardOutput();
+                                    cards ++;
+                                }
                             }
                         }
 

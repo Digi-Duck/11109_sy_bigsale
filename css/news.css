@@ -84,7 +84,7 @@ nav .bar-R {
   width: 70%;
   padding-top: 52px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .container .cardbox .card {
@@ -100,6 +100,9 @@ nav .bar-R {
 }
 .container .cardbox .card span {
   font-size: 20px;
+}
+.container .cardbox .display-none {
+  display: none;
 }
 
 .footerlocat {
