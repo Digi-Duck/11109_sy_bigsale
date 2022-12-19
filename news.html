@@ -34,76 +34,29 @@
 
     <main>
         <div class="buttonbox">
-            <div class="btn"><span>所有公告</span></div>
-            <div class="btn"><span>優惠活動</span></div>
-            <div class="btn"><span>新品上市</span></div>
-            <div class="btn"><span>官方公告</span></div>
+            <div class="btn tab active"><span>所有公告</span></div>
+            <div class="btn tab"><span>優惠活動</span></div>
+            <div class="btn tab"><span>新品上市</span></div>
+            <div class="btn tab"><span>官方公告</span></div>
         </div>
         <div class="container">
-        <div class="cardbox">
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                    <p class="ellipsis2">我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購</p>
+            <div class="cardbox">
+                <!-- <div class="card">
+                    <div class="card-img">
+                        <img src="https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg" alt="">
+                    </div>
+                    <div class="news-class">
+                        <div class="label">
+                            <span>新品上市</span>
+                        </div>
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <p class="ellipsis2">我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購</p>
+                </div> -->
+
             </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <span>我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購
-                </span>
-            </div>
-        </div>
     
         </div>
     </main>
@@ -112,4 +65,87 @@
 </footer>
 
 </body>
+
+<script>
+    const tabs = document.querySelectorAll(".tab");
+    const content = document.querySelector(".cardbox");
+
+    let newsClass = '';
+
+    fetch("./datas/news.json").then(function(response){
+            return response.json();
+        }).then(function(dataW){
+
+            // console.log(dataW[0]);
+
+
+            //預設先顯示所有消息
+
+            
+
+            dataW.forEach(function(data,index){
+
+                if(dataW[index].class == "discount"){
+                newsClass = '優惠活動';
+                }else if(dataW[index].class == "new"){
+                newsClass = '新品上市';
+                }else if(dataW[index].class == "announcement"){
+                newsClass = '官方公告';
+                }
+
+                content.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
+            });
+
+
+            tabs.forEach(function(tab,tabindex){
+
+                tab.addEventListener("click",function(){
+                    tabs.forEach(function(tab,tabindex){
+                        tab.classList.remove("active");
+                    });
+                    tab.classList.add("active");
+                    // content.textContent = contentArray[index];
+                    content.innerHTML ="";
+
+                    dataW.forEach(function(data,index){
+
+                        // console.log(dataW[index]);
+
+                        if(tabindex == 0){
+                            cardOutput();
+                        }else if(tabindex == 1){
+                            if(dataW[index].class == "discount"){
+                                cardOutput();
+                            }
+                        }else if(tabindex == 2){
+                            if(dataW[index].class == "new"){
+                                cardOutput();
+                            } 
+                        }else if(tabindex == 3){
+                            if(dataW[index].class == "announcement"){
+                                cardOutput();
+                            }
+                        }
+
+
+                        function cardOutput(){
+
+                            if(dataW[index].class == "discount"){
+                            newsClass = '優惠活動';
+                            }else if(dataW[index].class == "new"){
+                            newsClass = '新品上市';
+                            }else if(dataW[index].class == "announcement"){
+                            newsClass = '官方公告';
+                            }
+
+                            content.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
+                        }
+
+                    });
+                });
+            });
+
+
+        });
+</script>
 </html>
