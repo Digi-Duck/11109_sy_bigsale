@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -226,36 +225,14 @@ main #cof .cof-p p {
   letter-spacing: 10px;
 }
 main #cof .swiper {
-  width: 52%;
   height: 586px;
   position: absolute;
   top: 262px;
   left: 29%;
 }
-main #cof .swiper-slide.pic1 {
-  background-image: url("/Images/去暗角.png");
-  background-size: cover;
-  background-position: left center;
-}
-main #cof .swiper-slide {
-  width: 800px;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 main #cof .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 15px;
-  transform-origin: top left;
-  aspect-ratio: 16/9;
 }
 main #cof .swiper-pagination {
   width: 90%;

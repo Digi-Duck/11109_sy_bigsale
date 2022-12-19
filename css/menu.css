@@ -1,5 +1,114 @@
-.bb {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: #6E786D;
+  display: flex;
+  justify-content: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+nav .bar-L {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 45px;
+  margin-right: 40px;
+}
+nav .bar-logo {
+  position: relative;
+}
+nav .bar-logo img {
+  position: absolute;
+  z-index: 1;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav .bar-R {
+  height: 100%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.bar-logo {
+  width: 110px;
+  height: 110px;
+}
+.bar-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-card-box {
+  width: 66%;
+  padding-top: 258px;
+}
+.menu-card-box .menu-card {
+  display: flex;
+}
+.menu-card-box .menu-card img {
+  width: 776px;
+  height: 278px;
+  border-radius: 20px;
+}
+.menu-card-box .menu-card .content {
+  padding-left: 30px;
+}
+.menu-card-box .menu-card .content .classification {
+  font-size: 50px;
+  font-weight: 400;
+  color: #424242;
+}
+.menu-card-box .menu-card .content .classification span {
+  font-size: 40px;
+}
+.menu-card-box .menu-card .content .item-list {
+  margin-bottom: 20px;
+  display: flex;
+}
+.menu-card-box .menu-card .content .item-list .item span {
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  color: #424242;
+  line-height: 35px;
+}
+.menu-card-box .menu-card .content .item-list .hot-cold {
+  margin: 0px 40px;
+}
+.menu-card-box .menu-card .content .item-list .hot-cold span {
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  color: #424242;
+  line-height: 35px;
+}
+.menu-card-box .menu-card .content .item-list .price span {
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  color: #424242;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+}
+.menu-card-box .dividing {
+  width: 100%;
+  height: 1px;
+  background-color: #424242;
+  margin: 55px 0 55px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #6E786D;
 }/*# sourceMappingURL=menu.css.map */

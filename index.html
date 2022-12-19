@@ -127,7 +127,7 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide pic1">
-            <!-- <img src="./Images/去暗角.png" alt=""> -->
+            <img src="./Images/去暗角.png" alt="">
           </div>
           <div class="swiper-slide">
             <img src="./Images/chair.jpg" alt="">
@@ -162,6 +162,7 @@
     let box_move = document.querySelector('.dots-move');
     let boxPosition = 67;
     let nav = document.querySelector('nav');
+    let img = document.querySelector('.swiper-slide img')
 
     window.addEventListener('scroll', showNav);
     showNav();
@@ -254,6 +255,19 @@
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }
+
+  window.onresize=function(){
+    w = window.innerWidth;
+    h = window.innerHeight;
+    console.log(w);
+    if(w < 1903 && w > 768){
+      img.style.width = "calc(860px *"+ 1.2*w/1903 + ")";
+      img.style.height = "calc(586px *"+ 1.2*w/1903+ ")";
+    }else{
+      img.style.width = "80vw";
+      img.style.height = "80vw";
+    }
+  }
   </script>
 
 </body>

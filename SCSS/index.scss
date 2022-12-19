@@ -254,7 +254,7 @@ main {
            
         }
         .swiper {
-            width: 52%;
+            // width: 52%;
             height: 586px;
             position: absolute;
             top: 262px;
@@ -262,41 +262,22 @@ main {
             
             
           }
-          .swiper-slide.pic1{
-            background-image: url('/Images/去暗角.png');
-            background-size: cover;
-            background-position: left center;
+        //   .swiper-slide.pic1{
+        //     background-image: url('/Images/去暗角.png');
+        //     background-size: cover;
+        //     background-position: left center;
             
-          }
+        //   }
           .swiper-slide {
-            width: 800px;
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-    
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+            
           }
     
           .swiper-slide img {
             display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            // object-fit: cover;
             border-radius: 15px;
-            transform-origin: top left;
-            aspect-ratio: 16/9;
+            
+            
             
           }
           .swiper-pagination{
