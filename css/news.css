@@ -49,12 +49,6 @@ nav .bar-R {
   height: 100%;
 }
 
-.navlocat {
-  width: 100%;
-  height: 110px;
-  background-color: #61786d;
-}
-
 .buttonbox {
   padding-top: 102px;
   display: flex;
@@ -100,6 +94,15 @@ nav .bar-R {
 }
 .container .cardbox .card span {
   font-size: 20px;
+}
+.container .cardbox .card .ellipsis2 {
+  font-size: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 
 .footerlocat {
