@@ -11,6 +11,10 @@ nav {
   display: flex;
   justify-content: center;
   font-family: "Zen Maru Gothic", sans-serif;
+  position: fixed;
+  opacity: 0;
+  transition: 1s;
+  z-index: 1;
 }
 nav .bar-L {
   display: flex;
@@ -21,8 +25,12 @@ nav .bar-L {
 }
 nav .bar-logo {
   position: relative;
+  width: 110px;
+  height: 110px;
 }
 nav .bar-logo img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
@@ -39,13 +47,9 @@ nav .bar-R {
   gap: 45px;
 }
 
-.bar-logo {
-  width: 110px;
-  height: 110px;
-}
-.bar-logo img {
-  width: 100%;
-  height: 100%;
+.block {
+  opacity: 1;
+  z-index: 1;
 }
 
 main #banner {
@@ -60,6 +64,7 @@ main #banner .slideshow-container {
 main #banner .slideshow-container .mySlides {
   position: relative;
   display: none;
+  height: 961px;
   /* Caption text */
   /* Number text (1/3 etc) */
 }
@@ -164,4 +169,96 @@ main #banner .dots .dots-move .dot:hover::after {
 }
 main #banner .dots .dots-move .dot.active::after {
   background-color: yellow;
+}
+main #about {
+  height: 961px;
+  color: #fff;
+  background-color: #6E786D;
+}
+main #about .about-logo {
+  padding-top: 114px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+main #about .about-logo img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+main #about .about-text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+main #about .about-text .textgp {
+  margin-top: 70px;
+}
+main #cof {
+  height: 961px;
+  background-color: #F6DEC3;
+  position: relative;
+}
+main #cof .cof-spn {
+  font-size: 96px;
+  font-family: "Island Moments", cursive;
+  position: absolute;
+  left: 17%;
+  top: 16%;
+}
+main #cof .cof-p {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-family: "Zen Maru Gothic", sans-serif;
+  gap: 28px;
+  position: absolute;
+  top: 41%;
+  left: 20%;
+}
+main #cof .cof-p p {
+  letter-spacing: 10px;
+}
+main #cof .swiper {
+  width: 52%;
+  height: 586px;
+  position: absolute;
+  top: 262px;
+  left: 29%;
+}
+main #cof .swiper-slide {
+  width: 800px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #cof .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  transform-origin: top left;
+}
+main #cof .swiper-pagination {
+  position: absolute;
+  bottom: 90px;
+  left: 90px;
+}
+main #cof .swiper-pagination-bullet {
+  width: calc((100% - 801px) / 3 - 20px);
+  height: 5px;
+  border-radius: 15px;
+  background-color: gray;
+  margin-right: 20px;
 }/*# sourceMappingURL=index.css.map */
