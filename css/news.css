@@ -81,7 +81,7 @@ nav .bar-R {
   width: 70%;
   padding-top: 52px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .container .cardbox .card {
@@ -133,6 +133,9 @@ nav .bar-R {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: normal;
+}
+.container .cardbox .display-none {
+  display: none;
 }
 
 .footerlocat {
