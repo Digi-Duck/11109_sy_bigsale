@@ -94,6 +94,8 @@ main {
   font-weight: 400;
   color: #424242;
   line-height: 35px;
+  display: flex;
+  justify-content: center;
 }
 .menu-card-box .dividing {
   width: 100%;
