@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./SCSS/index.css">
+  <link rel="stylesheet" href="./css/index.css">
   <title>酉酉咖啡</title>
 </head>
 
@@ -105,18 +106,39 @@
           這是我們的咖啡廳<br>
           如果您有機會到台中—豐原<br>
           可以來喝咖啡 聊聊天<br>
-          <div class="textgp">
-            「酉」 人氣<br>
-            「酉」 財氣<br>
-          </div>
+        <div class="textgp">
+          「酉」 人氣<br>
+          「酉」 財氣<br>
+        </div>
         </p>
-        <p></p>
+
 
       </div>
     </section>
 
     <section id="cof">
-      
+      <span class="cof-spn">Pour Over<br>
+        Coffee</span>
+      <div class="cof-p">
+        <p>相信未來會更好</p>
+        <p>來杯拿鐵讓心情愉悅</p>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Images/去暗角.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/chair.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/coffepowder.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </section>
     <section id="cof-pic"></section>
     <section id="dessert"></section>
@@ -124,11 +146,36 @@
   </main>
   <footer></footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   <script>
     let slideIndex = 1;
     let dotss = document.querySelectorAll('.dot');
     let box_move = document.querySelector('.dots-move');
     let boxPosition = 67;
+    let nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', showNav);
+    showNav();
+    function showNav() {
+      let YBar = window.scrollY;
+      if (YBar > 1800) {
+        nav.classList.add('block');
+
+      } else {
+        nav.classList.remove('block');
+
+      }
+    }
+
 
     function clearorder(n, m) {
       boxMoveposition(n);

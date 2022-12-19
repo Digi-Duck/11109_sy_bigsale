@@ -14,6 +14,11 @@ nav {
     display: flex;
     justify-content: center;
     font-family: 'Zen Maru Gothic', sans-serif;
+    position: fixed;
+    opacity: 0;
+    transition: 1s ;
+    z-index: 1;
+    
 
     .bar-L {
         display: flex;
@@ -26,8 +31,12 @@ nav {
 
     .bar-logo {
         position: relative;
+        width: 110px;
+        height: 110px;
 
         img {
+            width: 100%;
+            height: 100%;
             position: absolute;
             z-index: 1;
         }
@@ -47,16 +56,11 @@ nav {
         gap: 45px;
     }
 }
-
-.bar-logo {
-    width: 110px;
-    height: 110px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
+.block{
+    opacity: 1;
+    z-index: 1;
 }
+
 
 main {
     #banner {
@@ -221,7 +225,89 @@ main {
         }
     }
     #cof{
+        
         height: 961px;
         background-color: #F6DEC3;
+        position: relative;
+         .cof-spn{
+             font-size: 96px;
+             font-family: 'Island Moments', cursive;
+             position: absolute;
+             left: 17%;
+             top:16%;
+         }
+      
+        .cof-p{
+            font-size: 20px;          
+            display: flex;
+            flex-direction: column;
+            writing-mode:vertical-rl;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            gap:28px;
+            position: absolute;
+            top: 41%;
+            left: 20%;
+            p{
+                letter-spacing: 10px;
+
+            }
+           
+        }
+        .swiper {
+            width: 52%;
+            height: 586px;
+            position: absolute;
+            top: 262px;
+            left: 29%;
+            
+            
+          }
+    
+          .swiper-slide {
+            width: 800px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transform-origin: top left;
+            
+          }
+          .swiper-pagination{
+            position: absolute;
+            bottom: 90px;
+            left: 90px;
+          }
+          .swiper-pagination-bullet{
+            width: calc((100% - 801px) / 3 - 20px );
+            height: 5px;
+            border-radius: 15px;
+            background-color: gray;
+            margin-right: 20px;
+          
+            
+          }
+       
+        
     }
 }
