@@ -75,6 +75,7 @@ main {
   display: flex;
 }
 .menu-card-box .menu-card .content .item-list .item span {
+  font-family: "Zen Maru Gothic";
   font-size: 20px;
   font-weight: 400;
   color: #424242;
@@ -84,12 +85,14 @@ main {
   margin: 0px 40px;
 }
 .menu-card-box .menu-card .content .item-list .hot-cold span {
+  font-family: "Zen Maru Gothic";
   font-size: 20px;
   font-weight: 400;
   color: #424242;
   line-height: 35px;
 }
 .menu-card-box .menu-card .content .item-list .price span {
+  font-family: "Zen Maru Gothic";
   font-size: 20px;
   font-weight: 400;
   color: #424242;
