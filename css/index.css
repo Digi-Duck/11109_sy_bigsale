@@ -259,9 +259,45 @@ main #cof-pic {
   flex-wrap: wrap;
   margin-bottom: 113.65px;
 }
-main #cof-pic img {
-  width: 33.33333%;
+main #cof-pic .cof-size {
+  width: 33.3333%;
   height: 366.35px;
+}
+main #cof-pic .cof-pic1 {
+  background-image: url("/Images/rest-1.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic2 {
+  background-image: url("/Images/latte-love.jpg");
+  background-size: cover;
+  background-position: 0 -150px;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic3 {
+  background-image: url("/Images/rest-3.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic4 {
+  background-image: url("/Images/tea.jpg");
+  background-size: cover;
+  background-position: 0 -40px;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic5 {
+  background-image: url("/Images/cof-pic-5.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic6 {
+  background-image: url("/Images/latte-green-tea.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 main #dessert {
   background-color: #F6DEC3;
