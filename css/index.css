@@ -259,6 +259,17 @@ main #cof-pic {
   margin-bottom: 113.65px;
 }
 main #cof-pic img {
-  width: 634.33px;
+  width: 33.33333%;
   height: 366.35px;
+}
+main #dessert .des-pic {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main #dessert .des-pic img {
+  width: 33.333333%;
+  height: 300px;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */
