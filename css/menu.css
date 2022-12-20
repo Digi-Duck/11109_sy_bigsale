@@ -112,6 +112,12 @@ main {
   display: flex;
   justify-content: center;
 }
+.menu-card-box .card1 .image {
+  background-image: url(../Images/np-menu/coffee-2.jpg);
+}
+.menu-card-box .card6 .image {
+  background-image: url(../Images/np-menu/bubble_tea.jpg);
+}
 .menu-card-box .card8 .image {
   background-image: url(../Images/np-menu/ice-cream.jpg);
 }
