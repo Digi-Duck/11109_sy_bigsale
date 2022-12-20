@@ -71,6 +71,7 @@ main{
             height: 278px;
             border-radius: 20px;
         }
+
         .image{
             width: 62%;
             height: 278px;
@@ -80,6 +81,7 @@ main{
             background-size: 100%;
         }
         .content{
+            width: 38%;
             padding-left: 32px;
             .classification{
                 font-size: 50px;
@@ -135,9 +137,44 @@ main{
             background-image: url(../Images/np-menu/coffee-2.jpg);
         }
     }
+    .card2{
+        .image{
+            background-image: url(../Images/np-menu/coffee-2.jpg);
+        }
+        .content{
+            .item-list{
+                .item{
+                    width: 300px;
+                }
+                .hot-cold{
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+        } 
+    }
+    .card3{
+        .image{
+            background-image: url(../Images/np-menu/coffee-2.jpg);
+        }
+    }
+    .card4{
+        .image{
+            background-image: url(../Images/np-menu/coffee-2.jpg);
+        }
+    }
+    .card5{
+        .image{
+            background-image: url(../Images/np-menu/coffee-2.jpg);
+        }
+    }
     .card6{
         .image{
             background-image: url(../Images/np-menu/bubble_tea.jpg);
+        }
+    }
+    .card7{
+        .image{
+            background-image: url(../Images/np-menu/coffee-2.jpg);
         }
     }
     .card8{
@@ -158,4 +195,68 @@ main{
     width: 100%;
     height: 80px;
     background-color: #6E786D;
+}
+
+@media (max-width:1600px){
+    .menu-card-box{
+        width: 80%;
+        .menu-card{
+            .image{
+                width: 50%;
+            }
+            .content{
+                width: 50%;
+                .classification{
+                    font-size: 40px;
+                    span{
+                        font-size: 30px;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+@media (max-width:999px){
+    .menu-card-box{
+        .menu-card{
+            .image{
+                width: 62%;
+                height: 278px;
+                border-radius: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 150%;
+            }
+            .content{
+                .classification{
+                    font-size: 30px;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+                .item-list{
+                    .item{
+                        span{
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                    }
+                    .hot-cold{
+                        margin: 0px 40px 0px 25px;
+                        span{
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                    }
+                    .price{
+                        span{
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
 }
