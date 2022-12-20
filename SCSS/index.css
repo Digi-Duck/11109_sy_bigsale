@@ -312,15 +312,29 @@ main #dessert .des-pic {
   justify-content: space-between;
   margin-left: 320px;
   gap: 20px;
+  margin-right: 43px;
 }
 main #dessert .des-pic img {
   width: 31.333333%;
   height: 300px;
   border-radius: 20px;
 }
+main #dessert .des-txt {
+  padding-top: 117px;
+}
 main #dessert .des-txt .des-spn {
+  font-size: 80px;
   font-family: "Island Moments", cursive;
 }
 main #dessert .des-txt p {
+  font-size: 20px;
+  font-family: "Zen Maru Gothic", sans-serif;
   line-height: 35px;
+  margin-left: 15px;
+  margin-bottom: 135px;
+}
+main #dessert .des-txt img {
+  width: 250px;
+  height: 222.16px;
+  margin-left: 147px;
 }/*# sourceMappingURL=index.css.map */
