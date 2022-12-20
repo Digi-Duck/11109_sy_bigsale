@@ -201,6 +201,7 @@ main #cof {
   height: 961px;
   background-color: #F6DEC3;
   position: relative;
+  margin-bottom: 113px;
 }
 main #cof .cof-spn {
   font-size: 96px;
@@ -225,25 +226,39 @@ main #cof .cof-p p {
   letter-spacing: 10px;
 }
 main #cof .swiper {
+  width: 52%;
   height: 586px;
   position: absolute;
   top: 262px;
   left: 29%;
+  border-radius: 20px;
 }
 main #cof .swiper-slide img {
+  width: 1102px;
+  height: 586px;
   display: block;
-  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #cof .swiper-pagination {
-  width: 90%;
+  width: 85%;
   position: absolute;
   bottom: 90px;
-  left: 90px;
+  left: 250px;
 }
 main #cof .swiper-pagination-bullet {
-  width: calc((100% - 801px) / 3 - 20px);
+  width: calc((100% - 700px) / 3);
   height: 5px;
   border-radius: 15px;
   background-color: gray;
   margin-right: 20px;
+}
+main #cof-pic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 113.65px;
+}
+main #cof-pic img {
+  width: 634.33px;
+  height: 366.35px;
 }/*# sourceMappingURL=index.css.map */
