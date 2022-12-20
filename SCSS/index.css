@@ -11,6 +11,10 @@ nav {
   display: flex;
   justify-content: center;
   font-family: "Zen Maru Gothic", sans-serif;
+  position: fixed;
+  opacity: 0;
+  transition: 1s;
+  z-index: 1;
 }
 nav .bar-L {
   display: flex;
@@ -21,8 +25,13 @@ nav .bar-L {
 }
 nav .bar-logo {
   position: relative;
+  width: 110px;
+  height: 110px;
+  padding-top: 15px;
 }
 nav .bar-logo img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
@@ -39,13 +48,9 @@ nav .bar-R {
   gap: 45px;
 }
 
-.bar-logo {
-  width: 110px;
-  height: 110px;
-}
-.bar-logo img {
-  width: 100%;
-  height: 100%;
+.block {
+  opacity: 1;
+  z-index: 2;
 }
 
 main #banner {
@@ -196,4 +201,126 @@ main #about .about-text .textgp {
 main #cof {
   height: 961px;
   background-color: #F6DEC3;
+  position: relative;
+  margin-bottom: 113px;
+}
+main #cof .cof-spn {
+  font-size: 96px;
+  font-family: "Island Moments", cursive;
+  position: absolute;
+  left: 17%;
+  top: 16%;
+}
+main #cof .cof-p {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-family: "Zen Maru Gothic", sans-serif;
+  gap: 28px;
+  position: absolute;
+  top: 41%;
+  left: 20%;
+}
+main #cof .cof-p p {
+  letter-spacing: 10px;
+}
+main #cof .swiper {
+  width: 52%;
+  height: 586px;
+  position: absolute;
+  top: 262px;
+  left: 29%;
+  border-radius: 20px;
+}
+main #cof .swiper-slide img {
+  width: 1102px;
+  height: 586px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #cof .swiper-pagination {
+  width: 85%;
+  position: absolute;
+  bottom: 90px;
+  left: 250px;
+}
+main #cof .swiper-pagination-bullet {
+  width: calc((100% - 700px) / 3);
+  height: 5px;
+  border-radius: 15px;
+  background-color: gray;
+  margin-right: 20px;
+}
+main #cof-pic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 113.65px;
+}
+main #cof-pic .cof-size {
+  width: 33.3333%;
+  height: 366.35px;
+}
+main #cof-pic .cof-pic1 {
+  background-image: url("/Images/rest-1.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic2 {
+  background-image: url("/Images/latte-love.jpg");
+  background-size: cover;
+  background-position: 0 -240px;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic3 {
+  background-image: url("/Images/rest-3.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic4 {
+  background-image: url("/Images/tea.jpg");
+  background-size: cover;
+  background-position: 0 -70px;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic5 {
+  background-image: url("/Images/cof-pic-5.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #cof-pic .cof-pic6 {
+  background-image: url("/Images/latte-green-tea.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+main #dessert {
+  background-color: #F6DEC3;
+  height: 961px;
+  padding-top: 168px;
+  display: flex;
+}
+main #dessert .des-pic {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 320px;
+  gap: 20px;
+}
+main #dessert .des-pic img {
+  width: 31.333333%;
+  height: 300px;
+  border-radius: 20px;
+}
+main #dessert .des-txt .des-spn {
+  font-family: "Island Moments", cursive;
+}
+main #dessert .des-txt p {
+  line-height: 35px;
 }/*# sourceMappingURL=index.css.map */

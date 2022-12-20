@@ -5,13 +5,53 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-.navlocat {
+nav {
   width: 100%;
+  height: 55px;
+  background-color: #6E786D;
+  display: flex;
+  justify-content: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+nav .bar-L {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 45px;
+  margin-right: 40px;
+}
+nav .bar-logo {
+  position: relative;
+}
+nav .bar-logo img {
+  position: absolute;
+  z-index: 1;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav .bar-R {
+  height: 100%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.bar-logo {
+  width: 110px;
   height: 110px;
-  background-color: #61786d;
+}
+.bar-logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .tittle {
+  padding-top: 150px;
+  padding-bottom: 95px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,85 +59,108 @@
 }
 .tittle h1 {
   font-size: 40px;
+  padding-bottom: 45px;
 }
 .tittle h3 {
   font-size: 20px;
+  line-height: 35px;
 }
 
 .schematic {
   width: 100%;
   height: 1400px;
   position: relative;
+  overflow: hidden;
 }
-.schematic img {
+.schematic .image {
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 20px;
   position: absolute;
+  filter: blur(2px);
+  transition: all 0.5s;
 }
 .schematic .img1 {
+  background-image: url(../Images/np-custom/cus1.webp);
   width: 380px;
   height: 253px;
-  top: 0%;
-  left: -5%;
+  top: 3%;
+  right: 84%;
 }
 .schematic .img2 {
+  background-image: url(../Images/np-custom/cus2.webp);
   width: 477px;
   height: 362px;
-  top: 0%;
-  left: 25%;
+  top: 9%;
+  right: 53%;
 }
 .schematic .img3 {
+  background-image: url(../Images/np-custom/cus3.jpg);
   width: 390px;
   height: 299px;
   top: 0%;
-  left: 55%;
+  right: 24%;
 }
 .schematic .img4 {
+  background-image: url(../Images/np-custom/cus4.jpg);
   width: 380px;
   height: 292px;
-  top: 0%;
-  left: 80%;
+  top: 7%;
+  right: -2%;
 }
 .schematic .img5 {
+  background-image: url(../Images/np-custom/cus5.webp);
   width: 411px;
   height: 315px;
-  top: 30%;
-  left: 5%;
+  top: 43%;
+  right: 71%;
 }
 .schematic .img6 {
+  background-image: url(../Images/np-custom/cus6.jpg);
   width: 371px;
   height: 284px;
-  top: 30%;
-  left: 35%;
+  top: 42%;
+  right: 40%;
 }
 .schematic .img7 {
+  background-image: url(../Images/np-custom/cus7.jpg);
   width: 446px;
   height: 342px;
-  top: 30%;
-  left: 70%;
+  top: 35%;
+  right: 8%;
 }
 .schematic .img8 {
+  background-image: url(../Images/np-custom/cus8.jpg);
   width: 278px;
   height: 185px;
-  top: 60%;
-  left: 0%;
+  top: 73%;
+  right: 85%;
 }
 .schematic .img9 {
+  background-image: url(../Images/np-custom/cus9.jpg);
   width: 417px;
   height: 278px;
-  top: 60%;
-  left: 25%;
+  top: 75%;
+  right: 53%;
 }
 .schematic .img10 {
+  background-image: url(../Images/np-custom/cus10.jpg);
   width: 308px;
   height: 205px;
-  top: 60%;
-  left: 50%;
+  top: 70%;
+  right: 29%;
 }
 .schematic .img11 {
+  background-image: url(../Images/np-custom/cus11.jpg);
   width: 364px;
   height: 268px;
-  top: 60%;
-  left: 80%;
+  top: 73%;
+  right: 0%;
+}
+.schematic .image:hover {
+  filter: blur(0);
+  transform: scale(1.2, 1.2);
 }
 
 .venue {
@@ -119,7 +182,7 @@
 }
 
 .callboss {
-  width: 1903px;
+  width: 100%;
   height: 962px;
   display: flex;
   flex-direction: column;
@@ -127,7 +190,7 @@
   align-items: center;
 }
 .callboss .formbox {
-  width: 1264px;
+  width: 66%;
   height: 714px;
   background-color: #6E786D;
   border-radius: 20px;
