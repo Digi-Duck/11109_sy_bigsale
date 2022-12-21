@@ -201,6 +201,9 @@ nav {
         margin-top: 50px;
     }
 }
+.callboss-pad{
+    display: none;
+}
 .callboss{
     width: 100%;
     height: 962px;
@@ -361,6 +364,281 @@ nav {
             object-fit: cover;
             // border-radius: 20px;
             // overflow: hidden;
+        }
+    }
+}
+
+@media (max-width:1600px){
+    .schematic{
+        width: 100%;
+        height: 1200px;
+        position: relative;
+        overflow: hidden;
+        .image{
+            background-size: 110%;
+            border-radius: 20px;
+            transform:scale(0.8,0.8);
+        }
+        .image:hover{
+            filter: blur(0);
+            transform:scale(1,1);
+        }
+    }
+}
+@media (max-width:1200px){
+    .schematic{
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        overflow: hidden;
+        .image{
+            background-size: 110%;
+            border-radius: 20px;
+            transform:scale(0.6,0.6);
+        }
+        .image:hover{
+            filter: blur(0);
+            transform:scale(0.8,0.8);
+        }
+    }
+}
+@media (max-width:900px){
+    .schematic{
+        width: 100%;
+        height: 950px;
+        position: relative;
+        overflow: hidden;
+        .image{
+            background-size: 110%;
+            border-radius: 20px;
+            transform:scale(0.5,0.5);
+        }
+        .image:hover{
+            filter: blur(0);
+            transform:scale(0.7,0.7);
+        }
+    }
+}
+@media (max-width:768px){
+    .tittle{
+        padding-top: 100px;
+        h1{
+            display: none;
+        }
+        h3{
+            display: none;
+        }
+    }
+    .schematic{
+        width: 100%;
+        height: 550px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 100px;
+        .image{
+            background-size: 110%;
+            border-radius: 20px;
+            transform:scale(1,1);
+        }
+        .img1{
+            width: 134px;
+            height: 97px;
+            top: 4%;
+            right: 2%;
+        }
+        .img2{
+            width: 155px;
+            height: 109px;
+            top: 13%;
+            right: 63%;
+        }
+        .img3{
+            width: 211px;
+            height: 152px;
+            top: 0%;
+            right: 26%;
+        }
+        .img4{
+            width: 174px;
+            height: 131px;
+            top: 3%;
+            right: 88%;
+        }
+        .img5{
+            width: 177px;
+            height: 127px;
+            top: 42%;
+            right: 71%;
+        }
+        .img6{
+            width: 221px;
+            height: 160px;
+            top: 38%;
+            right: 33%;
+        }
+        .img7{
+            width: 193px;
+            height: 140px;
+            top: 31%;
+            right: -3%;
+        }
+        .img8{
+            width: 136px;
+            height: 101px;
+            top: 78%;
+            right: 54%;
+        }
+        .img9{
+            width: 213px;
+            height: 155px;
+            top: 73%;
+            right: 78%;
+        }
+        .img10{
+            width: 155px;
+            height: 121px;
+            top: 65%;
+            right: -8%;
+        }
+        .img11{
+            width: 190px;
+            height: 143px;
+            top: 74%;
+            right: 19%;
+        }
+        .image:hover{
+            filter: blur(0);
+            transform:scale(1.3,1.3);
+        }
+    }
+    .venue{
+        width: 100%;
+        height: 515px;
+        background-color: #F7DEC3;
+        padding-top: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        h1{
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            padding-left: 24px;
+        }
+        h3{
+            font-size: 15px;
+            padding-left: 24px;
+            line-height: 28px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+        }
+        .swiper{
+            margin-top: 0px;
+            padding-top: 30px;
+            .swiper-slide{
+                height: 160px;
+            }
+        }
+    }
+    .callboss{
+        display: none;
+    }
+    .callboss-pad{
+        display: block;
+        width: 100%;
+        height: 499px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .formbox{
+            width: 575px;
+            height: 322px;
+            background-color: #6E786D;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            transform: translate(2%,0);
+        }
+        .title{
+            padding-top: 40px;
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 20px;
+                line-height: 30px;
+                font-family: 'Zen Maru Gothic', sans-serif;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+        .input-box{
+            display: flex;
+            padding-top: 25px;
+            .message{
+                transform: translate(-5%,0);
+                input{
+                    width: 259px;
+                    height: 145px;
+                    border-radius: 15px;
+                    background-color: #6E786D;
+                    border: 1px solid white;
+                }
+                input::placeholder{
+                    color: #ffffff;
+                    padding-left: 11px;
+                }
+            }
+            .info-box{
+                display: flex;
+                flex-direction: column;
+                .name{
+                    input{
+                        width: 180px;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #6E786D;
+                        border: 1px solid white;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #ffffff;
+                        padding-left: 11px;
+                    }
+                }
+                .phone{
+                    input{
+                        width: 180px;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #6E786D;
+                        border: 1px solid white;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #ffffff;
+                        padding-left: 11px;
+                    }
+                }
+                .mail{
+                    input{
+                        width: 180px;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #6E786D;
+                        border: 1px solid white;
+                    }
+                    input::placeholder{
+                        color: #ffffff;
+                        padding-left: 11px;
+                    }
+                }
+            }
+
         }
     }
 }

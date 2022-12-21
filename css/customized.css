@@ -195,6 +195,10 @@ nav .bar-R {
   margin-top: 50px;
 }
 
+.callboss-pad {
+  display: none;
+}
+
 .callboss {
   width: 100%;
   height: 962px;
@@ -338,4 +342,303 @@ nav .bar-R {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1600px) {
+  .schematic {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.8, 0.8);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 1200px) {
+  .schematic {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.6, 0.6);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(0.8, 0.8);
+  }
+}
+@media (max-width: 900px) {
+  .schematic {
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.5, 0.5);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(0.7, 0.7);
+  }
+}
+@media (max-width: 768px) {
+  .tittle {
+    padding-top: 100px;
+  }
+  .tittle h1 {
+    display: none;
+  }
+  .tittle h3 {
+    display: none;
+  }
+  .schematic {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(1, 1);
+  }
+  .schematic .img1 {
+    width: 134px;
+    height: 97px;
+    top: 4%;
+    right: 2%;
+  }
+  .schematic .img2 {
+    width: 155px;
+    height: 109px;
+    top: 13%;
+    right: 63%;
+  }
+  .schematic .img3 {
+    width: 211px;
+    height: 152px;
+    top: 0%;
+    right: 26%;
+  }
+  .schematic .img4 {
+    width: 174px;
+    height: 131px;
+    top: 3%;
+    right: 88%;
+  }
+  .schematic .img5 {
+    width: 177px;
+    height: 127px;
+    top: 42%;
+    right: 71%;
+  }
+  .schematic .img6 {
+    width: 221px;
+    height: 160px;
+    top: 38%;
+    right: 33%;
+  }
+  .schematic .img7 {
+    width: 193px;
+    height: 140px;
+    top: 31%;
+    right: -3%;
+  }
+  .schematic .img8 {
+    width: 136px;
+    height: 101px;
+    top: 78%;
+    right: 54%;
+  }
+  .schematic .img9 {
+    width: 213px;
+    height: 155px;
+    top: 73%;
+    right: 78%;
+  }
+  .schematic .img10 {
+    width: 155px;
+    height: 121px;
+    top: 65%;
+    right: -8%;
+  }
+  .schematic .img11 {
+    width: 190px;
+    height: 143px;
+    top: 74%;
+    right: 19%;
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(1.3, 1.3);
+  }
+  .venue {
+    width: 100%;
+    height: 515px;
+    background-color: #F7DEC3;
+    padding-top: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .venue h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: 24px;
+  }
+  .venue h3 {
+    font-size: 15px;
+    padding-left: 24px;
+    line-height: 28px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .venue .swiper {
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+  .venue .swiper .swiper-slide {
+    height: 160px;
+  }
+  .callboss {
+    display: none;
+  }
+  .callboss-pad {
+    display: block;
+    width: 100%;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .callboss-pad .formbox {
+    width: 575px;
+    height: 322px;
+    background-color: #6E786D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(2%, 0);
+  }
+  .callboss-pad .title {
+    padding-top: 40px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .callboss-pad .title h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .callboss-pad .input-box {
+    display: flex;
+    padding-top: 25px;
+  }
+  .callboss-pad .input-box .message {
+    transform: translate(-5%, 0);
+  }
+  .callboss-pad .input-box .message input {
+    width: 259px;
+    height: 145px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+  }
+  .callboss-pad .input-box .message input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .callboss-pad .input-box .info-box .name input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .name input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+  }
+  .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
 }/*# sourceMappingURL=customized.css.map */
