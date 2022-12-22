@@ -214,4 +214,79 @@ main {
     font-size: 16px;
     line-height: 30px;
   }
+}
+@media (max-width: 768px) {
+  .menu-card-box {
+    width: 86%;
+    padding-top: 200px;
+    padding-left: 60px;
+  }
+  .menu-card-box .menu-card {
+    display: flex;
+  }
+  .menu-card-box .menu-card img {
+    width: 283px;
+    height: 147px;
+    border-radius: 20px;
+  }
+  .menu-card-box .menu-card .image {
+    width: 283px;
+    height: 147px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .menu-card-box .menu-card .content {
+    width: 50%;
+    padding-left: 32px;
+  }
+  .menu-card-box .menu-card .content .classification {
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 8px;
+  }
+  .menu-card-box .menu-card .content .classification span {
+    font-size: 16px;
+  }
+  .menu-card-box .menu-card .content .item-list {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .menu-card-box .menu-card .content .item-list .item {
+    width: 220px;
+  }
+  .menu-card-box .menu-card .content .item-list .item span {
+    font-family: "Zen Maru Gothic";
+    font-size: 15px;
+    font-weight: 400;
+    color: #424242;
+    line-height: 28px;
+  }
+  .menu-card-box .menu-card .content .item-list .hot-cold {
+    margin: 0px 15px 0px 0px;
+  }
+  .menu-card-box .menu-card .content .item-list .hot-cold span {
+    font-family: "Zen Maru Gothic";
+    font-size: 15px;
+    font-weight: 400;
+    color: #424242;
+    line-height: 28px;
+  }
+  .menu-card-box .menu-card .content .item-list .price span {
+    font-family: "Zen Maru Gothic";
+    font-size: 15px;
+    font-weight: 400;
+    color: #424242;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-card-box .dividing {
+    width: 100%;
+    height: 1px;
+    background-color: #424242;
+    margin: 0px 0 30px 0;
+  }
 }/*# sourceMappingURL=menu.css.map */
