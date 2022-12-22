@@ -81,6 +81,9 @@ nav {
         color: #424242;
     }
 }
+.schematic-mobile{
+    display: none;
+}
 .schematic{
     width: 100%;
     height: 1400px;
@@ -640,5 +643,328 @@ nav {
             }
 
         }
+    }
+}
+@media (max-width:699px){
+    .tittle{
+        padding-top: 200px;
+        padding-bottom: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            display: block;
+            font-size: 30px;
+            padding-bottom: 50px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: #424242;
+        }
+        h3{
+            display: block;
+            font-size: 16px;
+            line-height: 28px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: #424242;
+        }
+    }
+    .schematic{
+        display: none;
+    }
+    .schematic-mobile{
+        display: block;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        .image{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200%;
+            width: 33%;
+            height: 100%;
+        }
+        .img1{
+            background-image: url(../Images/np-custom/cus5.webp);
+        }
+        .img2{
+            background-image: url(../Images/np-custom/cus2.webp);
+        }
+        .img3{
+            background-image: url(../Images/np-custom/cus7.jpg);
+        }
+    }
+    .venue{
+        display: none;
+    }
+    .callboss-pad{
+        display: block;
+        width: 100%;
+        height: 600px;
+        padding-top: 100px;
+        display: flex;
+        background-color: #F7DEC3;
+        flex-direction: column;
+        justify-content:start;
+        align-items: center;
+        .formbox{
+            width: 80%;
+            height: 100%;
+            background-color: #F7DEC3;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            transform: translate(2%,0);
+        }
+        .title{
+            padding-top: 0px;
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 20px;
+                line-height: 30px;
+                font-family: 'Zen Maru Gothic', sans-serif;
+                font-weight: 400;
+                color: #424242;
+            }
+        }
+        .input-box{
+            width: 100%;
+            display: flex;
+            padding-top: 25px;
+            flex-direction: column-reverse;
+            .message{
+                transform: translate(0,0);
+                input{
+                    width: 80%;
+                    height: 145px;
+                    border-radius: 15px;
+                    background-color: #F7DEC3;
+                    border: 1px solid #424242;
+                }
+                input::placeholder{
+                    color: #7D7D7D;
+                    padding-left: 11px;
+                }
+            }
+            .info-box{
+                display: flex;
+                flex-direction: column;
+                .name{
+                    input{
+                        width: 80%;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+                .phone{
+                    input{
+                        width: 80%;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+                .mail{
+                    input{
+                        width: 80%;
+                        height: 35px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media (max-width:499px){
+    .tittle{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+@media (max-width:375px){
+    .tittle{
+        padding-top: 135px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            display: block;
+            font-size: 20px;
+            padding-bottom: 15px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: #424242;
+        }
+        h3{
+            display: block;
+            font-size: 12px;
+            line-height: 22px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: #424242;
+        }
+    }
+    .schematic{
+        display: none;
+    }
+    .schematic-mobile{
+        display: block;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+        .image{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200%;
+            width: 33%;
+            height: 100%;
+        }
+        .img1{
+            background-image: url(../Images/np-custom/cus5.webp);
+        }
+        .img2{
+            background-image: url(../Images/np-custom/cus2.webp);
+        }
+        .img3{
+            background-image: url(../Images/np-custom/cus7.jpg);
+        }
+    }
+    .venue{
+        display: none;
+    }
+    .callboss-pad{
+        display: block;
+        width: 100%;
+        height: 456px;
+        padding-top: 35px;
+        display: flex;
+        background-color: #F7DEC3;
+        flex-direction: column;
+        justify-content:start;
+        align-items: center;
+        .formbox{
+            width: 80%;
+            height: 100%;
+            background-color: #F7DEC3;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            transform: translate(8%,0);
+        }
+        .title{
+            padding-top: 0px;
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translate(-8%,0);
+            h3{
+                font-size: 15px;
+                line-height: 22px;
+                font-family: 'Zen Maru Gothic', sans-serif;
+                font-weight: 400;
+                color: #424242;
+            }
+        }
+        .input-box{
+            width: 100%;
+            display: flex;
+            padding-top: 25px;
+            flex-direction: column-reverse;
+            .message{
+                transform: translate(0,0);
+                input{
+                    width: 255px;
+                    height: 132px;
+                    border-radius: 15px;
+                    background-color: #F7DEC3;
+                    border: 1px solid #424242;
+                }
+                input::placeholder{
+                    color: #7D7D7D;
+                    padding-left: 11px;
+                }
+            }
+            .info-box{
+                display: flex;
+                flex-direction: column;
+                .name{
+                    input{
+                        width: 255px;
+                        height: 38px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+                .phone{
+                    input{
+                        width: 255px;
+                        height: 38px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+                .mail{
+                    input{
+                        width: 255px;
+                        height: 38px;
+                        border-radius: 15px;
+                        background-color: #F7DEC3;
+                        border: 1px solid #424242;
+                        margin-bottom: 20px;
+                    }
+                    input::placeholder{
+                        color: #7D7D7D;
+                        padding-left: 11px;
+                    }
+                }
+            }
+
+        }
+    }
+    .footerlocat{
+        margin-top: 0px;
     }
 }
