@@ -269,3 +269,109 @@ nav {
         }
     }
 }
+@media (max-width:640px){
+    .container-pad{
+        .cardbox-pad{
+            width: 95%;    
+            justify-content: center;
+            .card{
+                width: 320px;
+                .card-img{
+                    img{
+                        width: 145px;
+                    }
+                }
+            }
+            .display-none{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:375px){
+    .buttonbox-pad{
+        padding-top: 150px;
+        padding-left: 15px;
+        .btn{
+            width: 64px;
+            height: 23px;
+            margin: 10px 5px;
+            span{
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        .btn:hover{
+            background-color: #F6DEC3;
+        }
+        .active{
+            background-color: #F6DEC3;
+        }
+    }
+    .container{
+        display: none;
+    }
+
+    .container-pad{
+        display: block;
+        display: flex;
+        justify-content: center;
+        .cardbox-pad{
+            width: 68%;    
+            padding-top: 15px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .card{
+                width: 500px;
+                height: 130px;               
+                margin-bottom: 65px;
+                display: flex;
+                flex-direction: column;
+                .card-img{
+                    // border-radius: 20px;
+                    // background-color: darkgray;
+                    img{
+                        width: 255px;
+                        height: 120px;
+                        border-radius: 20px;
+                    }
+                }
+                .content{
+                    width: 255px;
+                    height: 130px;
+                    padding-left: 8px;
+                    display: flex;
+                    .news-class{
+                        display: flex;
+                        margin-bottom: 8px;
+                        padding-top: 5px;
+                        .label{
+                            width: 3px;
+                            height: 32px;
+                            border-radius: 20px;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                    .ellipsis3{
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding-left: 10px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2; 
+                        //行數
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                    }
+                }
+            }
+            .display-none{
+                display: none;
+            }
+        }
+    }
+}

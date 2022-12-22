@@ -255,4 +255,100 @@ nav .bar-R {
   .container-pad .cardbox-pad .display-none {
     display: none;
   }
+}
+@media (max-width: 640px) {
+  .container-pad .cardbox-pad {
+    width: 95%;
+    justify-content: center;
+  }
+  .container-pad .cardbox-pad .card {
+    width: 320px;
+  }
+  .container-pad .cardbox-pad .card .card-img img {
+    width: 145px;
+  }
+  .container-pad .cardbox-pad .display-none {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .buttonbox-pad {
+    padding-top: 150px;
+    padding-left: 15px;
+  }
+  .buttonbox-pad .btn {
+    width: 64px;
+    height: 23px;
+    margin: 10px 5px;
+  }
+  .buttonbox-pad .btn span {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .buttonbox-pad .btn:hover {
+    background-color: #F6DEC3;
+  }
+  .buttonbox-pad .active {
+    background-color: #F6DEC3;
+  }
+  .container {
+    display: none;
+  }
+  .container-pad {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .container-pad .cardbox-pad {
+    width: 68%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .container-pad .cardbox-pad .card {
+    width: 500px;
+    height: 130px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-pad .cardbox-pad .card .card-img img {
+    width: 255px;
+    height: 120px;
+    border-radius: 20px;
+  }
+  .container-pad .cardbox-pad .card .content {
+    width: 255px;
+    height: 130px;
+    padding-left: 8px;
+    display: flex;
+  }
+  .container-pad .cardbox-pad .card .content .news-class {
+    display: flex;
+    margin-bottom: 8px;
+    padding-top: 5px;
+  }
+  .container-pad .cardbox-pad .card .content .news-class .label {
+    width: 3px;
+    height: 32px;
+    border-radius: 20px;
+  }
+  .container-pad .cardbox-pad .card .content .news-class .label span {
+    display: none;
+  }
+  .container-pad .cardbox-pad .card .content .ellipsis3 {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+  .container-pad .cardbox-pad .display-none {
+    display: none;
+  }
 }/*# sourceMappingURL=news.css.map */
