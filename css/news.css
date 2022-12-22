@@ -53,6 +53,10 @@ nav .bar-R {
   z-index: 2;
 }
 
+.buttonbox-pad {
+  display: none;
+}
+
 .buttonbox {
   padding-top: 225px;
   display: flex;
@@ -78,6 +82,10 @@ nav .bar-R {
 }
 .buttonbox .active {
   background-color: #F6DEC3;
+}
+
+.container-pad {
+  display: none;
 }
 
 .container {
@@ -155,71 +163,96 @@ nav .bar-R {
 
 @media (max-width: 768px) {
   .buttonbox {
+    display: none;
+  }
+  .buttonbox-pad {
+    display: block;
     padding-top: 150px;
     padding-left: 30px;
-  }
-  .buttonbox .btn {
-    width: 90px;
-    height: 34px;
-  }
-  .buttonbox .btn span {
-    font-size: 15px;
-  }
-  .container {
     display: flex;
     justify-content: center;
   }
-  .container .cardbox {
-    width: 80%;
-    padding-top: 0px;
+  .buttonbox-pad .btn {
+    width: 90px;
+    height: 34px;
+    background-color: #6e786d;
+    border-radius: 20px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonbox-pad .btn span {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .buttonbox-pad .btn:hover {
+    background-color: #F6DEC3;
+  }
+  .buttonbox-pad .active {
+    background-color: #F6DEC3;
+  }
+  .container {
+    display: none;
+  }
+  .container-pad {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .container-pad .cardbox-pad {
+    width: 60%;
+    padding-top: 25px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .container .cardbox .card {
-    width: 400px;
-    height: 440px;
-    margin: 50px 20px;
-  }
-  .container .cardbox .card .card-img {
-    width: 100%;
-    height: 356px;
-  }
-  .container .cardbox .card .card-img img {
-    width: 100%;
-    height: 356px;
-    border-radius: 20px;
-  }
-  .container .cardbox .card .news-class {
-    margin: 15px 0;
+  .container-pad .cardbox-pad .card {
+    width: 500px;
+    height: 130px;
+    margin-bottom: 35px;
     display: flex;
   }
-  .container .cardbox .card .news-class .label {
+  .container-pad .cardbox-pad .card .card-img img {
+    width: 245px;
+    height: 130px;
+    border-radius: 20px;
+  }
+  .container-pad .cardbox-pad .card .content {
+    width: 245px;
+    height: 130px;
+    padding-top: 5px;
+    padding-left: 30px;
+  }
+  .container-pad .cardbox-pad .card .content .news-class {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .container-pad .cardbox-pad .card .content .news-class .label {
     width: 68px;
     height: 21px;
     background-color: #6e786d;
     border-radius: 20px;
   }
-  .container .cardbox .card .news-class .label span {
+  .container-pad .cardbox-pad .card .content .news-class .label span {
     font-size: 12px;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container .cardbox .card .news-class .line-box {
-    display: none;
-  }
-  .container .cardbox .card .ellipsis2 {
-    font-size: 20px;
+  .container-pad .cardbox-pad .card .content .ellipsis3 {
+    font-size: 15px;
+    line-height: 25px;
     overflow: hidden;
     display: -webkit-box;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     white-space: normal;
   }
-  .container .cardbox .display-none {
+  .container-pad .cardbox-pad .display-none {
     display: none;
   }
 }/*# sourceMappingURL=news.css.map */
