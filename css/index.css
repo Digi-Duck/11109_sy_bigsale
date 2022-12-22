@@ -69,9 +69,44 @@ main #banner {
 main #banner .slideshow-container {
   position: relative;
   margin: auto;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
   /* Fading animation */
 }
-main #banner .slideshow-container .ban1, main #banner .slideshow-container .ban2, main #banner .slideshow-container .ban3, main #banner .slideshow-container .ban4, main #banner .slideshow-container .ban5, main #banner .slideshow-container .ban6 {
+main #banner .slideshow-container .prev,
+main #banner .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: none;
+}
+main #banner .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main #banner .slideshow-container .prev:hover,
+main #banner .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main #banner .slideshow-container .ban1,
+main #banner .slideshow-container .ban2,
+main #banner .slideshow-container .ban3,
+main #banner .slideshow-container .ban4,
+main #banner .slideshow-container .ban5,
+main #banner .slideshow-container .ban6 {
   width: 100%;
   background-position: 0 0;
   background-size: cover;
@@ -221,6 +256,7 @@ main #about .about-logo img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
+  box-shadow: 3px 3px 14px 0px #565454;
 }
 main #about .about-text {
   text-align: center;
@@ -259,30 +295,30 @@ main #cof .cof-p {
 main #cof .cof-p p {
   letter-spacing: 10px;
 }
-main #cof .swiper {
-  width: 1102px;
+main #cof .swiper-box {
+  width: 57%;
+  position: relative;
+  transform: translate(177px, 136px);
+}
+main #cof .swiper-box .swiper {
+  width: 100%;
   height: 586px;
   border-radius: 20px;
-  position: absolute;
-  left: 481px;
-  top: 262px;
 }
-main #cof .swiper-slide img {
-  width: 1102px;
-  height: 586px;
+main #cof .swiper-box .swiper .swiper-slide img {
+  width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main #cof .swiper-pagination {
-  width: 1200px;
-  position: absolute;
-  bottom: 90px;
-  left: 440px;
+main #cof .swiper-box .swiper-pagination {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  bottom: -29px;
+  left: 0px;
 }
-main #cof .swiper-pagination-bullet {
+main #cof .swiper-box .swiper-pagination-bullet {
   width: 351px;
   height: 5px;
   border-radius: 15px;
@@ -447,4 +483,116 @@ footer {
   font-size: 12px;
   line-height: 35px;
   font-family: "Zen Maru Gothic", sans-serif;
+}
+footer .logoTxt {
+  width: 136px;
+  height: 35px;
+  margin-left: 30px;
+}
+footer .logoTxt img {
+  width: 100%;
+}
+footer .maker {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 15px;
+  }
+  nav .bar-L {
+    margin-right: 22px;
+  }
+  nav .bar-logo {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 89.72px;
+    height: 89.72px;
+  }
+  nav .bar-logo .logo-back {
+    width: 100%;
+    height: 100%;
+  }
+  nav .bar-logo .logo-back img {
+    width: 84.44px;
+    height: 84.44px;
+  }
+  nav .bar-R {
+    margin-left: 22px;
+  }
+  main #banner .slideshow-container {
+    height: 387.25px;
+  }
+  main #banner .slideshow-container .mySlides {
+    height: 100%;
+  }
+  main #banner .slideshow-container .prev, main #banner .slideshow-container .next {
+    display: block;
+    font-size: 35px;
+    font-weight: normal;
+  }
+  main #banner .dots {
+    display: none;
+  }
+  main #about {
+    height: 637px;
+  }
+  main #about .about-logo {
+    padding-top: 32px;
+    margin-bottom: 26px;
+  }
+  main #about .about-logo img {
+    width: 131px;
+    height: 131px;
+  }
+  main #about .about-text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  main #about .about-text .text-1 {
+    margin-bottom: 28px;
+  }
+  main #about .about-text .text-2 {
+    margin-bottom: 28px;
+  }
+  main #about .about-text .text-3 {
+    margin-bottom: 28px;
+  }
+  main #about .about-text .textgp {
+    margin: 0;
+  }
+  main #cof .cof-spn {
+    top: 6%;
+    left: 13%;
+    font-size: 70px;
+    z-index: 2;
+    line-height: 80.5px;
+  }
+  main #cof .cof-p {
+    top: 26%;
+    left: 9%;
+    font-size: 15px;
+    line-height: 21.72px;
+    gap: 5px;
+  }
+  main #cof .swiper-box {
+    width: 68%;
+    height: 268px;
+  }
+  main #cof .swiper-box .swiper {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  main #cof .swiper-box .swiper .swiper-wrapper .swiper-slide img {
+    border-radius: 20px;
+    width: 100%;
+    height: 268px;
+  }
+  main #cof .swiper-box .swiper-pagination {
+    width: 100%;
+    bottom: -20px;
+    left: 0%;
+  }
 }/*# sourceMappingURL=index.css.map */

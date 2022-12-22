@@ -23,11 +23,11 @@
       <a href=""><span>酉酉飲品</span></a>
     </div>
     <div class="bar-logo">
-      
-        <div class="logo-back">
-          <img src="./Images/LOGO.png" alt="">
-        </div>
-      
+
+      <div class="logo-back">
+        <img src="./Images/LOGO.png" alt="">
+      </div>
+
     </div>
     <div class="bar-R">
       <a href=""><span>客製化服務</span></a>
@@ -69,7 +69,11 @@
           <div class="text">Caption Three</div>
         </div>
 
+        
         <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         <div class="dots" style="text-align:center;">
           <div class="dots-move" style="transition: top 0.5s; top:0px ;">
             <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
@@ -98,16 +102,22 @@
       </div>
       <div class="about-text">
         <p>
-          關於起名「酉」字<br>
-          朝鮮漢語詞： 유 yu<br>
-          男店主與女店主本職工作是從事婚紗攝影<br>
-          攝影師與彩妝師的夢想是能擁有自己的咖啡店<br>
-          一樓咖啡廳 二樓婚紗工作室「酉酉」「유 유」巧妙的結合<br>
-          聯想到兩個人型於是就這樣….展開新的開始<br>
-          也許哪一天婚紗工作室也改名「酉酉유유婚紗」<br>
-          這是我們的咖啡廳<br>
-          如果您有機會到台中—豐原<br>
-          可以來喝咖啡 聊聊天<br>
+          <div class="text-1">
+            關於起名「酉」字<br>
+            朝鮮漢語詞： 유 yu<br>
+          </div>
+          <div class="text-2">
+            男店主與女店主本職工作是從事婚紗攝影<br>
+            攝影師與彩妝師的夢想是能擁有自己的咖啡店<br>
+            一樓咖啡廳 二樓婚紗工作室「酉酉」「유 유」巧妙的結合<br>
+            聯想到兩個人型於是就這樣….展開新的開始<br>
+            也許哪一天婚紗工作室也改名「酉酉유유婚紗」<br>
+          </div>
+          <div class="text-3">
+            這是我們的咖啡廳<br>
+            如果您有機會到台中—豐原<br>
+            可以來喝咖啡 聊聊天<br>
+          </div>
         <div class="textgp">
           「酉」 人氣<br>
           「酉」 財氣<br>
@@ -126,7 +136,27 @@
         <p>來杯拿鐵讓心情愉悅</p>
       </div>
       <!-- Swiper -->
-      <div class="swiper mySwiper">
+
+      <div class="swiper-box">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pic1">
+              <img src="./Images/去暗角.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/chair.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/coffepowder.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+        </div>
+      </div>
+
+      <!-- <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide pic1">
             <img src="./Images/去暗角.png" alt="">
@@ -140,7 +170,7 @@
         </div>
       </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination"></div> -->
     </section>
     <section id="cof-pic">
       <div class="cof-pic1 cof-size"></div>
@@ -163,9 +193,9 @@
         <span class="des-spn">Light Meals &<br> Desserts</span>
         <p>來份早午餐+咖啡<br>
           三五好友一起來坐坐</p>
-          <div class="des-gif">
-            <img src="./Images/coffee.gif" alt="">
-          </div>
+        <div class="des-gif">
+          <img src="./Images/coffee.gif" alt="">
+        </div>
       </div>
 
     </section>
@@ -187,14 +217,14 @@
         <img src="./Images/coffepowder.jpg" alt="">
         <img src="./Images/coffee-1.png" alt="">
         <img src="./Images/tree-decorate.jpg" alt="">
-      </div>     
+      </div>
     </section>
     <section id="contact">
       <div class="adres">
         <h3>聯絡我們</h3>
         <p>地址：台中市豐原區向陽路60號</p>
         <p>連絡電話：04-25220619</p>
-        <p>營業時間：09:00 - 19:00　星期二公休</p>
+        <p>營業時間：09:00 - 19:00　星期四公休</p>
       </div>
       <div class="aboutus">
         <h3>關注酉酉</h3>
@@ -202,7 +232,7 @@
           <p>FaceBook</p>
         </a>
         <a href="">
-          <p>Instagram</p> 
+          <p>Instagram</p>
         </a>
         <a href="">
           <p>Uber Eats</p>
@@ -211,7 +241,9 @@
     </section>
   </main>
   <footer>
-    <div></div>
+    <div class="logoTxt">
+      <img src="./Images/LOGO文字.png" alt="">
+    </div>
     <span>copyright © yuyu__coffee All Rights Reserved.</span>
     <div class="maker"><span>site by BigSale</span></div>
   </footer>
@@ -219,11 +251,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      
+
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      
     });
   </script>
   <script>
