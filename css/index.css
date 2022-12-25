@@ -268,10 +268,11 @@ main #about .about-text .textgp {
   margin-top: 70px;
 }
 main #cof {
-  height: 961px;
+  min-height: 1px;
   background-color: #F6DEC3;
   position: relative;
   margin-bottom: 113px;
+  padding-bottom: 393px;
 }
 main #cof .cof-spn {
   font-size: 96px;
@@ -378,8 +379,7 @@ main #dessert {
 }
 main #dessert .des-pic {
   width: 960px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  display: flex;
   flex-wrap: wrap;
   margin-left: 320px;
   gap: 20px;
@@ -562,16 +562,21 @@ footer .maker {
   main #about .about-text .textgp {
     margin: 0;
   }
+  main #cof {
+    min-width: 1px;
+    padding-bottom: 252px;
+    margin-bottom: 55px;
+  }
   main #cof .cof-spn {
-    top: 6%;
-    left: 13%;
+    top: 9%;
+    left: 12%;
     font-size: 70px;
     z-index: 2;
     line-height: 80.5px;
   }
   main #cof .cof-p {
-    top: 26%;
-    left: 9%;
+    top: 38%;
+    left: 16%;
     font-size: 15px;
     line-height: 21.72px;
     gap: 5px;
@@ -594,5 +599,65 @@ footer .maker {
     width: 100%;
     bottom: -20px;
     left: 0%;
+  }
+  main #cof-pic {
+    margin-bottom: 55.18px;
+  }
+  main #cof-pic .cof-size {
+    height: 147.85px;
+  }
+  main #dessert {
+    margin-bottom: 73px;
+    padding-top: 90px;
+  }
+  main #dessert .des-pic {
+    gap: 17px;
+    margin-left: 111px;
+    margin-right: 21px;
+  }
+  main #dessert .des-pic .none {
+    display: none;
+  }
+  main #dessert .des-pic img {
+    width: 50%;
+    height: 143.77px;
+  }
+  main #dessert .des-txt P {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  main #dessert .des-txt .des-spn {
+    font-size: 60px;
+    line-height: 69px;
+  }
+  main #ig-part {
+    margin-bottom: 80.28px;
+  }
+  main #ig-part .ig-name img {
+    width: 31px;
+    height: 31px;
+  }
+  main #ig-part .ig-name span {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  main #ig-part .ig-pic {
+    width: 535.36px;
+    height: 351px;
+  }
+  main #ig-part .ig-pic img {
+    width: calc(33% - 26px);
+  }
+  main #contact {
+    margin-bottom: 106px;
+  }
+  main #contact .adres p {
+    font-size: 15px;
+  }
+  main #contact .aboutus a {
+    font-size: 20px;
+  }
+  .none {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
