@@ -2,55 +2,55 @@
     {
         "id":1,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":2,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news2.jpg",
         "text":"有沒有人要來酉酉聊天喝咖啡的呢？手沖精品精品在這裡等你"
     },
     {
         "id":3,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news3.jpg",
         "text":"今天真的太冷清，颱風不知道會不會進來，總之就是大家要注意安全喔！"
     },
     {
         "id":4,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news4.jpg",
         "text":"親手打造店內的設計與改造，希望帶給大家溫暖舒適的感受"
     },
     {
         "id":5,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news5.jpg",
         "text":"終於等到這一天，簡單的開幕儀式，希望五路財神能帶來好運"
     },
     {
         "id":6,
         "class":"discount",
-        "img":"https://shop.mos.com.tw/resources/site/1671160635506.jpg",
+        "img":"./Images/np-news/news6.jpg",
         "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
     },
     {
         "id":7,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news7.jpg",
         "text":"希望能呈現更加舒服的環境，慢慢期待，酉蛻變，酉營業，喝杯咖啡"
     },
     {
         "id":8,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news8.jpg",
         "text":"利用下班時間，做了很多功課與細節思考，完成室內改裝90%"
     },
     {
         "id":9,
         "class":"announcement",
-        "img":"https://www.mos.com.tw/Upload/images/202212/%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1/202211%2012%E6%9C%88%E6%91%A9%E6%96%AF%E5%A0%B1%E5%A0%B1_%E5%B0%81%E9%9D%A2.jpg",
+        "img":"./Images/np-news/news9.jpg",
         "text":"蛻變/需要時間來證明，機會/需要靠自己努力，過程/需要更多參與感"
     },
     {
