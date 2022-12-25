@@ -1,0 +1,1017 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: #6E786D;
+  display: flex;
+  justify-content: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+  position: fixed;
+  transition: 1s;
+  z-index: 1;
+}
+nav .bar-L {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 45px;
+  margin-right: 40px;
+}
+nav .bar-logo {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  padding-top: 15px;
+}
+nav .bar-logo img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav .bar-R {
+  height: 100%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.block {
+  opacity: 1;
+  z-index: 2;
+}
+
+.tittle {
+  padding-top: 200px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tittle h1 {
+  font-size: 40px;
+  padding-bottom: 50px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #424242;
+}
+.tittle h3 {
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #424242;
+}
+
+.schematic-mobile {
+  display: none;
+}
+
+.schematic {
+  width: 100%;
+  height: 1400px;
+  position: relative;
+  overflow: hidden;
+}
+.schematic .image {
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  position: absolute;
+  filter: blur(2px);
+  transition: all 0.5s;
+}
+.schematic .img1 {
+  background-image: url(../Images/np-custom/cus1.webp);
+  width: 380px;
+  height: 253px;
+  top: 3%;
+  right: 84%;
+}
+.schematic .img2 {
+  background-image: url(../Images/np-custom/cus2.webp);
+  width: 477px;
+  height: 362px;
+  top: 9%;
+  right: 53%;
+}
+.schematic .img3 {
+  background-image: url(../Images/np-custom/cus3.jpg);
+  width: 390px;
+  height: 299px;
+  top: 0%;
+  right: 24%;
+}
+.schematic .img4 {
+  background-image: url(../Images/np-custom/cus4.jpg);
+  width: 380px;
+  height: 292px;
+  top: 7%;
+  right: -2%;
+}
+.schematic .img5 {
+  background-image: url(../Images/np-custom/cus5.webp);
+  width: 411px;
+  height: 315px;
+  top: 43%;
+  right: 71%;
+}
+.schematic .img6 {
+  background-image: url(../Images/np-custom/cus6.jpg);
+  width: 371px;
+  height: 284px;
+  top: 42%;
+  right: 40%;
+}
+.schematic .img7 {
+  background-image: url(../Images/np-custom/cus7.jpg);
+  width: 446px;
+  height: 342px;
+  top: 35%;
+  right: 8%;
+}
+.schematic .img8 {
+  background-image: url(../Images/np-custom/cus8.jpg);
+  width: 278px;
+  height: 185px;
+  top: 73%;
+  right: 85%;
+}
+.schematic .img9 {
+  background-image: url(../Images/np-custom/cus9.jpg);
+  width: 417px;
+  height: 278px;
+  top: 75%;
+  right: 53%;
+}
+.schematic .img10 {
+  background-image: url(../Images/np-custom/cus10.jpg);
+  width: 308px;
+  height: 205px;
+  top: 70%;
+  right: 29%;
+}
+.schematic .img11 {
+  background-image: url(../Images/np-custom/cus11.jpg);
+  width: 364px;
+  height: 268px;
+  top: 73%;
+  right: 0%;
+}
+.schematic .image:hover {
+  filter: blur(0);
+  transform: scale(1.2, 1.2);
+}
+
+.venue {
+  width: 100%;
+  height: 962px;
+  background-color: #F7DEC3;
+  padding-top: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.venue h1 {
+  font-size: 50px;
+  margin-bottom: 52px;
+  padding-left: 14px;
+}
+.venue h3 {
+  font-size: 20px;
+  padding-left: 14px;
+  line-height: 35px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.venue .swiper {
+  margin-top: 50px;
+}
+
+.callboss-pad {
+  display: none;
+}
+
+.callboss {
+  width: 100%;
+  height: 962px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.callboss .formbox {
+  width: 66%;
+  height: 714px;
+  background-color: #6E786D;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callboss .formbox .title {
+  padding-top: 60px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callboss .formbox .title h3 {
+  font-size: 24px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+.callboss .formbox .info-box {
+  width: 80%;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.callboss .formbox .info-box .name {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.callboss .formbox .info-box .name span {
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.callboss .formbox .info-box .name input {
+  height: 57px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  border: 1px solid white;
+}
+.callboss .formbox .info-box .phone {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.callboss .formbox .info-box .phone span {
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.callboss .formbox .info-box .phone input {
+  height: 57px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  border: 1px solid white;
+}
+.callboss .formbox .info-box .mail {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.callboss .formbox .info-box .mail span {
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.callboss .formbox .info-box .mail input {
+  height: 57px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  border: 1px solid white;
+}
+.callboss .formbox .message {
+  width: 80%;
+  height: 312px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.callboss .formbox .message span {
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.callboss .formbox .message input {
+  height: 292px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  border: 1px solid white;
+}
+
+.footerlocat {
+  margin-top: 90px;
+  width: 100%;
+  height: 80px;
+  background-color: #6e786d;
+}
+
+.swiper {
+  width: 100%;
+  height: 284px;
+  margin-top: 101px;
+}
+.swiper .swiper-slide {
+  border-radius: 20px;
+  width: 387px;
+  height: 284px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1600px) {
+  .schematic {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.8, 0.8);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 1200px) {
+  .schematic {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.6, 0.6);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(0.8, 0.8);
+  }
+}
+@media (max-width: 900px) {
+  .schematic {
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(0.5, 0.5);
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(0.7, 0.7);
+  }
+}
+@media (max-width: 768px) {
+  .tittle {
+    padding-top: 100px;
+  }
+  .tittle h1 {
+    display: none;
+  }
+  .tittle h3 {
+    display: none;
+  }
+  .schematic {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .schematic .image {
+    background-size: 110%;
+    border-radius: 20px;
+    transform: scale(1, 1);
+  }
+  .schematic .img1 {
+    width: 134px;
+    height: 97px;
+    top: 4%;
+    right: 2%;
+  }
+  .schematic .img2 {
+    width: 155px;
+    height: 109px;
+    top: 13%;
+    right: 63%;
+  }
+  .schematic .img3 {
+    width: 211px;
+    height: 152px;
+    top: 0%;
+    right: 26%;
+  }
+  .schematic .img4 {
+    width: 174px;
+    height: 131px;
+    top: 3%;
+    right: 88%;
+  }
+  .schematic .img5 {
+    width: 177px;
+    height: 127px;
+    top: 42%;
+    right: 71%;
+  }
+  .schematic .img6 {
+    width: 221px;
+    height: 160px;
+    top: 38%;
+    right: 33%;
+  }
+  .schematic .img7 {
+    width: 193px;
+    height: 140px;
+    top: 31%;
+    right: -3%;
+  }
+  .schematic .img8 {
+    width: 136px;
+    height: 101px;
+    top: 78%;
+    right: 54%;
+  }
+  .schematic .img9 {
+    width: 213px;
+    height: 155px;
+    top: 73%;
+    right: 78%;
+  }
+  .schematic .img10 {
+    width: 155px;
+    height: 121px;
+    top: 65%;
+    right: -8%;
+  }
+  .schematic .img11 {
+    width: 190px;
+    height: 143px;
+    top: 74%;
+    right: 19%;
+  }
+  .schematic .image:hover {
+    filter: blur(0);
+    transform: scale(1.3, 1.3);
+  }
+  .venue {
+    width: 100%;
+    height: 515px;
+    background-color: #F7DEC3;
+    padding-top: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .venue h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: 24px;
+  }
+  .venue h3 {
+    font-size: 15px;
+    padding-left: 24px;
+    line-height: 28px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .venue .swiper {
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+  .venue .swiper .swiper-slide {
+    height: 160px;
+  }
+  .callboss {
+    display: none;
+  }
+  .callboss-pad {
+    display: block;
+    width: 100%;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .callboss-pad .formbox {
+    width: 575px;
+    height: 322px;
+    background-color: #6E786D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(2%, 0);
+  }
+  .callboss-pad .title {
+    padding-top: 40px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .callboss-pad .title h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .callboss-pad .input-box {
+    display: flex;
+    padding-top: 25px;
+  }
+  .callboss-pad .input-box .message {
+    transform: translate(-5%, 0);
+  }
+  .callboss-pad .input-box .message input {
+    width: 259px;
+    height: 145px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+  }
+  .callboss-pad .input-box .message input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .callboss-pad .input-box .info-box .name input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .name input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input {
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+  }
+  .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+}
+@media (max-width: 699px) {
+  .tittle {
+    padding-top: 200px;
+    padding-bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tittle h1 {
+    display: block;
+    font-size: 30px;
+    padding-bottom: 50px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .tittle h3 {
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .schematic {
+    display: none;
+  }
+  .schematic-mobile {
+    display: block;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .schematic-mobile .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    width: 33%;
+    height: 100%;
+  }
+  .schematic-mobile .img1 {
+    background-image: url(../Images/np-custom/cus5.webp);
+  }
+  .schematic-mobile .img2 {
+    background-image: url(../Images/np-custom/cus2.webp);
+  }
+  .schematic-mobile .img3 {
+    background-image: url(../Images/np-custom/cus7.jpg);
+  }
+  .venue {
+    display: none;
+  }
+  .callboss-pad {
+    display: block;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    display: flex;
+    background-color: #F7DEC3;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .callboss-pad .formbox {
+    width: 80%;
+    height: 100%;
+    background-color: #F7DEC3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(2%, 0);
+  }
+  .callboss-pad .title {
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .callboss-pad .title h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    color: #424242;
+  }
+  .callboss-pad .input-box {
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column-reverse;
+  }
+  .callboss-pad .input-box .message {
+    transform: translate(0, 0);
+  }
+  .callboss-pad .input-box .message input {
+    width: 80%;
+    height: 145px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+  }
+  .callboss-pad .input-box .message input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .callboss-pad .input-box .info-box .name input {
+    width: 80%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .name input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input {
+    width: 80%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input {
+    width: 80%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+}
+@media (max-width: 499px) {
+  .tittle h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .tittle {
+    padding-top: 135px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tittle h1 {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .tittle h3 {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .schematic {
+    display: none;
+  }
+  .schematic-mobile {
+    display: block;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .schematic-mobile .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    width: 33%;
+    height: 100%;
+  }
+  .schematic-mobile .img1 {
+    background-image: url(../Images/np-custom/cus5.webp);
+  }
+  .schematic-mobile .img2 {
+    background-image: url(../Images/np-custom/cus2.webp);
+  }
+  .schematic-mobile .img3 {
+    background-image: url(../Images/np-custom/cus7.jpg);
+  }
+  .venue {
+    display: none;
+  }
+  .callboss-pad {
+    display: block;
+    width: 100%;
+    height: 456px;
+    padding-top: 35px;
+    display: flex;
+    background-color: #F7DEC3;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .callboss-pad .formbox {
+    width: 80%;
+    height: 100%;
+    background-color: #F7DEC3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(8%, 0);
+  }
+  .callboss-pad .title {
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-8%, 0);
+  }
+  .callboss-pad .title h3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    color: #424242;
+  }
+  .callboss-pad .input-box {
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column-reverse;
+  }
+  .callboss-pad .input-box .message {
+    transform: translate(0, 0);
+  }
+  .callboss-pad .input-box .message input {
+    width: 255px;
+    height: 132px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+  }
+  .callboss-pad .input-box .message input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .callboss-pad .input-box .info-box .name input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .name input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .footerlocat {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=customized.css.map */
