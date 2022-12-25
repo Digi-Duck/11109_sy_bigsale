@@ -630,4 +630,31 @@ footer .maker {
     font-size: 60px;
     line-height: 69px;
   }
+  main #ig-part {
+    margin-bottom: 80.28px;
+  }
+  main #ig-part .ig-name img {
+    width: 31px;
+    height: 31px;
+  }
+  main #ig-part .ig-name span {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  main #ig-part .ig-pic {
+    width: 535.36px;
+    height: 351px;
+  }
+  main #ig-part .ig-pic img {
+    width: calc(33% - 26px);
+  }
+  main #contact .adres h3 {
+    font-size: 20px;
+  }
+  main #contact .aboutus h3 {
+    font-size: 20px;
+  }
+  .none {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

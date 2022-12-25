@@ -807,6 +807,45 @@ footer {
                 }
             }
         }
+        #ig-part{
+            margin-bottom: 80.28px;
+            .ig-name{
+               
+                img{
+                    width: 31px;
+                    height: 31px;
+                }
+                span{
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+            }
+            .ig-pic{
+                width: 535.36px;
+                height: 351px;
+                img{
+                    width: calc(33% - 26px)
+                }
+            }
+        }
+        #contact{
+            .adres{
+                h3{
+                    font-size: 20px;
+                    
+                }
+            }
+            .aboutus{
+                h3{
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+    }
+    .none{
+        display: none;
     }  
 }
 
