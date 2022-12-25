@@ -608,19 +608,24 @@ footer .maker {
   }
   main #dessert {
     margin-bottom: 73px;
-    padding-top: 90px;
+    padding-top: 91px;
+    padding-left: 111px;
+    height: 500px;
   }
   main #dessert .des-pic {
     gap: 17px;
-    margin-left: 111px;
+    margin-left: 0px;
     margin-right: 21px;
   }
   main #dessert .des-pic .none {
     display: none;
   }
   main #dessert .des-pic img {
-    width: 50%;
+    width: 143.77px;
     height: 143.77px;
+  }
+  main #dessert .des-txt {
+    padding-top: 17px;
   }
   main #dessert .des-txt P {
     font-size: 15px;
@@ -629,6 +634,10 @@ footer .maker {
   main #dessert .des-txt .des-spn {
     font-size: 60px;
     line-height: 69px;
+  }
+  main #dessert .des-txt .des-gif img {
+    width: 151px;
+    height: 134px;
   }
   main #ig-part {
     margin-bottom: 80.28px;
