@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -300,6 +301,7 @@ nav .bar-R {
   margin-bottom: 55px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .callboss .formbox .message span {
   font-size: 16px;
@@ -313,6 +315,35 @@ nav .bar-R {
   border-radius: 20px;
   background-color: #6E786D;
   border: 1px solid white;
+}
+.callboss .formbox .message #submit {
+  width: 123px;
+  height: 38px;
+  background-color: #F7DEC3;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px 3px 1px #504e4e;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.callboss .formbox .message #submit span {
+  font-size: 16px;
+  line-height: 23px;
+  color: #6e786d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.callboss .formbox .message #submit span p {
+  transform: rotate(21.91deg);
+}
+.callboss .formbox .message #submit:hover {
+  box-shadow: 1px 1px 5px 3px #634a4a;
+}
+.callboss .formbox .message #submit:active {
+  box-shadow: 1px 1px 5px 3px #634a4a;
+  background-color: #be6c6c;
 }
 
 .footerlocat {
@@ -534,7 +565,7 @@ nav .bar-R {
   }
   .callboss-pad .formbox {
     width: 575px;
-    height: 322px;
+    height: 346px;
     background-color: #6E786D;
     border-radius: 20px;
     display: flex;
@@ -542,8 +573,35 @@ nav .bar-R {
     align-items: center;
     transform: translate(2%, 0);
   }
+  .callboss-pad .formbox #submit-pad {
+    width: 100px;
+    height: 27px;
+    background-color: #F7DEC3;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #504e4e;
+    transform: translate(0, 120%);
+  }
+  .callboss-pad .formbox #submit-pad span {
+    font-size: 12px;
+    line-height: 17.38px;
+    color: #6e786d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .callboss-pad .formbox #submit-pad span p {
+    transform: rotate(21.91deg);
+  }
+  .callboss-pad .formbox #submit-pad:hover {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+  }
+  .callboss-pad .formbox #submit-pad:active {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+    background-color: #be6c6c;
+  }
   .callboss-pad .title {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
@@ -719,6 +777,29 @@ nav .bar-R {
     align-items: center;
     transform: translate(2%, 0);
   }
+  .callboss-pad .formbox #submit-pad {
+    background-color: #6E786D;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #504e4e;
+    transform: translate(0, 120%);
+  }
+  .callboss-pad .formbox #submit-pad span {
+    font-size: 12px;
+    line-height: 17.38px;
+    color: #FFFFFF;
+  }
+  .callboss-pad .formbox #submit-pad i {
+    transform: rotate();
+    color: #FFFFFF;
+  }
+  .callboss-pad .formbox #submit-pad:hover {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+  }
+  .callboss-pad .formbox #submit-pad:active {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+    background-color: #be6c6c;
+  }
   .callboss-pad .title {
     padding-top: 0px;
     padding-left: 0px;
@@ -887,7 +968,7 @@ nav .bar-R {
     display: block;
     width: 100%;
     height: 456px;
-    padding-top: 35px;
+    padding-top: 25px;
     display: flex;
     background-color: #F7DEC3;
     flex-direction: column;
@@ -903,6 +984,34 @@ nav .bar-R {
     flex-direction: column;
     align-items: center;
     transform: translate(8%, 0);
+  }
+  .callboss-pad .formbox #submit-pad {
+    width: 81px;
+    height: 31px;
+    background-color: #6E786D;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #504e4e;
+    transform: translate(-20%, 60%);
+  }
+  .callboss-pad .formbox #submit-pad span {
+    font-size: 12px;
+    line-height: 17.38px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .callboss-pad .formbox #submit-pad span p {
+    display: none;
+    transform: rotate(21.91deg);
+  }
+  .callboss-pad .formbox #submit-pad:hover {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+  }
+  .callboss-pad .formbox #submit-pad:active {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+    background-color: #be6c6c;
   }
   .callboss-pad .title {
     padding-top: 0px;
@@ -922,7 +1031,7 @@ nav .bar-R {
   .callboss-pad .input-box {
     width: 100%;
     display: flex;
-    padding-top: 25px;
+    padding-top: 20px;
     flex-direction: column-reverse;
   }
   .callboss-pad .input-box .message {
@@ -930,7 +1039,7 @@ nav .bar-R {
   }
   .callboss-pad .input-box .message input {
     width: 255px;
-    height: 132px;
+    height: 120px;
     border-radius: 15px;
     background-color: #F7DEC3;
     border: 1px solid #424242;
