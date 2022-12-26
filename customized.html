@@ -106,21 +106,22 @@
                 <div class="info-box">
                     <div class="name">
                         <span>姓名</span>
-                        <input type="text">
+                        <input id="nameValue" type="text">
                     </div>
                     <div class="phone">
                         <span>電話</span>
-                        <input type="text">
+                        <input id="phoneValue" type="text">
                     </div>
                     <div class="mail">
                         <span>E-mail</span>
-                        <input type="text">
+                        <input id="demandValue" type="text">
                     </div>
                 </div>
                 <div class="message">
                     <span>訊息</span>
-                    <input type="text">
+                    <input id="dataValue" type="text">
                 </div>
+                <button id="submit">送出</button>
             </div>
         </div>
         <div class="callboss-pad">
@@ -155,6 +156,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
 <script>
     var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4.5,
@@ -174,6 +177,36 @@
     speed:2000,
     loop: true,
     });
+
+    let sendButton = document.querySelector('#submit');
+    // let sendButton = document.querySelector('button');
+
+
+    function send() {
+        let name = document.querySelector('#nameValue').value;
+        let phone = document.querySelector('#phoneValue').value;
+        let demand = document.querySelector('#demandValue').value;
+        let data = document.querySelector('#dataValue').value;
+
+        $.ajax({
+            // url: "填入google sheet api url",
+            url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
+            data: {
+                "name": name,
+                "phone": phone,
+                "demand": demand,
+                "data": data
+            },
+            success: function(response) {
+                if(response == "成功"){
+                    alert("您的需求已成功傳達");
+                }
+            },
+        });
+    };
+
+    sendButton.addEventListener('click', send);
+
 </script>
 
 </html>
