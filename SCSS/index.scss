@@ -11,8 +11,7 @@ body{
 
 #bar{
     display: flex;
-   
-    
+    display: none;
     i{
         display: flex;
         justify-content: center;
@@ -384,6 +383,12 @@ main {
             position: absolute;
             top: 392px;
             left: 330px;
+            .cof-img{
+                display: none;
+            }
+            .cof-gi{
+                display: none;
+            }
 
             p {
                 letter-spacing: 10px;
@@ -911,5 +916,207 @@ footer {
     nav{
         display: none;
     }
+    main{
+        #banner{
+            .slideshow-container{
+                height: 189.48px;
+            }
+        }
+        #about{
+            height: 478px;
+            .about-logo{
+                padding-top: 48px;
+                margin-bottom: 22px;
+                img{
+                    width: 73px;
+                    height: 73px;
+                }
+            }
+            .about-text{
+                font-size: 12px;
+                line-height: 20px;
+                .text-1{
+                    margin-bottom: 20px;
+                }
+                .text-2{
+                    margin-bottom: 20px;
+                }
+                .text-3{
+                    margin-bottom: 20px;
+                }
+                .textgp{
+                    padding-bottom: 35px;
+                }
+               
+            }
+        }
+        #cof{
+            width: 100%;
+            height: 532px;
+            padding-top: 34px;
+            position: relative;
+            margin-bottom: 42px;
+            .cof-spn{
+                width: 100%;
+                font-size: 35px;
+                line-height: 40.25px;
+                position: static;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 7px;
+            }
+            .cof-p{
+                font-size: 12px;
+                line-height: 13.78px;
+                padding-top: 35px;
+                flex-direction: column-reverse;
+                .cof-gi{
+                    display: flex;
+                    p{
+                        font-size: 12px;
+                        line-height: 17.38px;
+                        letter-spacing: 7px;
+                    }
+                    img{
+                        width: 80px;
+                        height: 71.3px;
+                        position: absolute;
+                        bottom: -6px;
+                    }
+                    .cof-p1{
+                        display: flex;
+                        flex-direction:column ;
+                        margin-right: 24px;
+                    }
+                    p{
+                    
+                    }
+                }
+                .cof-img{
+                    display: flex;
+                    gap:20px;
+                    img{
+                        width: 185px;
+                        height: 107px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .swiper-box{
+                width: 80%;
+                height: 135.6px;
+                transform: translate(60px, 0px);
+                .swiper{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            img{
+                                width: 255px;
+                                height: 135.6px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+       
+        #ig-part{
+            margin-bottom: 47.82px auto;
+            
+            .ig-name{
+                span{
+                    font-size: 12px;
+
+                }
+                img{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .ig-pic{
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    width: calc(50% - 15px) ;
+                  
+                }
+            }
+        }
+        #contact{
+            width: 90%;
+            flex-direction: column;
+            margin-bottom: 65px;
+            min-height: 1px;
+            padding-left: 60px;
+            .adres{
+                width: 100%;
+                border: none;
+                padding: 0;
+                h3{
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .aboutus{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                a{
+                    display: inline-block;
+                    
+                }
+                .icons{
+                    display: flex;
+                    gap: 15px;
+                    width: 100%;
+                    
+                }
+                h3{
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+                .FB{
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .IG{
+                    img{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .none-375{
+        display: none !important;
+    }
+    footer{
+        flex-direction: column;
+        height: 100px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        line-height: 20px;
+        .logoTxt{
+            width: 97px;
+            height: 24px;
+            font-size: 12px;
+            margin: 0;
+        }
+        .maker{
+            span{
+                padding-bottom: 16px;
+            }
+        }
+      
+    }
+    
     
 }

@@ -6,6 +6,7 @@
 
 #bar {
   display: flex;
+  display: none;
 }
 #bar i {
   display: flex;
@@ -336,6 +337,12 @@ main #cof .cof-p {
   position: absolute;
   top: 392px;
   left: 330px;
+}
+main #cof .cof-p .cof-img {
+  display: none;
+}
+main #cof .cof-p .cof-gi {
+  display: none;
 }
 main #cof .cof-p p {
   letter-spacing: 10px;
@@ -717,5 +724,177 @@ footer .maker {
 @media (max-width: 375px) {
   nav {
     display: none;
+  }
+  main #banner .slideshow-container {
+    height: 189.48px;
+  }
+  main #about {
+    height: 478px;
+  }
+  main #about .about-logo {
+    padding-top: 48px;
+    margin-bottom: 22px;
+  }
+  main #about .about-logo img {
+    width: 73px;
+    height: 73px;
+  }
+  main #about .about-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  main #about .about-text .text-1 {
+    margin-bottom: 20px;
+  }
+  main #about .about-text .text-2 {
+    margin-bottom: 20px;
+  }
+  main #about .about-text .text-3 {
+    margin-bottom: 20px;
+  }
+  main #about .about-text .textgp {
+    padding-bottom: 35px;
+  }
+  main #cof {
+    width: 100%;
+    height: 532px;
+    padding-top: 34px;
+    position: relative;
+    margin-bottom: 42px;
+  }
+  main #cof .cof-spn {
+    width: 100%;
+    font-size: 35px;
+    line-height: 40.25px;
+    position: static;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+  main #cof .cof-p {
+    font-size: 12px;
+    line-height: 13.78px;
+    padding-top: 35px;
+    flex-direction: column-reverse;
+  }
+  main #cof .cof-p .cof-gi {
+    display: flex;
+  }
+  main #cof .cof-p .cof-gi p {
+    font-size: 12px;
+    line-height: 17.38px;
+    letter-spacing: 7px;
+  }
+  main #cof .cof-p .cof-gi img {
+    width: 80px;
+    height: 71.3px;
+    position: absolute;
+    bottom: -6px;
+  }
+  main #cof .cof-p .cof-gi .cof-p1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+  }
+  main #cof .cof-p .cof-img {
+    display: flex;
+    gap: 20px;
+  }
+  main #cof .cof-p .cof-img img {
+    width: 185px;
+    height: 107px;
+    border-radius: 10px;
+  }
+  main #cof .swiper-box {
+    width: 80%;
+    height: 135.6px;
+    transform: translate(60px, 0px);
+  }
+  main #cof .swiper-box .swiper .swiper-wrapper .swiper-slide img {
+    width: 255px;
+    height: 135.6px;
+  }
+  main #ig-part {
+    margin-bottom: 47.82px auto;
+  }
+  main #ig-part .ig-name span {
+    font-size: 12px;
+  }
+  main #ig-part .ig-name img {
+    width: 18px;
+    height: 18px;
+  }
+  main #ig-part .ig-pic {
+    width: 100%;
+  }
+  main #ig-part .ig-pic a {
+    text-decoration: none;
+    width: calc(50% - 15px);
+  }
+  main #contact {
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 65px;
+    min-height: 1px;
+    padding-left: 60px;
+  }
+  main #contact .adres {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  main #contact .adres h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  main #contact .adres h3 p {
+    font-size: 12px;
+  }
+  main #contact .aboutus {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  main #contact .aboutus a {
+    display: inline-block;
+  }
+  main #contact .aboutus .icons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  main #contact .aboutus h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  main #contact .aboutus .FB img {
+    width: 25px;
+    height: 25px;
+  }
+  main #contact .aboutus .IG img {
+    width: 22px;
+    height: 22px;
+  }
+  .none-375 {
+    display: none !important;
+  }
+  footer {
+    flex-direction: column;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    line-height: 20px;
+  }
+  footer .logoTxt {
+    width: 97px;
+    height: 24px;
+    font-size: 12px;
+    margin: 0;
+  }
+  footer .maker span {
+    padding-bottom: 16px;
   }
 }/*# sourceMappingURL=index.css.map */
