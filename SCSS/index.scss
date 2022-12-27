@@ -54,8 +54,9 @@ body{
         }
     }
 }
+
+//修改陰影
 nav {
-    width: 100%;
     min-width: 100%;
     height: 55px;
     background-color: #6E786D;
@@ -83,6 +84,7 @@ nav {
         height: 110px;
         padding-top: 15px;
         
+        //修改陰影
         .logo-back {
             width: 117px;
             height: 117px;
@@ -373,7 +375,7 @@ main {
     }
 
     #cof {
-
+        height: 962px;
         min-height: 1px;
         background-color: #F6DEC3;
         position: relative;
@@ -381,10 +383,11 @@ main {
         padding-bottom: 393px;
 
         .cof-spn {
+            width: 308px;
             font-size: 96px;
             font-family: 'Island Moments', cursive;
             position: absolute;
-            left: 280px;
+            left: 300px;
             top: 160px;
         }
 
@@ -397,25 +400,37 @@ main {
             gap: 28px;
             position: absolute;
             top: 392px;
-            left: 330px;
+            left: 350px;
             .cof-img{
                 display: none;
             }
+
+            //修改這邊
+            // .cof-gi{
+            //     display: none;
+            // }
             .cof-gi{
-                display: none;
-            }
-
-            p {
-                letter-spacing: 10px;
-
+                .cof-p1{
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 85px;
+                    justify-content: space-around;
+                    p {
+                        letter-spacing: 10px;
+                    }
+                }
+                img{
+                    display: none;
+                }
             }
 
         }
-
+//修改 transform
         .swiper-box{
             width: 57%;
             position: relative;
-            transform: translate(177px,136px);
+            transform: translate(505px,255px);
             .swiper {
                 width: 100%;
                 height: 586px;
@@ -598,6 +613,7 @@ main {
 
     }
 
+    //修改這裡
     #ig-part {
         display: flex;
         justify-content: center;
@@ -613,10 +629,7 @@ main {
             justify-content: center;
             align-items: center;
             margin-bottom: 32px;
-            a{
-                color: #000;
-                text-decoration: none;
-            }
+
             img {
                 width: 31px;
                 height: 31px;
@@ -630,18 +643,19 @@ main {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+
             a{
-                text-decoration: none;
-                width: calc((100% / 6) - 30px);
-                height: calc((100% / 2) - 20px);
-                
-                img {
-                    width: 100%;
-                    height: 100%;
+                img{
+                    width: 237px;
+                    height: 237px;
                     border-radius: 20px;
                 }
             }
-
+            // img {
+            //     width: calc((100% / 6) - 30px);
+            //     height: calc((100% / 2) - 20px);
+            //     border-radius: 20px;
+            // }
         }
     }
 
@@ -792,7 +806,9 @@ footer {
                 }
             }
         }
+        //修改這裡
         #cof{
+            height: 520px;
             min-width: 1px;
             padding-bottom: 252px;
             margin-bottom: 55px;
@@ -804,16 +820,22 @@ footer {
                 line-height: 80.5px;
             }
             .cof-p{
-                
                 top: 38%;
-                left: 16%;
+                left:14%;
                 font-size: 15px;
                 line-height: 21.72px;
-                gap: 5px   ;
+                gap: 5px;
+                .cof-gi{
+                    .cof-p1{
+                        width: 50px;
+                    }
+                }
             }
+            //修改trans
             .swiper-box{
                 width: 68%;
                 height: 268px;
+                transform: translate(165px,145px);
                 .swiper{
                     width: 100%;
                     top: 0;
@@ -913,11 +935,12 @@ footer {
             .ig-pic{
                 width: 535.36px;
                 height: 351px;
+                gap: 13px;
                 a{
-                    width: calc(33.333% - 30px);
-                }
-                img{
-                    width: calc(33% - 26px)
+                    img{
+                        width: 168px;
+                        height: 168px;
+                    }
                 }
             }
         }
@@ -1059,7 +1082,6 @@ footer {
             margin-bottom: 47.82px auto;
             
             .ig-name{
-            
                 span{
                     font-size: 12px;
 

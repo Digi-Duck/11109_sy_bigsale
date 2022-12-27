@@ -50,7 +50,6 @@
 }
 
 nav {
-  width: 100%;
   min-width: 100%;
   height: 55px;
   background-color: #6E786D;
@@ -329,6 +328,7 @@ main #about .about-text .text-3 {
   margin-bottom: 35px;
 }
 main #cof {
+  height: 962px;
   min-height: 1px;
   background-color: #F6DEC3;
   position: relative;
@@ -336,10 +336,11 @@ main #cof {
   padding-bottom: 393px;
 }
 main #cof .cof-spn {
+  width: 308px;
   font-size: 96px;
   font-family: "Island Moments", cursive;
   position: absolute;
-  left: 280px;
+  left: 300px;
   top: 160px;
 }
 main #cof .cof-p {
@@ -352,21 +353,28 @@ main #cof .cof-p {
   gap: 28px;
   position: absolute;
   top: 392px;
-  left: 330px;
+  left: 350px;
 }
 main #cof .cof-p .cof-img {
   display: none;
 }
-main #cof .cof-p .cof-gi {
-  display: none;
+main #cof .cof-p .cof-gi .cof-p1 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  justify-content: space-around;
 }
-main #cof .cof-p p {
+main #cof .cof-p .cof-gi .cof-p1 p {
   letter-spacing: 10px;
+}
+main #cof .cof-p .cof-gi img {
+  display: none;
 }
 main #cof .swiper-box {
   width: 57%;
   position: relative;
-  transform: translate(177px, 136px);
+  transform: translate(505px, 255px);
 }
 main #cof .swiper-box .swiper {
   width: 100%;
@@ -493,10 +501,6 @@ main #ig-part .ig-name {
   align-items: center;
   margin-bottom: 32px;
 }
-main #ig-part .ig-name a {
-  color: #000;
-  text-decoration: none;
-}
 main #ig-part .ig-name img {
   width: 31px;
   height: 31px;
@@ -509,14 +513,9 @@ main #ig-part .ig-pic {
   flex-wrap: wrap;
   gap: 20px;
 }
-main #ig-part .ig-pic a {
-  text-decoration: none;
-  width: calc(16.6666666667% - 30px);
-  height: calc(50% - 20px);
-}
 main #ig-part .ig-pic a img {
-  width: 100%;
-  height: 100%;
+  width: 237px;
+  height: 237px;
   border-radius: 20px;
 }
 main #contact {
@@ -646,6 +645,7 @@ footer .maker {
     margin: 0;
   }
   main #cof {
+    height: 520px;
     min-width: 1px;
     padding-bottom: 252px;
     margin-bottom: 55px;
@@ -659,14 +659,18 @@ footer .maker {
   }
   main #cof .cof-p {
     top: 38%;
-    left: 16%;
+    left: 14%;
     font-size: 15px;
     line-height: 21.72px;
     gap: 5px;
   }
+  main #cof .cof-p .cof-gi .cof-p1 {
+    width: 50px;
+  }
   main #cof .swiper-box {
     width: 68%;
     height: 268px;
+    transform: translate(165px, 145px);
   }
   main #cof .swiper-box .swiper {
     width: 100%;
@@ -736,12 +740,11 @@ footer .maker {
   main #ig-part .ig-pic {
     width: 535.36px;
     height: 351px;
+    gap: 13px;
   }
-  main #ig-part .ig-pic a {
-    width: calc(33.333% - 30px);
-  }
-  main #ig-part .ig-pic img {
-    width: calc(33% - 26px);
+  main #ig-part .ig-pic a img {
+    width: 168px;
+    height: 168px;
   }
   main #contact {
     margin-bottom: 106px;
