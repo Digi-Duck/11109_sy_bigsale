@@ -336,6 +336,18 @@ main{
                 }
             }  
         }
+        .card2{
+            .content{
+                .item-list{
+                    .item{
+                        width: 300px;
+                    }
+                    .hot-cold{
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+            } 
+        }
         .dividing{
             width: 100%;
             height: 1px;
@@ -491,7 +503,7 @@ main{
                             font-weight: 400;
                             color: #424242;
                             line-height: 20px;
-                            padding-top: 2.5px;
+                            // padding-top: 2.5px;
                             display: flex;
                             justify-content: center;
                             
