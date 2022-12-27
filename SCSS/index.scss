@@ -55,7 +55,7 @@ body{
     }
 }
 nav {
-    width: 100%;
+    min-width: 100%;
     height: 55px;
     background-color: #6E786D;
     display: flex;
@@ -65,7 +65,7 @@ nav {
     opacity: 0;
     transition: 1s;
     z-index: 1;
-
+    box-shadow:3px 3px 14px 0px #565454;
 
     .bar-L {
         display: flex;
@@ -81,7 +81,7 @@ nav {
         width: 110px;
         height: 110px;
         padding-top: 15px;
-
+        
         .logo-back {
             width: 117px;
             height: 117px;
@@ -90,15 +90,20 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            box-shadow:3px 3px 14px 0px #565454;
+            a{
+                width: 110px;
+                height: 110px;
+            }
 
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+            }
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: 1;
-        }
     }
 
     a {
@@ -123,6 +128,7 @@ nav {
 
 
 main {
+    min-width: 100%;
     #banner {
         width: 100%;
 
@@ -327,8 +333,8 @@ main {
         background-color: #6E786D;
 
         .about-logo {
-            padding-top: 114px;
-            margin-bottom: 55px;
+            padding-top: 85px;
+            margin-bottom: 41px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -348,9 +354,17 @@ main {
             font-size: 20px;
             line-height: 35px;
             font-family: 'Zen Maru Gothic', sans-serif;
-
+            .text-1{
+                margin-bottom: 35px;
+            }
+            .text-2{
+                margin-bottom: 35px;
+            }
+            .text-3{
+                margin-bottom: 35px;
+            }
             .textgp {
-                margin-top: 70px;
+                
             }
 
 
@@ -659,6 +673,7 @@ main {
 }
 
 footer {
+    min-width: 100%;
     height: 80px;
     background-color: #6E786D;
     color: #fff;
