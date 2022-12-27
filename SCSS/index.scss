@@ -55,6 +55,7 @@ body{
     }
 }
 nav {
+    width: 100%;
     min-width: 100%;
     height: 55px;
     background-color: #6E786D;
@@ -65,7 +66,7 @@ nav {
     opacity: 0;
     transition: 1s;
     z-index: 1;
-    box-shadow:3px 3px 14px 0px #565454;
+    box-shadow:1px 1px 5px 0px #565454;
 
     .bar-L {
         display: flex;
@@ -90,7 +91,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow:3px 3px 14px 0px #565454;
+            box-shadow:1px 1px 5px 0px #565454;
             a{
                 width: 110px;
                 height: 110px;
