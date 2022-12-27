@@ -864,6 +864,7 @@ nav .bar-R {
     background-color: #F7DEC3;
     border: 1px solid #424242;
     color: #6E786D;
+    padding: 10px 0 0 0;
   }
   .callboss-pad .input-box .message input::-moz-placeholder {
     color: #7D7D7D;
@@ -1097,7 +1098,7 @@ nav .bar-R {
     border-radius: 15px;
     background-color: #F7DEC3;
     border: 1px solid #424242;
-    padding: 10px;
+    padding: 10px 0 0 0;
   }
   .callboss-pad .input-box .message input::-moz-placeholder {
     color: #7D7D7D;
