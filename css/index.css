@@ -501,6 +501,11 @@ main #ig-part .ig-name {
   align-items: center;
   margin-bottom: 32px;
 }
+main #ig-part .ig-name a {
+  text-decoration: none;
+  color: #000;
+  line-height: 20px;
+}
 main #ig-part .ig-name img {
   width: 31px;
   height: 31px;

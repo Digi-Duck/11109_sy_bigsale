@@ -629,7 +629,11 @@ main {
             justify-content: center;
             align-items: center;
             margin-bottom: 32px;
-
+            a{
+                text-decoration: none;
+                color: #000;
+                line-height: 20px;
+            }
             img {
                 width: 31px;
                 height: 31px;
