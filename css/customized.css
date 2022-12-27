@@ -94,77 +94,77 @@ nav .bar-R {
   transition: all 0.5s;
 }
 .schematic .img1 {
-  background-image: url(../Images/np-custom/cus1.webp);
+  background-image: url(../Images/np-custom-ccd/cus1.jpg);
   width: 380px;
   height: 253px;
   top: 3%;
   right: 84%;
 }
 .schematic .img2 {
-  background-image: url(../Images/np-custom/cus2.webp);
+  background-image: url(../Images/np-custom-ccd/cus2.jpg);
   width: 477px;
   height: 362px;
   top: 9%;
   right: 53%;
 }
 .schematic .img3 {
-  background-image: url(../Images/np-custom/cus3.jpg);
+  background-image: url(../Images/np-custom-ccd/cus3.jpg);
   width: 390px;
   height: 299px;
   top: 0%;
   right: 24%;
 }
 .schematic .img4 {
-  background-image: url(../Images/np-custom/cus4.jpg);
+  background-image: url(../Images/np-custom-ccd/cus4.jpg);
   width: 380px;
   height: 292px;
   top: 7%;
   right: -2%;
 }
 .schematic .img5 {
-  background-image: url(../Images/np-custom/cus5.webp);
+  background-image: url(../Images/np-custom-ccd/cus5.jpg);
   width: 411px;
   height: 315px;
   top: 43%;
   right: 71%;
 }
 .schematic .img6 {
-  background-image: url(../Images/np-custom/cus6.jpg);
+  background-image: url(../Images/np-custom-ccd/cus6.jpg);
   width: 371px;
   height: 284px;
   top: 42%;
   right: 40%;
 }
 .schematic .img7 {
-  background-image: url(../Images/np-custom/cus7.jpg);
+  background-image: url(../Images/np-custom-ccd/cus7.jpg);
   width: 446px;
   height: 342px;
   top: 35%;
   right: 8%;
 }
 .schematic .img8 {
-  background-image: url(../Images/np-custom/cus8.jpg);
+  background-image: url(../Images/np-custom-ccd/cus8.jpg);
   width: 278px;
   height: 185px;
   top: 73%;
   right: 85%;
 }
 .schematic .img9 {
-  background-image: url(../Images/np-custom/cus9.jpg);
+  background-image: url(../Images/np-custom-ccd/cus9.jpg);
   width: 417px;
   height: 278px;
   top: 75%;
   right: 53%;
 }
 .schematic .img10 {
-  background-image: url(../Images/np-custom/cus10.jpg);
+  background-image: url(../Images/np-custom-ccd/cus10.jpg);
   width: 308px;
   height: 205px;
   top: 70%;
   right: 29%;
 }
 .schematic .img11 {
-  background-image: url(../Images/np-custom/cus11.jpg);
+  background-image: url(../Images/np-custom-ccd/cus11.jpg);
   width: 364px;
   height: 268px;
   top: 73%;
@@ -772,13 +772,13 @@ nav .bar-R {
     height: 100%;
   }
   .schematic-mobile .img1 {
-    background-image: url(../Images/np-custom/cus5.webp);
+    background-image: url(../Images/np-custom-ccd/cus5.jpg);
   }
   .schematic-mobile .img2 {
-    background-image: url(../Images/np-custom/cus2.webp);
+    background-image: url(../Images/np-custom-ccd/cus2.jpg);
   }
   .schematic-mobile .img3 {
-    background-image: url(../Images/np-custom/cus7.jpg);
+    background-image: url(../Images/np-custom-ccd/cus7.jpg);
   }
   .venue {
     display: none;
@@ -1001,13 +1001,13 @@ nav .bar-R {
     height: 100%;
   }
   .schematic-mobile .img1 {
-    background-image: url(../Images/np-custom/cus5.webp);
+    background-image: url(../Images/np-custom-ccd/cus5.jpg);
   }
   .schematic-mobile .img2 {
-    background-image: url(../Images/np-custom/cus2.webp);
+    background-image: url(../Images/np-custom-ccd/cus2.jpg);
   }
   .schematic-mobile .img3 {
-    background-image: url(../Images/np-custom/cus7.jpg);
+    background-image: url(../Images/np-custom-ccd/cus7.jpg);
   }
   .venue {
     display: none;
