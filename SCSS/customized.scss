@@ -319,6 +319,12 @@ nav {
                 background-color: #6E786D;
                 border: 1px solid white;
             }
+            textarea{
+                height: 292px;
+                border-radius: 20px;
+                background-color: #6E786D;
+                border: 1px solid white;
+            }
             #submit{
                 width: 123px;
                 height: 38px;
@@ -651,7 +657,20 @@ nav {
                     background-color: #6E786D;
                     border: 1px solid white;
                 }
+                textarea{
+                    width: 259px;
+                    height: 145px;
+                    border-radius: 15px;
+                    background-color: #6E786D;
+                    border: 1px solid white;
+                    color: #fff;
+                    padding: 10px;
+                }
                 input::placeholder{
+                    color: #ffffff;
+                    padding-left: 11px;
+                }
+                textarea::placeholder{
                     color: #ffffff;
                     padding-left: 11px;
                 }
@@ -829,7 +848,19 @@ nav {
                     background-color: #F7DEC3;
                     border: 1px solid #424242;
                 }
+                textarea{
+                    width: 80%;
+                    height: 145px;
+                    border-radius: 15px;
+                    background-color: #F7DEC3;
+                    border: 1px solid #424242;
+                    color: #6E786D;
+                }
                 input::placeholder{
+                    color: #7D7D7D;
+                    padding-left: 11px;
+                }
+                textarea::placeholder{
                     color: #7D7D7D;
                     padding-left: 11px;
                 }
@@ -1020,6 +1051,14 @@ nav {
                     border-radius: 15px;
                     background-color: #F7DEC3;
                     border: 1px solid #424242;
+                }
+                textarea{
+                    width: 255px;
+                    height: 120px;
+                    border-radius: 15px;
+                    background-color: #F7DEC3;
+                    border: 1px solid #424242;
+                    padding: 10px;
                 }
                 input::placeholder{
                     color: #7D7D7D;

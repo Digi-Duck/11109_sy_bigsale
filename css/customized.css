@@ -316,6 +316,12 @@ nav .bar-R {
   background-color: #6E786D;
   border: 1px solid white;
 }
+.callboss .formbox .message textarea {
+  height: 292px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  border: 1px solid white;
+}
 .callboss .formbox .message #submit {
   width: 123px;
   height: 38px;
@@ -628,6 +634,15 @@ nav .bar-R {
     background-color: #6E786D;
     border: 1px solid white;
   }
+  .callboss-pad .input-box .message textarea {
+    width: 259px;
+    height: 145px;
+    border-radius: 15px;
+    background-color: #6E786D;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px;
+  }
   .callboss-pad .input-box .message input::-moz-placeholder {
     color: #ffffff;
     padding-left: 11px;
@@ -637,6 +652,18 @@ nav .bar-R {
     padding-left: 11px;
   }
   .callboss-pad .input-box .message input::placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea::-moz-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea:-ms-input-placeholder {
+    color: #ffffff;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea::placeholder {
     color: #ffffff;
     padding-left: 11px;
   }
@@ -830,6 +857,14 @@ nav .bar-R {
     background-color: #F7DEC3;
     border: 1px solid #424242;
   }
+  .callboss-pad .input-box .message textarea {
+    width: 80%;
+    height: 145px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    color: #6E786D;
+  }
   .callboss-pad .input-box .message input::-moz-placeholder {
     color: #7D7D7D;
     padding-left: 11px;
@@ -839,6 +874,18 @@ nav .bar-R {
     padding-left: 11px;
   }
   .callboss-pad .input-box .message input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message textarea::placeholder {
     color: #7D7D7D;
     padding-left: 11px;
   }
@@ -1043,6 +1090,14 @@ nav .bar-R {
     border-radius: 15px;
     background-color: #F7DEC3;
     border: 1px solid #424242;
+  }
+  .callboss-pad .input-box .message textarea {
+    width: 255px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    padding: 10px;
   }
   .callboss-pad .input-box .message input::-moz-placeholder {
     color: #7D7D7D;
