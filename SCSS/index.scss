@@ -658,6 +658,14 @@ main {
             height: 160px;
             font-family: 'Zen Maru Gothic', sans-serif;
             line-height: 35px;
+            .icons{
+                .FB{
+                    display: none;
+                }
+                .IG{
+                    display: none;
+                }
+            }
 
             h3 {
                 margin-bottom: 20px;

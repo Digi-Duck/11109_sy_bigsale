@@ -531,6 +531,12 @@ main #contact .aboutus {
   font-family: "Zen Maru Gothic", sans-serif;
   line-height: 35px;
 }
+main #contact .aboutus .icons .FB {
+  display: none;
+}
+main #contact .aboutus .icons .IG {
+  display: none;
+}
 main #contact .aboutus h3 {
   margin-bottom: 20px;
 }
