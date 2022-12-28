@@ -941,6 +941,7 @@ footer .maker {
   }
   main #ig-part .ig-pic {
     width: 100%;
+    height: 270px;
     gap: 15px;
     justify-content: center;
     align-items: center;
@@ -948,7 +949,7 @@ footer .maker {
   main #ig-part .ig-pic a {
     text-decoration: none;
     width: calc(50% - 65px);
-    height: calc(50% - 65px);
+    height: calc(66% - 56px);
   }
   main #ig-part .ig-pic a img {
     width: 100%;
