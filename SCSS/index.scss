@@ -8,11 +8,11 @@ body{
    
 }
 // <<<<<<< HEAD
+
 #bar{
-    display: flex;
+    display: flex;    
     
     i{
-        display: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,6 +27,7 @@ body{
         top: 11px;
         left: 12px;
         z-index: 1;
+        display: none;
     }
     .bar-menu{
         width: 260px;
@@ -983,7 +984,9 @@ footer {
 
 @media (max-width:375px){
     #bar{
-        display: block;
+        i{
+            display: flex;
+        }
     }
     nav{
         display: none;
