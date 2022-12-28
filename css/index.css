@@ -160,7 +160,7 @@ nav:hover {
 }
 
 .block {
-  display: flex;
+  opacity: 1;
   z-index: 2;
 }
 
