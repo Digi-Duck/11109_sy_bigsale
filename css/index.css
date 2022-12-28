@@ -6,9 +6,9 @@
 
 #bar {
   display: flex;
-  display: none;
 }
 #bar i {
+  display: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   border-radius: 20px;
   background-color: #6E786D;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 11px;
   left: 12px;
   z-index: 1;
@@ -36,22 +36,27 @@
   align-items: center;
   gap: 20px;
   color: #F6DEC3;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #6E786D;
   border-radius: 10px;
   z-index: 1;
+  opacity: 0;
 }
 #bar .bar-menu a {
   text-decoration: none;
   color: #F6DEC3;
 }
 
+.active {
+  opacity: 1 !important;
+  transition: 0.5s ease;
+}
+
 nav {
   width: 100%;
-  min-width: 100%;
   height: 55px;
   background-color: #6E786D;
   display: flex;
@@ -766,6 +771,9 @@ footer .maker {
   }
 }
 @media (max-width: 375px) {
+  #bar {
+    display: block;
+  }
   nav {
     display: none;
   }
@@ -859,7 +867,7 @@ footer .maker {
     height: 135.6px;
   }
   main #ig-part {
-    margin-bottom: 47.82px auto;
+    margin-bottom: 47.82px;
   }
   main #ig-part .ig-name span {
     font-size: 12px;
@@ -870,10 +878,18 @@ footer .maker {
   }
   main #ig-part .ig-pic {
     width: 100%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
   main #ig-part .ig-pic a {
     text-decoration: none;
-    width: calc(50% - 15px);
+    width: calc(50% - 65px);
+    height: calc(50% - 65px);
+  }
+  main #ig-part .ig-pic a img {
+    width: 100%;
+    height: 100%;
   }
   main #contact {
     width: 90%;
@@ -909,17 +925,23 @@ footer .maker {
     gap: 15px;
     width: 100%;
   }
-  main #contact .aboutus h3 {
-    font-size: 15px;
-    margin-bottom: 10px;
+  main #contact .aboutus .icons .FB {
+    display: block;
   }
-  main #contact .aboutus .FB img {
+  main #contact .aboutus .icons .FB img {
     width: 25px;
     height: 25px;
   }
-  main #contact .aboutus .IG img {
+  main #contact .aboutus .icons .IG {
+    display: block;
+  }
+  main #contact .aboutus .icons .IG img {
     width: 22px;
     height: 22px;
+  }
+  main #contact .aboutus h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .none-375 {
     display: none !important;

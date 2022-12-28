@@ -8,11 +8,11 @@ body{
    
 }
 // <<<<<<< HEAD
-
 #bar{
     display: flex;
-    display: none;
+    
     i{
+        display: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,7 +23,7 @@ body{
         border-radius: 20px;
         background-color:#6E786D;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         top: 11px;
         left: 12px;
         z-index: 1;
@@ -40,19 +40,25 @@ body{
         align-items: center;
         gap:20px;
         color: #F6DEC3;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color:#6E786D;
         border-radius: 10px;
         z-index: 1;
+        opacity: 0;
         
         a{
             text-decoration: none;
             color:#F6DEC3;
         }
     }
+}
+.active{
+    opacity: 1 !important;
+    transition: 0.5s ease;
+    
 }
 
 //修改陰影
@@ -976,6 +982,9 @@ footer {
 }
 
 @media (max-width:375px){
+    #bar{
+        display: block;
+    }
     nav{
         display: none;
     }
@@ -1083,7 +1092,7 @@ footer {
         }
        
         #ig-part{
-            margin-bottom: 47.82px auto;
+            margin-bottom: 47.82px;
             
             .ig-name{
                 span{
@@ -1097,9 +1106,18 @@ footer {
             }
             .ig-pic{
                 width: 100%;
+                gap:15px;
+                justify-content: center;
+                align-items: center;
                 a{
                     text-decoration: none;
-                    width: calc(50% - 15px) ;
+                    width: calc(50% - 65px) ;
+                    height: calc(50% - 65px)  ;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                   
                 }
             }
@@ -1137,22 +1155,24 @@ footer {
                     gap: 15px;
                     width: 100%;
                     
+                    .FB{
+                        display: block ;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    .IG{
+                        display: block;
+                        img{
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
                 }
                 h3{
                     font-size: 15px;
                     margin-bottom: 10px;
-                }
-                .FB{
-                    img{
-                        width: 25px;
-                        height: 25px;
-                    }
-                }
-                .IG{
-                    img{
-                        width: 22px;
-                        height: 22px;
-                    }
                 }
             }
         }

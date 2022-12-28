@@ -19,7 +19,7 @@
 <body>
 
   <div id="bar">
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars bars"></i>
     <div class="bar-menu">
       <span>酉酉故事</span>
       <span>特色主打</span>
@@ -295,7 +295,9 @@
     let box_move = document.querySelector('.dots-move');
     let boxPosition = 67;
     let nav = document.querySelector('nav');
-    let img = document.querySelector('.swiper-slide img')
+    let img = document.querySelector('.swiper-slide img');
+    let bars = document.querySelector('.bars');
+    let barMenu = document.querySelector('.bar-menu')
 
     window.addEventListener('scroll', showNav);
     showNav();
@@ -401,6 +403,12 @@
   //     img.style.height = "80vw";
   //   }
   // }
+  bars.addEventListener('click',function(){
+    console.log(123);
+    barMenu.classList.toggle('active');
+  })
+  
+  
   </script>
 
 </body>
