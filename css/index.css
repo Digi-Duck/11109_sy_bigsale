@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 #bar {
@@ -53,6 +54,28 @@
 .active {
   opacity: 1 !important;
   transition: 0.5s ease;
+}
+
+.backTop {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  right: 70px;
+  bottom: 90px;
+  cursor: pointer;
+}
+.backTop a {
+  text-decoration: none;
+  color: #000;
+}
+.backTop a i {
+  font-size: 30px;
 }
 
 nav {
@@ -295,7 +318,7 @@ main #banner .dots .dots-move .dot::after {
   bottom: 12px;
 }
 main #banner .dots .dots-move .dot:hover::after {
-  background-color: yellow;
+  background-color: #F6DEC3;
   transform: scale(1.1);
   transition: all 0.5s;
 }
