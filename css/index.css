@@ -94,8 +94,11 @@ nav .bar-logo .logo-back {
 nav .bar-logo .logo-back a {
   width: 110px;
   height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav .bar-logo .logo-back img {
+nav .bar-logo .logo-back a img {
   width: 100%;
   height: 100%;
   position: absolute;
