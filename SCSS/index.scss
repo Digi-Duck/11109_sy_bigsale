@@ -473,7 +473,7 @@ main {
         }
 //修改 transform
         .swiper-box{
-            width: 57%;
+            width: 58%;
             position: relative;
             transform: translate(505px,255px);
             .swiper {
@@ -483,10 +483,33 @@ main {
                 // position: absolute;
                 // top: 262px;
                 // left: 481px;
-                .swiper-slide img {
-                    width: 100%;
-                    display: block;
-                    object-fit: cover;
+                .swiper-wrapper{
+                    .pic1{
+                        background-image: url('/Images/去暗角.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        
+                    }
+                    .pic2{
+                        background-image: url('/Images/chair.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .piic3{
+                        background-image: url('/Images/coffepowder.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    // .swiper-slide img {
+                    //     width: 100%;
+                    //     display: block;
+                    //     object-fit: cover;
+                    //     object-position: left 10% top 10%;
+                    // }
                 }
             }
             .swiper-pagination {
@@ -695,7 +718,7 @@ main {
             gap: 20px;
             
             a{
-                width: calc((100% - 100px) / 6 );
+                width: calc((100% - 102px) / 6 );
                 
                 img{
                     width: 100%;
@@ -793,7 +816,22 @@ footer {
     }
 
 }
+@media (max-width:1230px){
+    main{
+        #cof{
+            .cof-spn{
+                left: 140px;
+            }
+            .cof-p{
+                left: 180px;
+            }
+            .swiper-box{
+               transform: translate(320px, 255px);
+            }
+        }
 
+    }
+}
 @media (max-width:768px){
     nav{
         a{

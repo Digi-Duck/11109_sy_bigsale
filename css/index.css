@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -423,7 +424,7 @@ main #cof .cof-p .cof-gi img {
   display: none;
 }
 main #cof .swiper-box {
-  width: 57%;
+  width: 58%;
   position: relative;
   transform: translate(505px, 255px);
 }
@@ -432,11 +433,23 @@ main #cof .swiper-box .swiper {
   height: 586px;
   border-radius: 20px;
 }
-main #cof .swiper-box .swiper .swiper-slide img {
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+main #cof .swiper-box .swiper .swiper-wrapper .pic1 {
+  background-image: url("/Images/去暗角.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #cof .swiper-box .swiper .swiper-wrapper .pic2 {
+  background-image: url("/Images/chair.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #cof .swiper-box .swiper .swiper-wrapper .piic3 {
+  background-image: url("/Images/coffepowder.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main #cof .swiper-box .swiper-pagination {
   width: 100%;
@@ -570,7 +583,7 @@ main #ig-part .ig-pic {
   gap: 20px;
 }
 main #ig-part .ig-pic a {
-  width: calc((100% - 100px) / 6);
+  width: calc((100% - 102px) / 6);
 }
 main #ig-part .ig-pic a img {
   width: 100%;
@@ -647,6 +660,17 @@ footer .maker {
   margin-right: 30px;
 }
 
+@media (max-width: 1230px) {
+  main #cof .cof-spn {
+    left: 140px;
+  }
+  main #cof .cof-p {
+    left: 180px;
+  }
+  main #cof .swiper-box {
+    transform: translate(320px, 255px);
+  }
+}
 @media (max-width: 768px) {
   nav a {
     font-size: 15px;
