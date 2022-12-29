@@ -646,6 +646,7 @@ main {
         padding-top: 168px;
         display: flex;
         margin-bottom: 203px;
+        padding-bottom: 169px;
 
         .des-pic {
             width:calc( 100% - 963px) ;
@@ -658,7 +659,7 @@ main {
 
             img {
                 width: calc(( 100% - 40px) / 3);
-                height: calc(( 100% - 40px) / 3);
+                height: calc(( 100% - 70px) / 2);
                 border-radius: 20px;
 
 
