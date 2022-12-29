@@ -520,6 +520,7 @@ main #dessert {
   padding-top: 168px;
   display: flex;
   margin-bottom: 203px;
+  padding-bottom: 169px;
 }
 main #dessert .des-pic {
   width: calc(100% - 963px);
