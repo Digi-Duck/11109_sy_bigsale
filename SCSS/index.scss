@@ -82,8 +82,8 @@ body{
     align-items: center;
     position: fixed;
     z-index: 1;
-    right: 70px;
-    bottom: 90px;
+    right: 40px;
+    bottom: 30px;
     cursor: pointer;
     a{
         text-decoration: none;
@@ -839,6 +839,18 @@ footer {
         .bar-R{
             margin-left: 10px;
             gap:35px;
+        }
+    }
+    main{
+        #cof{
+            .cof-spn{
+                right: 54%;
+                top: 17%;
+                font-size: 80px;
+            }
+            .cof-p{
+                right: 77%;
+            }
         }
     }
 
