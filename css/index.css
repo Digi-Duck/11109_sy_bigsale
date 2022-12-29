@@ -89,8 +89,9 @@
 .backTop a {
   text-decoration: none;
   color: #000;
-  display: flex;
-  justify-content: center;
+}
+.backTop a i {
+  font-size: 30px;
 }
 
 nav {
@@ -361,7 +362,7 @@ main #about .about-logo img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  box-shadow: 0px 1px 6px 0px #565454;
+  box-shadow: 3px 3px 14px 0px #565454;
 }
 main #about .about-text {
   text-align: center;
@@ -391,8 +392,8 @@ main #cof .cof-spn {
   font-size: 96px;
   font-family: "Island Moments", cursive;
   position: absolute;
-  left: 300px;
-  top: 160px;
+  right: 65%;
+  top: 14%;
 }
 main #cof .cof-p {
   font-size: 20px;
@@ -403,8 +404,8 @@ main #cof .cof-p {
   font-family: "Zen Maru Gothic", sans-serif;
   gap: 28px;
   position: absolute;
-  top: 392px;
-  left: 350px;
+  top: 37%;
+  right: 74%;
 }
 main #cof .cof-p .cof-img {
   display: none;
@@ -425,7 +426,8 @@ main #cof .cof-p .cof-gi img {
 main #cof .swiper-box {
   width: 58%;
   position: relative;
-  transform: translate(505px, 255px);
+  right: -29%;
+  top: 43%;
 }
 main #cof .swiper-box .swiper {
   width: 100%;
@@ -434,7 +436,7 @@ main #cof .swiper-box .swiper {
 }
 main #cof .swiper-box .swiper .swiper-wrapper .pic1 {
   background-image: url("/Images/去暗角.png");
-  background-position: center;
+  background-position: 0% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -528,7 +530,6 @@ main #dessert .des-pic img {
   width: calc((100% - 40px) / 3);
   height: calc((100% - 40px) / 3);
   border-radius: 20px;
-  box-shadow: 0.5px 0.5px 2.5px 0px #8c8a8a;
 }
 main #dessert .des-txt {
   padding-top: 117px;
@@ -589,7 +590,6 @@ main #ig-part .ig-pic a img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  box-shadow: 0.5px 0.5px 2.5px 0px #8c8a8a;
 }
 main #contact {
   display: flex;
@@ -618,10 +618,6 @@ main #contact .aboutus .icons .icons-n {
   justify-content: center;
   align-items: center;
 }
-main #contact .aboutus .icons .icons-n:hover{
-  font-weight: bold;
-  filter: drop-shadow(0.5px 0.5px 0.5px #8c8a8a);
-} 
 main #contact .aboutus .icons img {
   width: 20px;
   height: 20px;
@@ -665,15 +661,25 @@ footer .maker {
   margin-right: 30px;
 }
 
-@media (max-width: 1230px) {
-  main #cof .cof-spn {
-    left: 140px;
+@media (max-width: 900px) {
+  nav a {
+    font-size: 18px;
   }
-  main #cof .cof-p {
-    left: 180px;
+  nav .bar-L {
+    margin-right: 10px;
+    gap: 35px;
   }
-  main #cof .swiper-box {
-    transform: translate(320px, 255px);
+  nav .bar-logo .logo-back {
+    width: 110px;
+    height: 110px;
+  }
+  nav .bar-logo .logo-back a img {
+    width: 90%;
+    height: 90%;
+  }
+  nav .bar-R {
+    margin-left: 10px;
+    gap: 35px;
   }
 }
 @media (max-width: 768px) {
@@ -725,7 +731,6 @@ footer .maker {
   main #about .about-logo img {
     width: 131px;
     height: 131px;
-    box-shadow: 0px 0.8px 5px 0px #565454;
   }
   main #about .about-text {
     font-size: 15px;
@@ -883,7 +888,6 @@ footer .maker {
   main #about .about-logo img {
     width: 73px;
     height: 73px;
-    box-shadow: 0px 0.5px 3px 0px #565454;
   }
   main #about .about-text {
     font-size: 12px;

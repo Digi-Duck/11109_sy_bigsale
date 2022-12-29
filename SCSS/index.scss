@@ -432,8 +432,8 @@ main {
             font-size: 96px;
             font-family: 'Island Moments', cursive;
             position: absolute;
-            left: 300px;
-            top: 160px;
+            right: 65%;
+            top: 14%;
         }
 
         .cof-p {
@@ -444,8 +444,8 @@ main {
             font-family: 'Zen Maru Gothic', sans-serif;
             gap: 28px;
             position: absolute;
-            top: 392px;
-            left: 350px;
+            top: 37%;
+            right: 74%;
             .cof-img{
                 display: none;
             }
@@ -475,7 +475,8 @@ main {
         .swiper-box{
             width: 58%;
             position: relative;
-            transform: translate(505px,255px);
+           right: -29%;
+           top: 43%;
             .swiper {
                 width: 100%;
                 height: 586px;
@@ -486,7 +487,7 @@ main {
                 .swiper-wrapper{
                     .pic1{
                         background-image: url('/Images/去暗角.png');
-                        background-position: center;
+                        background-position: 0% center;
                         background-size: cover;
                         background-repeat: no-repeat;
                         
@@ -504,12 +505,7 @@ main {
                         background-repeat: no-repeat;
                     }
 
-                    // .swiper-slide img {
-                    //     width: 100%;
-                    //     display: block;
-                    //     object-fit: cover;
-                    //     object-position: left 10% top 10%;
-                    // }
+                  
                 }
             }
             .swiper-pagination {
@@ -816,21 +812,36 @@ footer {
     }
 
 }
-@media (max-width:1230px){
-    main{
-        #cof{
-            .cof-spn{
-                left: 140px;
-            }
-            .cof-p{
-                left: 180px;
-            }
-            .swiper-box{
-               transform: translate(320px, 255px);
+
+@media (max-width:900px){
+    nav{
+        
+        a{
+            font-size: 18px;
+        }
+        .bar-L{
+            margin-right: 10px;
+            gap:35px;
+
+        }
+        .bar-logo{
+            .logo-back{
+                width: 110px;
+                height: 110px;
+                a{
+                    img{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
             }
         }
-
+        .bar-R{
+            margin-left: 10px;
+            gap:35px;
+        }
     }
+
 }
 @media (max-width:768px){
     nav{
