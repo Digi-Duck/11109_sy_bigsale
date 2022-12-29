@@ -690,7 +690,8 @@ footer .maker {
   }
   nav .bar-L {
     margin-right: 10px;
-    gap: 25px;
+    gap: 20px;
+    line-height: 35px;
   }
   nav .bar-logo .logo-back {
     width: 110px;
@@ -702,7 +703,11 @@ footer .maker {
   }
   nav .bar-R {
     margin-left: 10px;
-    gap: 25px;
+    gap: 20px;
+    line-height: 35px;
+  }
+  nav .bar-hover:hover {
+    line-height: 35px;
   }
   main #cof .cof-spn {
     right: 54%;
@@ -716,27 +721,37 @@ footer .maker {
 @media (max-width: 768px) {
   nav a {
     font-size: 15px;
+    padding: 0 8px;
   }
   nav .bar-L {
-    margin-right: 22px;
+    margin-right: 10px;
+    gap: 10px;
+    line-height: 38px;
   }
   nav .bar-logo {
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding-top: 15px;
     width: 89.72px;
     height: 89.72px;
   }
   nav .bar-logo .logo-back {
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 90px;
   }
   nav .bar-logo .logo-back img {
     width: 84.44px;
     height: 84.44px;
   }
   nav .bar-R {
-    margin-left: 22px;
+    margin-left: 10px;
+    gap: 10px;
+    line-height: 38px;
+  }
+  nav .bar-hover:hover {
+    height: 30px;
+    padding: 0 8px;
+    line-height: 30px;
   }
   main #banner .slideshow-container {
     height: 387.25px;

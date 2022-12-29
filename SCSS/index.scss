@@ -169,6 +169,7 @@ nav {
         display: flex;
         align-items: center;
         gap: 30px;
+        // line-height: 30px;
     }
 }
 nav .bar-hover:hover{
@@ -843,8 +844,8 @@ footer {
         }
         .bar-L{
             margin-right: 10px;
-            gap:25px;
-
+            gap:20px;
+            line-height: 35px;
         }
         .bar-logo{
             .logo-back{
@@ -860,7 +861,11 @@ footer {
         }
         .bar-R{
             margin-left: 10px;
-            gap:25px;
+            gap:20px;
+            line-height: 35px;
+        }
+        .bar-hover:hover{
+            line-height: 35px;
         }
     }
     main{
@@ -881,19 +886,22 @@ footer {
     nav{
         a{
             font-size: 15px;
+            padding: 0 8px;
         }
         .bar-L{
-           margin-right: 22px;
+           margin-right: 10px;
+           gap: 10px;
+           line-height: 38px;
         }
         .bar-logo{
             justify-content: center;
             align-items: center;
-            padding: 0;
+            padding-top: 15px;
             width: 89.72px;
             height: 89.72px;
             .logo-back{
-                width: 100%;    
-                height: 100%;
+                width: 90px;    
+                height: 90px;
                 img{
                     width: 84.44px;
                     height: 84.44px;
@@ -901,8 +909,16 @@ footer {
             }
         }
         .bar-R{
-            margin-left: 22px;
+            margin-left: 10px;
+            gap: 10px;
+            line-height: 38px;
         }
+        .bar-hover:hover{
+            height: 30px;
+            padding: 0 8px;
+            line-height: 30px;
+        }
+        
     }
     main{
         #banner{
