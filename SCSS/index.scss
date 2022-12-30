@@ -860,7 +860,7 @@ footer {
         }
         .bar-L{
             margin-right: 10px;
-            gap:20px;
+            gap:10px;
             line-height: 35px;
         }
         .bar-logo{
@@ -877,7 +877,7 @@ footer {
         }
         .bar-R{
             margin-left: 10px;
-            gap:20px;
+            gap:10px;
             line-height: 35px;
         }
         .bar-hover:hover{
@@ -912,6 +912,11 @@ footer {
                 .des-gif{
                     top: 55%;
                 }
+            }
+        }
+        #ig-part{
+            .ig-pic{
+                width: calc( 100% - 87px);
             }
         }
     }

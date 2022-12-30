@@ -699,7 +699,7 @@ footer .maker {
   }
   nav .bar-L {
     margin-right: 10px;
-    gap: 20px;
+    gap: 10px;
     line-height: 35px;
   }
   nav .bar-logo .logo-back {
@@ -712,7 +712,7 @@ footer .maker {
   }
   nav .bar-R {
     margin-left: 10px;
-    gap: 20px;
+    gap: 10px;
     line-height: 35px;
   }
   nav .bar-hover:hover {
@@ -743,6 +743,9 @@ footer .maker {
   }
   main #dessert .des-txt .des-gif {
     top: 55%;
+  }
+  main #ig-part .ig-pic {
+    width: calc(100% - 87px);
   }
 }
 @media (max-width: 768px) {
