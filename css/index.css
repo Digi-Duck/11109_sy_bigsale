@@ -1028,6 +1028,7 @@ footer .maker {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    padding-top: 0;
   }
   main #cof .cof-p .cof-img {
     display: flex;
