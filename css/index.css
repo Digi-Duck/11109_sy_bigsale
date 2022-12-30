@@ -729,6 +729,21 @@ footer .maker {
   main #cof .swiper-box {
     right: -28%;
   }
+  main #dessert {
+    padding-left: 5%;
+  }
+  main #dessert .des-txt {
+    width: 43%;
+  }
+  main #dessert .des-txt .des-spn {
+    font-size: 60px;
+  }
+  main #dessert .des-txt p {
+    font-size: 16px;
+  }
+  main #dessert .des-txt .des-gif {
+    top: 55%;
+  }
 }
 @media (max-width: 768px) {
   nav a {
