@@ -719,12 +719,15 @@ footer .maker {
     line-height: 35px;
   }
   main #cof .cof-spn {
-    right: 54%;
+    right: 59%;
     top: 17%;
     font-size: 80px;
   }
   main #cof .cof-p {
-    right: 77%;
+    right: 75%;
+  }
+  main #cof .swiper-box {
+    right: -28%;
   }
 }
 @media (max-width: 768px) {
