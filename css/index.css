@@ -1008,6 +1008,7 @@ footer .maker {
     line-height: 13.78px;
     padding-top: 35px;
     flex-direction: column-reverse;
+    right: 17%;
   }
   main #cof .cof-p .cof-gi {
     display: flex;
@@ -1026,7 +1027,7 @@ footer .maker {
   main #cof .cof-p .cof-gi .cof-p1 {
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
+    margin-right: 20px;
   }
   main #cof .cof-p .cof-img {
     display: flex;
@@ -1038,9 +1039,16 @@ footer .maker {
     border-radius: 10px;
   }
   main #cof .swiper-box {
-    width: 80%;
+    width: 71%;
     height: 135.6px;
-    transform: translate(60px, 0px);
+    top: 0%;
+    right: -12%;
+  }
+  main #cof .swiper-box .swiper .swiper-wrapper {
+    height: 23%;
+  }
+  main #cof .swiper-box .swiper .swiper-wrapper .swiper-slide {
+    border-radius: 15px;
   }
   main #cof .swiper-box .swiper .swiper-wrapper .swiper-slide img {
     width: 255px;

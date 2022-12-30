@@ -1246,6 +1246,7 @@ footer {
                 line-height: 13.78px;
                 padding-top: 35px;
                 flex-direction: column-reverse;
+                right: 17%;
                 .cof-gi{
                     display: flex;
                     p{
@@ -1262,7 +1263,7 @@ footer {
                     .cof-p1{
                         display: flex;
                         flex-direction:column ;
-                        margin-right: 24px;
+                        margin-right: 20px;
                     }
                     p{
                     
@@ -1279,12 +1280,16 @@ footer {
                 }
             }
             .swiper-box{
-                width: 80%;
+                width: 71%;
                 height: 135.6px;
-                transform: translate(60px, 0px);
+                top: 0%;
+                right: -12%;
+            
                 .swiper{
                     .swiper-wrapper{
+                        height: 23%;
                         .swiper-slide{
+                            border-radius: 15px;
                             img{
                                 width: 255px;
                                 height: 135.6px;
