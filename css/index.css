@@ -552,23 +552,29 @@ main #dessert .des-pic img {
   box-shadow: 0.5px 0.5px 2.5px 0 #8a8787;
 }
 main #dessert .des-txt {
-  padding-top: 117px;
   width: 38%;
+  margin-top: 5%;
+  position: relative;
 }
 main #dessert .des-txt .des-spn {
   font-size: 80px;
   font-family: "Island Moments", cursive;
+  padding-top: 15%;
 }
 main #dessert .des-txt p {
   font-size: 20px;
   font-family: "Zen Maru Gothic", sans-serif;
   line-height: 35px;
   margin-left: 15px;
-  margin-bottom: 30px;
+  padding-top: 12%;
 }
-main #dessert .des-txt img {
-  width: 250px;
-  height: 222.16px;
+main #dessert .des-txt .des-gif {
+  position: absolute;
+  top: 62%;
+  right: 20%;
+}
+main #dessert .des-txt .des-gif img {
+  width: 51%;
   margin-left: 147px;
 }
 main #ig-part {

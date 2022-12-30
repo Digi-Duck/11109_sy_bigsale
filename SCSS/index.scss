@@ -674,12 +674,16 @@ main {
         }
 
         .des-txt {
-            padding-top: 117px;
+           
             width: 38%;
+            margin-top: 5%;
+            position: relative;
 
             .des-spn {
                 font-size: 80px;
                 font-family: 'Island Moments', cursive;
+                padding-top: 15%;
+                
 
             }
 
@@ -688,15 +692,21 @@ main {
                 font-family: 'Zen Maru Gothic', sans-serif;
                 line-height: 35px;
                 margin-left: 15px;
-                margin-bottom: 30px;
+                padding-top: 12%;
+                
 
             }
+            .des-gif{
+                position: absolute;
+                top: 62%;
+                right: 20%;
 
-            img {
-                width: 250px;
-                height: 222.16px;
-                margin-left: 147px;
+                img {
+                    width: 51%;
+                    margin-left: 147px;
+                }
             }
+
         }
 
 
@@ -842,7 +852,7 @@ footer {
 
 }
 
-@media (max-width:1210px){
+@media (max-width:1200px){
     nav{
         
         a{
