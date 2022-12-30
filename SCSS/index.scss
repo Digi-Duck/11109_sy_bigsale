@@ -1097,9 +1097,8 @@ footer {
                     display: none;
                 }
                 img{
-                    width: 143.77px;
-                    // width: 50%;
-                    height: 143.77px;
+                    width: calc((100% - 68px) / 2);
+                    height: 53%;
                 }
             }
             .des-txt{padding-top: 17px;

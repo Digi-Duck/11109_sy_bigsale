@@ -890,8 +890,8 @@ footer .maker {
     display: none;
   }
   main #dessert .des-pic img {
-    width: 143.77px;
-    height: 143.77px;
+    width: calc((100% - 68px) / 2);
+    height: 53%;
   }
   main #dessert .des-txt {
     padding-top: 17px;
