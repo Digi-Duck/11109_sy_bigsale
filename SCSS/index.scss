@@ -1015,14 +1015,14 @@ footer {
             margin-bottom: 55px;
             .cof-spn{
                 top: 9%;
-                left: 12%;
+                left: 11%;
                 font-size: 70px;
                 z-index: 2;
                 line-height: 80.5px;
             }
             .cof-p{
                 top: 38%;
-                left:14%;
+                right: 80%;
                 font-size: 15px;
                 line-height: 21.72px;
                 gap: 5px;
@@ -1035,13 +1035,13 @@ footer {
             //修改trans
             .swiper-box{
                 width: 68%;
-                height: 268px;
-                transform: translate(165px,145px);
+                right: -22%;
                 .swiper{
                     width: 100%;
                     top: 0;
                     left: 0;
                     .swiper-wrapper{
+                        height: 60%;
                         .swiper-slide{
                             img{
                                 border-radius: 20px;
@@ -1053,7 +1053,7 @@ footer {
                 }
                 .swiper-pagination{
                     width: 100%;
-                    bottom:-20px;
+                    bottom:220px;
                     left: 0%;
                 }
             }
