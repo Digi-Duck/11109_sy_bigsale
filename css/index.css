@@ -920,13 +920,17 @@ footer .maker {
     line-height: 35px;
   }
   main #ig-part .ig-pic {
-    width: 535.36px;
-    height: 351px;
-    gap: 13px;
+    width: 80%;
+    height: 50vw;
+    gap: 15px;
+  }
+  main #ig-part .ig-pic a {
+    width: 28%;
+    height: 44%;
   }
   main #ig-part .ig-pic a img {
-    width: 168px;
-    height: 168px;
+    width: 100%;
+    height: 100%;
   }
   main #contact {
     margin-bottom: 106px;
