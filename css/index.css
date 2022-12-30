@@ -553,6 +553,7 @@ main #dessert .des-pic img {
 }
 main #dessert .des-txt {
   padding-top: 117px;
+  width: 38%;
 }
 main #dessert .des-txt .des-spn {
   font-size: 80px;
