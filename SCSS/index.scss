@@ -1089,25 +1089,27 @@ footer {
             padding: 0;
             height: 500px;           
             position: relative;
+            overflow: hidden;
             .des-pic{
+                width: 42.5%;
                 gap:17px;
                 margin: 0 auto;
                 position: absolute;
-                top: 15%;
-                right: 35%;
+                top: 19%;
+                right: 48%;
                 .none{
                     display: none;
                 }
                 img{
-                    width: calc((100% - 68px) / 2);
+                    width: 45%;
                     height: 53%;
                 }
             }
             .des-txt{
                 padding-top: 17px;
                 position: absolute;
-                top: 5%;
-                right: -3%;
+                top: 9%;
+                right: 5%;
                 P{
                     font-size: 15px;
                     line-height: 28px;
@@ -1117,7 +1119,8 @@ footer {
                     line-height: 69px;
                 }
                 .des-gif{
-                    right: 6%;
+                    top: 66%;
+                    right: 7%;
                     img{
                     
                     }
