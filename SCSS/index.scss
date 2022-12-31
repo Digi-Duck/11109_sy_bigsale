@@ -1086,14 +1086,15 @@ footer {
         }
         #dessert{
             margin-bottom: 73px;
-            padding-top: 91px;
-            padding-left: 111px;
-            height: 500px;
+            padding: 0;
+            height: 500px;           
+            position: relative;
             .des-pic{
-                
                 gap:17px;
-                margin-left: 0px;
-                margin-right: 21px;
+                margin: 0 auto;
+                position: absolute;
+                top: 15%;
+                right: 35%;
                 .none{
                     display: none;
                 }
@@ -1102,7 +1103,11 @@ footer {
                     height: 53%;
                 }
             }
-            .des-txt{padding-top: 17px;
+            .des-txt{
+                padding-top: 17px;
+                position: absolute;
+                top: 5%;
+                right: -3%;
                 P{
                     font-size: 15px;
                     line-height: 28px;
@@ -1112,9 +1117,9 @@ footer {
                     line-height: 69px;
                 }
                 .des-gif{
+                    right: 6%;
                     img{
-                        width: 151px;
-                        height: 134px;
+                    
                     }
                     
                 }
