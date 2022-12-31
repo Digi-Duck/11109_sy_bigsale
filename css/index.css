@@ -70,6 +70,7 @@
 
 .ovhd {
   overflow: hidden;
+  z-index: 99;
 }
 
 .backTop {
@@ -1023,6 +1024,8 @@ footer .maker {
     height: 71.3px;
     position: absolute;
     bottom: -6px;
+    display: block;
+    left: 5px;
   }
   main #cof .cof-p .cof-gi .cof-p1 {
     display: flex;

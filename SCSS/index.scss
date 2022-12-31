@@ -71,6 +71,7 @@ body{
 }
 .ovhd{
     overflow: hidden;
+    z-index:99 ;
 }
 .backTop{
     border: 1px solid #424242;
@@ -1258,6 +1259,8 @@ footer {
                         height: 71.3px;
                         position: absolute;
                         bottom: -6px;
+                        display: block;
+                        left: 5px;
                     }
                     .cof-p1{
                         display: flex;
