@@ -1181,11 +1181,14 @@ footer {
         display: none;
     }  
 }
-
-@media (max-width:430px){
+@media (max-width:640px) {
     #bar{
         i{
             display: flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 35px;
         }
     }
     .backTop{
@@ -1200,6 +1203,10 @@ footer {
     nav{
         display: none;
     }
+    
+}
+@media (max-width:430px){
+    
     main{
         #banner{
             .slideshow-container{
