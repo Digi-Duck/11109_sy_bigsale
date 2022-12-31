@@ -1233,6 +1233,25 @@ footer {
             }
         }
     }
+    footer{
+        flex-direction: column;
+        height: 100px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        line-height: 20px;
+        .logoTxt{
+            width: 97px;
+            height: 24px;
+            font-size: 12px;
+            margin: 0;
+        }
+        .maker{
+            span{
+                padding-bottom: 16px;
+            }
+        }
+    }
     
 }
 @media (max-width:430px){
@@ -1447,23 +1466,7 @@ footer {
         display: none !important;
     }
     footer{
-        flex-direction: column;
-        height: 100px;
-        margin: 0 auto;
-        padding-top: 15px;
-        padding-bottom: 16px;
-        line-height: 20px;
-        .logoTxt{
-            width: 97px;
-            height: 24px;
-            font-size: 12px;
-            margin: 0;
-        }
-        .maker{
-            span{
-                padding-bottom: 16px;
-            }
-        }
+        
       
     }
     

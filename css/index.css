@@ -993,6 +993,23 @@ footer .maker {
   main #dessert .des-txt .des-gif img {
     margin-left: 130px;
   }
+  footer {
+    flex-direction: column;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    line-height: 20px;
+  }
+  footer .logoTxt {
+    width: 97px;
+    height: 24px;
+    font-size: 12px;
+    margin: 0;
+  }
+  footer .maker span {
+    padding-bottom: 16px;
+  }
 }
 @media (max-width: 430px) {
   #bar i {
@@ -1183,22 +1200,5 @@ footer .maker {
   }
   .none-375 {
     display: none !important;
-  }
-  footer {
-    flex-direction: column;
-    height: 100px;
-    margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 16px;
-    line-height: 20px;
-  }
-  footer .logoTxt {
-    width: 97px;
-    height: 24px;
-    font-size: 12px;
-    margin: 0;
-  }
-  footer .maker span {
-    padding-bottom: 16px;
   }
 }/*# sourceMappingURL=index.css.map */
