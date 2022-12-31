@@ -1189,6 +1189,12 @@ footer {
             height: 60px;
             border-radius: 50%;
             font-size: 35px;
+           
+            &:active{
+                
+                transform: translate(1px, 1px);
+                transition: 0.1s ease;
+            }
         }
     }
     .backTop{

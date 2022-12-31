@@ -961,6 +961,10 @@ footer .maker {
     border-radius: 50%;
     font-size: 35px;
   }
+  #bar i:active {
+    transform: translate(1px, 1px);
+    transition: 0.1s ease;
+  }
   .backTop {
     display: none;
     bottom: 100px;
