@@ -239,14 +239,41 @@ main #banner .main-banner .slider-nav {
   transform: rotate(90deg) !important;
 }
 main #banner .main-banner .slider-nav .btn {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  background-color: rgb(36, 109, 27);
-  border-radius: 50%;
-  display: flex !important;
-  justify-content: center;
+  height: 30px;
+  display: flex;
   align-items: center;
+  position: relative;
+  top: 0px;
+  margin-bottom: 37px;
+}
+main #banner .main-banner .slider-nav .btn::before {
+  content: "";
+  width: 2px;
+  height: calc(100% + 20px);
+  background: #fff;
+  position: absolute;
+  top: -49px;
+  left: 50%;
+}
+main #banner .main-banner .slider-nav .btn::after {
+  content: "";
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: absolute;
+  bottom: 12px;
+}
+main #banner .main-banner .slider-nav .btn:hover::after {
+  background-color: #F6DEC3;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+main #banner .main-banner .slider-nav .btn.active::after {
+  background-color: #6E786D;
 }
 main #banner .main-banner .slider-nav .btn span {
   transform: rotate(-90deg);
@@ -320,7 +347,7 @@ main #banner .mySwiper-ban .fade {
 main #banner .mySwiper-ban img {
   height: 961px;
 }
-main #banner .swiper-pagination-bullets {
+main #banner .dots {
   width: 100px;
   height: 285px;
   position: absolute;
@@ -333,10 +360,10 @@ main #banner .swiper-pagination-bullets {
   opacity: 0.7;
   z-index: 13;
 }
-main #banner .swiper-pagination-bullets:hover {
+main #banner .dots:hover {
   opacity: 1;
 }
-main #banner .swiper-pagination-bullets .dots-move {
+main #banner .dots .dots-move {
   width: 100%;
   position: absolute;
   top: 0px;
@@ -344,7 +371,7 @@ main #banner .swiper-pagination-bullets .dots-move {
   flex-flow: column;
   /* The dots/bullets/indicators */
 }
-main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet {
+main #banner .dots .dots-move .btn {
   height: 30px;
   display: flex;
   flex-flow: column;
@@ -353,7 +380,7 @@ main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet {
   top: 0px;
   margin-bottom: 37px;
 }
-main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::before {
+main #banner .dots .dots-move .btn::before {
   content: "";
   width: 2px;
   height: calc(100% + 20px);
@@ -362,7 +389,7 @@ main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::be
   top: -49px;
   left: 50%;
 }
-main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::after {
+main #banner .dots .dots-move .btn::after {
   content: "";
   cursor: pointer;
   height: 15px;
@@ -374,12 +401,12 @@ main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::af
   position: absolute;
   bottom: 12px;
 }
-main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet:hover::after {
+main #banner .dots .dots-move .btn:hover::after {
   background-color: #F6DEC3;
   transform: scale(1.1);
   transition: all 0.5s;
 }
-main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet.active::after {
+main #banner .dots .dots-move .btn.active::after {
   background-color: #6E786D;
 }
 main #about {
