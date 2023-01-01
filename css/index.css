@@ -188,6 +188,50 @@ main #banner {
   width: 100%;
   /* Hide the images by default */
 }
+main #banner .mySwiper-ban .ban1,
+main #banner .mySwiper-ban .ban2,
+main #banner .mySwiper-ban .ban3,
+main #banner .mySwiper-ban .ban4,
+main #banner .mySwiper-ban .ban5,
+main #banner .mySwiper-ban .ban6 {
+  width: 100%;
+  height: 961px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #banner .mySwiper-ban .ban1 {
+  background-image: url("/Images/rest-1.jpg");
+}
+main #banner .mySwiper-ban .ban2 {
+  background-image: url("/Images/cof-pic-5.jpg");
+}
+main #banner .mySwiper-ban .ban3 {
+  background-image: url("/Images/rest-3.jpg");
+}
+main #banner .mySwiper-ban .ban4 {
+  background-image: url("/Images/rest-4.jpg");
+}
+main #banner .mySwiper-ban .ban5 {
+  background-image: url("/Images/rest-5.jpg");
+}
+main #banner .mySwiper-ban .swiper-pagination-ban {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  left: 98%;
+  z-index: 12;
+  display: none;
+}
+main #banner .mySwiper-ban .swiper-button-next,
+main #banner .mySwiper-ban .swiper-button-prev {
+  color: white;
+  display: none;
+}
 main #banner .slideshow-container {
   position: relative;
   margin: auto;
@@ -311,6 +355,7 @@ main #banner .dots {
   flex-direction: column;
   overflow: hidden;
   opacity: 0.7;
+  z-index: 13;
 }
 main #banner .dots:hover {
   opacity: 1;
@@ -784,6 +829,18 @@ footer .maker {
     padding: 0 8px;
     line-height: 30px;
   }
+  main #banner .mySwiper-ban .ban1,
+main #banner .mySwiper-ban .ban2,
+main #banner .mySwiper-ban .ban3,
+main #banner .mySwiper-ban .ban4,
+main #banner .mySwiper-ban .ban5,
+main #banner .mySwiper-ban .ban6 {
+    height: 387.25px;
+  }
+  main #banner .mySwiper-ban .swiper-button-next,
+main #banner .mySwiper-ban .swiper-button-prev {
+    display: block;
+  }
   main #banner .slideshow-container {
     height: 387.25px;
   }
@@ -952,6 +1009,9 @@ footer .maker {
   .none {
     display: none;
   }
+  .none-768 {
+    display: none !important;
+  }
 }
 @media (max-width: 640px) {
   #bar i {
@@ -1016,6 +1076,14 @@ footer .maker {
     width: 40px;
     height: 40px;
     font-size: 25px;
+  }
+  main #banner .mySwiper-ban .ban1,
+main #banner .mySwiper-ban .ban2,
+main #banner .mySwiper-ban .ban3,
+main #banner .mySwiper-ban .ban4,
+main #banner .mySwiper-ban .ban5,
+main #banner .mySwiper-ban .ban6 {
+    height: 189.48px;
   }
   main #banner .slideshow-container {
     height: 189.48px;
