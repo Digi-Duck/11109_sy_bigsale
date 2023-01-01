@@ -34,7 +34,7 @@ body{
         position: fixed;
         top: 11px;
         left: 12px;
-        z-index: 1;
+        z-index: 14;
         display: none;
         transition: 1s ease;
     }
@@ -201,8 +201,8 @@ main {
             .ban2,
             .ban3,
             .ban4,
-            .ban5,
-            .ban6 {
+            .ban5
+             {
                 width: 100%;
                 height: 961px;
                 background-position: center;
@@ -234,129 +234,20 @@ main {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-
                 width: 50px;
                 height: 100px;
                 position: absolute;
                 top: 500px;
                 left: 98%;
                 z-index: 12;
-
-                display: none;
+                
             }
             .swiper-button-next,
              .swiper-button-prev {
                  color: white;
                  display: none;
              }
-
-            // .ban6 {
-            //     background-image: url('');
-            // }
-        }
-
-        /* Hide the images by default */
-        .slideshow-container {
-            position: relative;
-            margin: auto;
-             /* Next & previous buttons */
-             .prev,
-             .next {
-                 cursor: pointer;
-                 position: absolute;
-                 top: 50%;
-                 width: auto;
-                 padding: 16px;
-                 margin-top: -22px;
-                 color: white;
-                 font-weight: bold;
-                 font-size: 18px;
-                 transition: 0.6s ease;
-                 border-radius: 0 3px 3px 0;
-                 user-select: none;
-                 display: none;
-             }
-
-             /* Position the "next button" to the right */
-             .next {
-                 right: 0;
-                 border-radius: 3px 0 0 3px;
-             }
-
-             /* On hover, add a black background color with a little bit see-through */
-             .prev:hover,
-             .next:hover {
-                 background-color: rgba(0, 0, 0, 0.8);
-             }
-
-
-            .ban1,
-            .ban2,
-            .ban3,
-            .ban4,
-            .ban5,
-            .ban6 {
-                width: 100%;
-                background-position: 0 0;
-                background-size: cover;
-                background-repeat: no-repeat;
-                
-            }
-
-            .ban1 {
-                background-image: url('/Images/rest-1.jpg');
-            }
-
-            .ban2 {
-                background-image: url('/Images/cof-pic-5.jpg');
-            }
-
-            .ban3 {
-                background-image: url('/Images/rest-3.jpg');
-            }
-
-            .ban4 {
-                background-image: url('/Images/rest-4.jpg');
-            }
-
-            .ban5 {
-                background-image: url('/Images/rest-5.jpg');
-            }
-
-            .ban6 {
-                background-image: url('');
-            }
-
-            .mySlides {
-                position: relative;
-                display: none;
-                height: 961px;
-
-               
-                /* Caption text */
-                .text {
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    bottom: 8px;
-                    width: 100%;
-                    text-align: center;
-                }
-
-                /* Number text (1/3 etc) */
-                .numbertext {
-                    color: #f2f2f2;
-                    font-size: 12px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    top: 0;
-                }
-
-            }
-
-            /* Fading animation */
-            .fade {
+            .fade{
                 animation-name: fade;
                 animation-duration: 1.5s;
             }
@@ -375,9 +266,8 @@ main {
             img {
                 height: 961px;
             }
-        }
-
-        .dots {
+        }  
+        .swiper-pagination-bullets {
             width: 100px;
             height: 285px;
             position: absolute;
@@ -403,7 +293,7 @@ main {
                 flex-flow: column;
 
                 /* The dots/bullets/indicators */
-                .dot {
+                .swiper-pagination-bullet{
                     height: 30px;
                     display: flex;
                     flex-flow: column;

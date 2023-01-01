@@ -60,37 +60,39 @@
     <section id="banner">
       <div class="swiper mySwiper-ban">
         <div class="swiper-wrapper">
-          <div class="swiper-slide ban1"></div>
-          <div class="swiper-slide ban2"></div>
-          <div class="swiper-slide ban3"></div>
-          <div class="swiper-slide ban4"></div>
-          <div class="swiper-slide ban5"></div>
+          <div class="swiper-slide fade ban1"></div>
+          <div class="swiper-slide fade ban2"></div>
+          <div class="swiper-slide fade ban3"></div>
+          <div class="swiper-slide fade ban4"></div>
+          <div class="swiper-slide fade ban5"></div>
 
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination-ban none-768"></div>
-      </div>
+        <div class="swiper-pagination-ban none-768">
 
-      <div class="dots" style="text-align:center;">
-        <div class="dots-move" style="transition: top 0.5s; top:0px ;">
-          <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
-          <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
-          <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
-          <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
-          <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
-          <span class="dot " data-move="6" onclick="currentSlide(1)"></span>
-          <span class="dot " data-move="7" onclick="currentSlide(2)"></span>
-          <span class="dot " data-move="8" onclick="currentSlide(3)"></span>
-          <span class="dot " data-move="9" onclick="currentSlide(4)"></span>
-          <span class="dot " data-move="10" onclick="currentSlide(5)"></span>
-          <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
-          <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
-          <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
-          <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
-          <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
+        </div>
+        <div class="dots" style="text-align:center; display: none;">
+          <div class="dots-move" style="transition: top 0.5s; top:0px ;">
+            <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
+            <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
+            <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
+            <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
+            <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
+            <span class="dot " data-move="6" onclick="currentSlide(1)"></span>
+            <span class="dot " data-move="7" onclick="currentSlide(2)"></span>
+            <span class="dot " data-move="8" onclick="currentSlide(3)"></span>
+            <span class="dot " data-move="9" onclick="currentSlide(4)"></span>
+            <span class="dot " data-move="10"onclick="currentSlide(5)"></span>
+            <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
+            <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
+            <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
+            <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
+            <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
+          </div>
         </div>
       </div>
+
 
     </section>
 
@@ -249,13 +251,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
+    
     var swiper = new Swiper(".mySwiper-ban", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       },
+      speed:1000,      
+      loop:true,
       pagination: {
         el: ".swiper-pagination-ban",
         clickable: true,
@@ -274,7 +279,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
-
+      loop:true,
       autoplay: {
         delay: 2000,
         stopOnLastSlide: false,
@@ -318,14 +323,14 @@
       setTimeout(() => {
         box_move.style.transition = "top 0.5s"
       }, 650)
-    }
+    };
 
     function boxMoveposition(q) {
       position = q * boxPosition;
       box_move.style.top = `-${position}px`;
       return position;
 
-    }
+    };
 
 
     dotss.forEach((target) => {
@@ -360,7 +365,7 @@
 
     // showSlides(slideIndex);
 
-    // // Next/previous controls
+    // Next/previous controls
     // function plusSlides(n) {
     //   showSlides(slideIndex += n);
     // }

@@ -33,7 +33,7 @@
   position: fixed;
   top: 11px;
   left: 12px;
-  z-index: 1;
+  z-index: 14;
   display: none;
   transition: 1s ease;
 }
@@ -186,14 +186,12 @@ main {
 }
 main #banner {
   width: 100%;
-  /* Hide the images by default */
 }
 main #banner .mySwiper-ban .ban1,
 main #banner .mySwiper-ban .ban2,
 main #banner .mySwiper-ban .ban3,
 main #banner .mySwiper-ban .ban4,
-main #banner .mySwiper-ban .ban5,
-main #banner .mySwiper-ban .ban6 {
+main #banner .mySwiper-ban .ban5 {
   width: 100%;
   height: 961px;
   background-position: center;
@@ -225,101 +223,13 @@ main #banner .mySwiper-ban .swiper-pagination-ban {
   top: 500px;
   left: 98%;
   z-index: 12;
-  display: none;
 }
 main #banner .mySwiper-ban .swiper-button-next,
 main #banner .mySwiper-ban .swiper-button-prev {
   color: white;
   display: none;
 }
-main #banner .slideshow-container {
-  position: relative;
-  margin: auto;
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Fading animation */
-}
-main #banner .slideshow-container .prev,
-main #banner .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: none;
-}
-main #banner .slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-main #banner .slideshow-container .prev:hover,
-main #banner .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-main #banner .slideshow-container .ban1,
-main #banner .slideshow-container .ban2,
-main #banner .slideshow-container .ban3,
-main #banner .slideshow-container .ban4,
-main #banner .slideshow-container .ban5,
-main #banner .slideshow-container .ban6 {
-  width: 100%;
-  background-position: 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-main #banner .slideshow-container .ban1 {
-  background-image: url("/Images/rest-1.jpg");
-}
-main #banner .slideshow-container .ban2 {
-  background-image: url("/Images/cof-pic-5.jpg");
-}
-main #banner .slideshow-container .ban3 {
-  background-image: url("/Images/rest-3.jpg");
-}
-main #banner .slideshow-container .ban4 {
-  background-image: url("/Images/rest-4.jpg");
-}
-main #banner .slideshow-container .ban5 {
-  background-image: url("/Images/rest-5.jpg");
-}
-main #banner .slideshow-container .ban6 {
-  background-image: url("");
-}
-main #banner .slideshow-container .mySlides {
-  position: relative;
-  display: none;
-  height: 961px;
-  /* Caption text */
-  /* Number text (1/3 etc) */
-}
-main #banner .slideshow-container .mySlides .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-main #banner .slideshow-container .mySlides .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-main #banner .slideshow-container .fade {
+main #banner .mySwiper-ban .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -341,10 +251,10 @@ main #banner .slideshow-container .fade {
     opacity: 1;
   }
 }
-main #banner .slideshow-container img {
+main #banner .mySwiper-ban img {
   height: 961px;
 }
-main #banner .dots {
+main #banner .swiper-pagination-bullets {
   width: 100px;
   height: 285px;
   position: absolute;
@@ -357,10 +267,10 @@ main #banner .dots {
   opacity: 0.7;
   z-index: 13;
 }
-main #banner .dots:hover {
+main #banner .swiper-pagination-bullets:hover {
   opacity: 1;
 }
-main #banner .dots .dots-move {
+main #banner .swiper-pagination-bullets .dots-move {
   width: 100%;
   position: absolute;
   top: 0px;
@@ -368,7 +278,7 @@ main #banner .dots .dots-move {
   flex-flow: column;
   /* The dots/bullets/indicators */
 }
-main #banner .dots .dots-move .dot {
+main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet {
   height: 30px;
   display: flex;
   flex-flow: column;
@@ -377,7 +287,7 @@ main #banner .dots .dots-move .dot {
   top: 0px;
   margin-bottom: 37px;
 }
-main #banner .dots .dots-move .dot::before {
+main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::before {
   content: "";
   width: 2px;
   height: calc(100% + 20px);
@@ -386,7 +296,7 @@ main #banner .dots .dots-move .dot::before {
   top: -49px;
   left: 50%;
 }
-main #banner .dots .dots-move .dot::after {
+main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet::after {
   content: "";
   cursor: pointer;
   height: 15px;
@@ -398,12 +308,12 @@ main #banner .dots .dots-move .dot::after {
   position: absolute;
   bottom: 12px;
 }
-main #banner .dots .dots-move .dot:hover::after {
+main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet:hover::after {
   background-color: #F6DEC3;
   transform: scale(1.1);
   transition: all 0.5s;
 }
-main #banner .dots .dots-move .dot.active::after {
+main #banner .swiper-pagination-bullets .dots-move .swiper-pagination-bullet.active::after {
   background-color: #6E786D;
 }
 main #about {
