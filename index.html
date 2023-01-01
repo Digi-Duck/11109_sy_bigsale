@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./JS/all.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>酉酉咖啡</title>
 </head>
@@ -58,41 +60,32 @@
   </nav>
   <main>
     <section id="banner">
-      <div class="swiper mySwiper-ban">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide fade ban1"></div>
-          <div class="swiper-slide fade ban2"></div>
-          <div class="swiper-slide fade ban3"></div>
-          <div class="swiper-slide fade ban4"></div>
-          <div class="swiper-slide fade ban5"></div>
-
+      <div class="main-banner">
+        <div class="slider slider-for">
+          <div class="ban ban1"></div>
+          <div class="ban ban2"></div>
+          <div class="ban ban3"></div>
+          <div class="ban ban4"></div>
+          <div class="ban ban5"></div>
+          <div class="ban ban6"></div>
+          <div class="ban ban7"></div>
+          <div class="ban ban8"></div>
+          <div class="ban ban9"></div>
+          <div class="ban ban10"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination-ban none-768">
-
+        <div class="slider slider-nav">
+          <div class="btn"><span>1</span></div>
+          <div class="btn"><span>2</span></div>
+          <div class="btn"><span>3</span></div>
+          <div class="btn"><span>4</span></div>
+          <div class="btn"><span>5</span></div>
+          <div class="btn"><span>1</span></div>
+          <div class="btn"><span>2</span></div>
+          <div class="btn"><span>3</span></div>
+          <div class="btn"><span>4</span></div>
+          <div class="btn"><span>5</span></div>
         </div>
-        <div class="dots" style="text-align:center; display: none;">
-          <div class="dots-move" style="transition: top 0.5s; top:0px ;">
-            <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
-            <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
-            <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
-            <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
-            <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
-            <span class="dot " data-move="6" onclick="currentSlide(1)"></span>
-            <span class="dot " data-move="7" onclick="currentSlide(2)"></span>
-            <span class="dot " data-move="8" onclick="currentSlide(3)"></span>
-            <span class="dot " data-move="9" onclick="currentSlide(4)"></span>
-            <span class="dot " data-move="10"onclick="currentSlide(5)"></span>
-            <span class="dot " data-move="1" onclick="currentSlide(1)"></span>
-            <span class="dot " data-move="2" onclick="currentSlide(2)"></span>
-            <span class="dot " data-move="3" onclick="currentSlide(3)"></span>
-            <span class="dot " data-move="4" onclick="currentSlide(4)"></span>
-            <span class="dot " data-move="5" onclick="currentSlide(5)"></span>
-          </div>
-        </div>
-      </div>
-
+    </div>
 
     </section>
 
@@ -248,6 +241,40 @@
     <span>copyright © yuyu__coffee All Rights Reserved.</span>
     <div class="maker"><span>site by BigSale</span></div>
   </footer>
+
+  <!-- slick -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $('.slider-for').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       fade: true,
+       asNavFor: '.slider-nav',
+
+       autoplay: true,
+       pauseOnHover:false,
+       autoplaySpeed: 2000,
+   });
+
+   $('.slider-nav').slick({
+       slidesToShow: 5,
+       slidesToScroll: 1,
+       arrows: false,
+       asNavFor: '.slider-for',
+       dots: true,
+       focusOnSelect: true
+   });
+
+   $('a[data-slide]').click(function(e) {
+       e.preventDefault();
+       var slideno = $(this).data('slide');
+       $('.slider-nav').slick('slickGoTo', slideno - 1);
+   });
+  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>

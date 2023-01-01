@@ -196,6 +196,82 @@ main {
     min-width: 100%;
     #banner {
         width: 100%;
+        .main-banner{
+            .slider-for{
+                margin: 0;
+                .ban{
+                    width: 100%;
+                    height: 961px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:cover;
+                }
+                .ban1{
+                    background-image: url(../Images/rest-1.jpg);
+                }
+                .ban2{
+                    background-image: url(../Images/rest-2.jpg);
+                }
+                .ban3{
+                    background-image: url(../Images/rest-3.jpg);
+                }
+                .ban4{
+                    background-image: url(../Images/rest-4.jpg);
+                }
+                .ban5{
+                    background-image: url(../Images/rest-5.jpg);
+                }
+                .ban6{
+                    background-image: url(../Images/rest-1.jpg);
+                }
+                .ban7{
+                    background-image: url(../Images/rest-2.jpg);
+                }
+                .ban8{
+                    background-image: url(../Images/rest-3.jpg);
+                }
+                .ban9{
+                    background-image: url(../Images/rest-4.jpg);
+                }
+                .ban10{
+                    background-image: url(../Images/rest-5.jpg);
+                }
+            }
+            .slick-dots{
+                display: none !important;
+            }
+            .slider-nav{
+                width: 300px;
+                height: 200px;
+                position: absolute;
+                top: 40%;
+                right: 0%;
+                transform: rotate(90deg) !important;
+                .btn{
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px;
+                    background-color: rgb(36, 109, 27);
+                    border-radius: 50%;
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .btn span{
+                    transform: rotate(-90deg);
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
         .mySwiper-ban{
             .ban1,
             .ban2,
