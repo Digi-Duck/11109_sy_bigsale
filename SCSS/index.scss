@@ -8,6 +8,106 @@ body{
    
 }
 // <<<<<<< HEAD
+
+$dark-green: #243628;
+$green: #ecf2ee;
+$grey: rgba(19, 21, 19, 0.31);
+
+$mix-white: #f9f9f9;
+$title-color: #6c6666;
+$text-color: #1c291c;
+$text-white: #e2dcdc;
+$line-color: #777777;
+$red: #d82121;
+
+$color: #F3F3F3;
+$stroke-width: 5px;
+$size: 136px;
+
+.loading{
+    position: fixed;
+    inset: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c1b2e;
+    z-index: 11;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform .5s, opacity 1s;
+    &.end{
+      transform: scale(1.6);
+      opacity: 0;
+    }
+    
+      .container{
+          position: relative;
+          width: 200px;
+          height: 200px;
+  
+  
+          background: black url("../Images/rest-6.jpg") no-repeat fixed center;
+          background-size: cover;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+  
+          .logo{
+              width: 100%;
+              display: flex;
+              font-size: 120px;
+              color: white;
+              justify-content: center;
+              align-items: center;
+              padding: 25px;
+              background: rgba(110, 120, 109, 0.5);
+              position: relative;
+          }
+  
+          text{
+              stroke-width: $stroke-width;
+              stroke-dasharray: 900;
+              stroke-dashoffset: -900;
+              animation: text 6s forwards 1;
+              animation-delay: 1s;
+             }
+  
+          .underline{
+              stroke-dasharray: 900;
+              stroke-dashoffset: 900;
+              animation: underline 4s forwards 1;
+              animation-delay: 5s;
+            }
+  
+  
+          @keyframes text {
+              75% {
+               fill: transparent;
+               stroke-dashoffset: 0;
+               stroke-width: $stroke-width;
+              }
+              100% {
+               fill: $color;
+               stroke-dashoffset: 0;
+               stroke-width: 0;
+              }
+             }
+             
+          @keyframes underline {
+              75% {
+               stroke-dashoffset: 0;
+              }
+              100% {
+               stroke-dashoffset: 0;
+              }
+             }
+        
+  
+      }
+      
+  }
+
 .whiteback{
     width: 100%;
     height: 100vh;
@@ -468,6 +568,7 @@ main {
         height: 961px;
         color: #fff;
         background-color: #6E786D;
+        overflow: hidden;
 
         .about-logo {
             padding-top: 85px;

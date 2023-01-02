@@ -6,6 +6,102 @@
   scroll-behavior: smooth;
 }
 
+.loading {
+  position: fixed;
+  inset: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c1b2e;
+  z-index: 11;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s, opacity 1s;
+}
+.loading.end {
+  transform: scale(1.6);
+  opacity: 0;
+}
+.loading .container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: black url("../Images/rest-6.jpg") no-repeat fixed center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.loading .container .logo {
+  width: 100%;
+  display: flex;
+  font-size: 120px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: rgba(110, 120, 109, 0.5);
+  position: relative;
+}
+.loading .container text {
+  stroke-width: 5px;
+  stroke-dasharray: 900;
+  stroke-dashoffset: -900;
+  -webkit-animation: text 6s forwards 1;
+          animation: text 6s forwards 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.loading .container .underline {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  -webkit-animation: underline 4s forwards 1;
+          animation: underline 4s forwards 1;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+@-webkit-keyframes text {
+  75% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+  100% {
+    fill: #F3F3F3;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+@keyframes text {
+  75% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+    stroke-width: 5px;
+  }
+  100% {
+    fill: #F3F3F3;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+@-webkit-keyframes underline {
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes underline {
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .whiteback {
   width: 100%;
   height: 100vh;
@@ -413,6 +509,7 @@ main #about {
   height: 961px;
   color: #fff;
   background-color: #6E786D;
+  overflow: hidden;
 }
 main #about .about-logo {
   padding-top: 85px;
