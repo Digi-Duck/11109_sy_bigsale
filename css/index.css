@@ -632,6 +632,7 @@ main #cof-pic {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 113.65px;
+  overflow: hidden;
 }
 main #cof-pic .cof-size {
   width: 33.3333%;
