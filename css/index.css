@@ -112,6 +112,13 @@
   display: none;
 }
 
+.dog1 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 99;
+}
+
 #bar {
   display: flex;
 }
@@ -634,8 +641,11 @@ main #cof-pic {
   margin-bottom: 113.65px;
   overflow: hidden;
 }
-main #cof-pic .cof-size {
+main #cof-pic a {
   width: 33.3333%;
+}
+main #cof-pic .cof-size {
+  width: 100%;
   height: 366.35px;
 }
 main #cof-pic .cof-pic1 {
@@ -692,11 +702,93 @@ main #dessert .des-pic {
   margin-right: 43px;
   align-content: center;
 }
-main #dessert .des-pic img {
+main #dessert .des-pic .cake {
   width: calc((100% - 40px) / 3);
   height: 45%;
   border-radius: 20px;
   box-shadow: 0.5px 0.5px 2.5px 0 #8a8787;
+  overflow: hidden;
+  transition: all 1s;
+  position: relative;
+}
+main #dessert .des-pic .cake::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #6e786d;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: all 2s;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 48% 100%, 0 49%, 50% 0, 100% 48%, 49% 100%, 79% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 48% 100%, 0 49%, 50% 0, 100% 48%, 49% 100%, 79% 100%, 100% 100%, 100% 0%);
+  transform: scale(2, 2);
+}
+main #dessert .des-pic .cake:hover::before {
+  content: "";
+  color: #F6DEC3;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #6e786d;
+  opacity: 0.9;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 48% 100%, 0 49%, 50% 0, 100% 48%, 49% 100%, 79% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 48% 100%, 0 49%, 50% 0, 100% 48%, 49% 100%, 79% 100%, 100% 100%, 100% 0%);
+  transform: scale(1, 1);
+}
+main #dessert .des-pic .cake::after {
+  content: "";
+  color: #F6DEC3;
+  text-shadow: 1px 1px 2px black;
+  font-size: 0px;
+  text-align: center;
+  padding-top: 40%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: all 1s;
+}
+main #dessert .des-pic .cake:hover::after {
+  content: "";
+  color: #F6DEC3;
+  text-shadow: 1px 1px 2px black;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+main #dessert .des-pic .cake1:hover::after {
+  content: "草莓蛋糕";
+}
+main #dessert .des-pic .cake2:hover::after {
+  content: "草莓三明治";
+}
+main #dessert .des-pic .cake3:hover::after {
+  content: "草莓麵包";
+}
+main #dessert .des-pic .cake4:hover::after {
+  content: "草莓奶油";
+}
+main #dessert .des-pic .cake5:hover::after {
+  content: "草莓可頌";
+}
+main #dessert .des-pic .cake6:hover::after {
+  content: "草莓慕斯";
+}
+main #dessert .des-pic img {
+  width: 100%;
+  height: 100%;
 }
 main #dessert .des-txt {
   width: 38%;
