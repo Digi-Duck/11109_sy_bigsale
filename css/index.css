@@ -640,6 +640,7 @@ main #cof-pic {
   flex-wrap: wrap;
   margin-bottom: 113.65px;
   overflow: hidden;
+  background-color: #6E786D;
 }
 main #cof-pic a {
   width: 33.3333%;
@@ -683,6 +684,12 @@ main #cof-pic .cof-pic6 {
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+main #cof-pic .cof-pictu {
+  opacity: 0.6;
+}
+main #cof-pic .cof-pictu:hover {
+  opacity: 1;
 }
 main #dessert {
   width: 100%;
