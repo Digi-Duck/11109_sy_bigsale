@@ -450,8 +450,13 @@
 <!-- loading -->
   <script>
     const loading = document.querySelector('.loading');
+
     window.onload = function() {
-      setTimeout(function() {
+
+      if(sessionStorage.getItem('load') != 5){
+
+        setTimeout(function() {
+
         loading.classList.add('end');
         body.classList.toggle('load-act');
         setTimeout(function() {
@@ -459,7 +464,32 @@
           scroll();
         }, 300);
       }, 8000);
+      sessionStorage.setItem("load", 5);
+    }else if(sessionStorage.getItem('load') == 5){
+      setTimeout(function() {
+
+loading.classList.add('end');
+body.classList.toggle('load-act');
+setTimeout(function() {
+  loading.style.display = 'none';
+  scroll();
+}, 1);
+}, 1);
     }
+      }
+
+
+    //   setTimeout(function() {
+    //     loading.classList.add('end');
+    //     body.classList.toggle('load-act');
+    //     setTimeout(function() {
+    //       loading.style.display = 'none';
+    //       scroll();
+    //     }, 300);
+    //   }, 8000);
+    //   sessionStorage.setItem("load", 5);
+    // }
+
   </script>
 
   <script>
