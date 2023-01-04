@@ -432,11 +432,16 @@
     })
  
   bars.addEventListener('click',function(){
-    console.log(123);
     barMenu.classList.toggle('active');
     body.classList.toggle('ovhd');
     w_back.classList.toggle('active');
+  });
+  w_back.addEventListener('click',()=>{
+    barMenu.classList.remove('active');
+    w_back.classList.remove('active');
+    body.classList.remove('ovhd');
   })
+
   
   
   </script>

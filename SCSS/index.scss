@@ -33,7 +33,7 @@ $size: 136px;
     justify-content: center;
     align-items: center;
     background-color: #0c1b2e;
-    z-index: 11;
+    z-index: 100;
     transform: scale(1);
     opacity: 1;
     transition: transform .5s, opacity 1s;
@@ -1268,39 +1268,17 @@ footer {
     }
     main{
         #banner{
-            .mySwiper-ban{
-                .ban1,
-                .ban2,
-                .ban3,
-                .ban4,
-                .ban5,
-                .ban6 {
-                    height: 387.25px;
+            .main-banner{
+                .slider-for{
+                    .ban{
+                        height: 387px;
+                    }
                 }
-                .swiper-button-next,
-            .swiper-button-prev {
-                display: block;
-            }
-            }
-
-            
-
-            .slideshow-container{
-                height: 387.25px;
-                .mySlides{
-                    height: 100%;
+                .slider-nav{
+                    .slick-dots{
+                        bottom: 90px;
+                    }
                 }
-              
-               
-                .prev,.next{
-                    display: block;
-                    font-size: 35px;
-                    font-weight: normal;
-                    
-                }
-            }
-            .dots{
-                display: none;
             }
         }
         #about{
@@ -1430,7 +1408,7 @@ footer {
                     }
                     &:hover::after{
                         font-size: 20px;
-                        padding-top: 45%;
+                        padding-top: 35%;
                     }
                 }
                 
@@ -1516,18 +1494,22 @@ footer {
 }
 @media (max-width:640px) {
     #bar{
+        
         i{
             display: flex;
             width: 60px;
             height: 60px;
             border-radius: 50%;
             font-size: 35px;
-           
+            
             &:active{
                 
                 transform: translate(1px, 1px);
                 transition: 0.1s ease;
             }
+        }
+        .bar-menu{
+            z-index: 3;
         }
     }
     .backTop{

@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #0c1b2e;
-  z-index: 11;
+  z-index: 100;
   transform: scale(1);
   opacity: 1;
   transition: transform 0.5s, opacity 1s;
@@ -998,31 +998,11 @@ footer .maker {
     padding: 0 8px;
     line-height: 30px;
   }
-  main #banner .mySwiper-ban .ban1,
-main #banner .mySwiper-ban .ban2,
-main #banner .mySwiper-ban .ban3,
-main #banner .mySwiper-ban .ban4,
-main #banner .mySwiper-ban .ban5,
-main #banner .mySwiper-ban .ban6 {
-    height: 387.25px;
+  main #banner .main-banner .slider-for .ban {
+    height: 387px;
   }
-  main #banner .mySwiper-ban .swiper-button-next,
-main #banner .mySwiper-ban .swiper-button-prev {
-    display: block;
-  }
-  main #banner .slideshow-container {
-    height: 387.25px;
-  }
-  main #banner .slideshow-container .mySlides {
-    height: 100%;
-  }
-  main #banner .slideshow-container .prev, main #banner .slideshow-container .next {
-    display: block;
-    font-size: 35px;
-    font-weight: normal;
-  }
-  main #banner .dots {
-    display: none;
+  main #banner .main-banner .slider-nav .slick-dots {
+    bottom: 90px;
   }
   main #about {
     height: 637px;
@@ -1129,7 +1109,7 @@ main #banner .mySwiper-ban .swiper-button-prev {
   }
   main #dessert .des-pic .cake:hover::after {
     font-size: 20px;
-    padding-top: 45%;
+    padding-top: 35%;
   }
   main #dessert .des-txt {
     padding-top: 17px;
@@ -1200,6 +1180,9 @@ main #banner .mySwiper-ban .swiper-button-prev {
   #bar i:active {
     transform: translate(1px, 1px);
     transition: 0.1s ease;
+  }
+  #bar .bar-menu {
+    z-index: 3;
   }
   .backTop {
     display: none;
