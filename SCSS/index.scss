@@ -359,51 +359,52 @@ main {
                 transform: translate(50%,0);
                 // transform: rotate(90deg) !important;
                
-                .btn{
-                    height: 30px;
-                    display: flex;
-                    // flex-flow: column;
-                    align-items: center;
-                    position: relative;
-                    top: 0px;
-                    margin-bottom: 37px;
+                // .btn{
+                //     height: 30px;
+                //     display: flex;
+                //     // flex-flow: column;
+                //     align-items: center;
+                //     position: relative;
+                //     top: 0px;
+                //     margin-bottom: 37px;
 
-                    &::before {
-                        content: '';
-                        width: 2px;
-                        height: calc(100% + 20px);
-                        background: #fff;
-                        position: absolute;
-                        top: -49px;
-                        left: 50%;
-                    }
-
-
-                    &::after {
-                        content: '';
-                        cursor: pointer;
-                        height: 15px;
-                        width: 15px;
-                        border: 2px solid #fff;
-                        border-radius: 50%;
-                        display: inline-block;
-                        transition: background-color 0.6s ease;
-                        position: absolute;
-                        bottom: 12px;
-                    }
+                //     &::before {
+                //         content: '';
+                //         width: 2px;
+                //         height: calc(100% + 20px);
+                //         background: #fff;
+                //         position: absolute;
+                //         top: -49px;
+                //         left: 50%;
+                //     }
 
 
-                    &:hover::after {
-                        background-color:#F6DEC3;
-                        transform: scale(1.1);
-                        transition: all 0.5s;
+                //     &::after {
+                //         content: '';
+                //         cursor: pointer;
+                //         height: 15px;
+                //         width: 15px;
+                //         border: 2px solid #fff;
+                //         border-radius: 50%;
+                //         display: inline-block;
+                //         transition: background-color 0.6s ease;
+                //         position: absolute;
+                //         bottom: 12px;
+                //     }
 
-                    }
 
-                    &.active::after {
-                        background-color:#6E786D;
-                    }
-                }
+                //     &:hover::after {
+                //         background-color:#F6DEC3;
+                //         transform: scale(1.1);
+                //         transition: all 0.5s;
+
+                //     }
+
+                //     &.active::after {
+                //         background-color:#6E786D;
+                //     }
+                // }
+                
                 // .btn{
                 //     width: 50px;
                 //     height: 50px;

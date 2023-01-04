@@ -339,43 +339,6 @@ main #banner .main-banner .slider-nav {
   right: 50%;
   transform: translate(50%, 0);
 }
-main #banner .main-banner .slider-nav .btn {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: 0px;
-  margin-bottom: 37px;
-}
-main #banner .main-banner .slider-nav .btn::before {
-  content: "";
-  width: 2px;
-  height: calc(100% + 20px);
-  background: #fff;
-  position: absolute;
-  top: -49px;
-  left: 50%;
-}
-main #banner .main-banner .slider-nav .btn::after {
-  content: "";
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  position: absolute;
-  bottom: 12px;
-}
-main #banner .main-banner .slider-nav .btn:hover::after {
-  background-color: #F6DEC3;
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-main #banner .main-banner .slider-nav .btn.active::after {
-  background-color: #6E786D;
-}
 main #banner .main-banner .slider-nav .btn span {
   transform: rotate(-90deg);
   color: #fff;
