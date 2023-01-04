@@ -330,9 +330,6 @@ main #banner .main-banner .slider-for .ban9 {
 main #banner .main-banner .slider-for .ban10 {
   background-image: url(../Images/rest-5.jpg);
 }
-main #banner .main-banner .slick-dots {
-  display: none !important;
-}
 main #banner .main-banner .slider-nav {
   width: 300px;
   height: 200px;
