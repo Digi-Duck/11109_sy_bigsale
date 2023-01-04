@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./JS/all.min.js">
     <link rel="stylesheet" href="./css/customized.css">
     <title>客製活動</title>
     <style> 
@@ -16,23 +18,37 @@
     </style>
 </head>
 <body>
+    <div id="bar">
+        <div class="whiteback">
+        </div>
+        <i class="fa-solid fa-bars bars"></i>
+        <div class="bar-menu">
+          <span>酉酉故事</span>
+          <span>特色主打</span>
+          <span><a href="./menu.html">酉酉飲品</a></span>
+          <span><a href="./customized.html">客製化服務</a></span>
+          <span><a href="./news.html">最新消息</a></span>
+          <span><a href="">聯絡我們</a></span>
+        </div>
+    </div>
     <nav>
         <div class="bar-L">
-        <a href=""><span>酉酉故事</span></a>
-        <a href=""><span>特色主打</span></a>
-        <a href=""><span>酉酉飲品</span></a>
+          <a class="bar-hover" href="#about"><span>酉酉故事</span></a>
+          <a class="bar-hover" href=""><span>特色主打</span></a>
+          <a class="bar-hover" href="./menu.html"><span>酉酉飲品</span></a>
         </div>
         <div class="bar-logo">
-        <a href="./index.html">
-            <img src="./Images/LOGO.png" alt="">
-        </a>
+          <div class="logo-back">
+            <a href="#banner"><img src="./Images/LOGO.png" alt=""></a>
+          </div>
+    
         </div>
         <div class="bar-R">
-            <a href=""><span>客製化服務</span></a>
-            <a href=""><span>最新消息</span></a>
-            <a href=""><span>聯絡我們</span></a>
+          <a class="bar-hover" href="./customized.html"><span>客製化服務</span></a>
+          <a class="bar-hover" href="./news.html"><span>最新消息</span></a>
+          <a class="bar-hover" href="#contact"><span>聯絡我們</span></a>
         </div>
-    </nav>
+      </nav>
     
     <main>
         <div class="tittle">
@@ -163,15 +179,36 @@
         </div>
     </main>
     <footer>
-        <div class="footerlocat"></div>
+        <div class="logoTxt">
+          <img src="./Images/LOGO文字.png" alt="">
+        </div>
+        <span>copyright © yuyu__coffee All Rights Reserved.</span>
+        <div class="maker"><span>site by BigSale</span></div>
     </footer>
 </body>
+
+<!-- bar -->
+<script>
+
+    let bars = document.querySelector('.bars');
+    let barMenu = document.querySelector('.bar-menu');
+    let body = document.body;
+    let w_back = document.querySelector('.whiteback')
+
+    bars.addEventListener('click',function(){
+        console.log(123);
+        barMenu.classList.toggle('active');
+        body.classList.toggle('ovhd');
+        w_back.classList.toggle('active');
+    })
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 <script>
+
     var screenWidth = window.innerWidth;
     console.log(screenWidth);
 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./JS/all.min.js">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/news.css">
     <title>最新消息</title>
@@ -109,6 +111,12 @@
 
 <!-- bar -->
 <script>
+
+    let bars = document.querySelector('.bars');
+    let barMenu = document.querySelector('.bar-menu');
+    let body = document.body;
+    let w_back = document.querySelector('.whiteback')
+
     bars.addEventListener('click',function(){
         console.log(123);
         barMenu.classList.toggle('active');
