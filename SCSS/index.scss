@@ -305,6 +305,7 @@ main {
     min-width: 100%;
     #banner {
         width: 100%;
+        position: relative;
         .main-banner{
             .slider-for{
                 margin: 0;
@@ -353,9 +354,10 @@ main {
                 width: 300px;
                 height: 200px;
                 position: absolute;
-                top: 40%;
-                right: 0%;
-                transform: rotate(90deg) !important;
+                top: 70%;
+                right: 50%;
+                transform: translate(50%,0);
+                // transform: rotate(90deg) !important;
                
                 .btn{
                     height: 30px;
