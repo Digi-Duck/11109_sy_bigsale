@@ -1001,8 +1001,8 @@ footer .maker {
   main #banner .main-banner .slider-for .ban {
     height: 387px;
   }
-  main #banner .main-banner .slider-nav .slick-dots {
-    bottom: 90px;
+  main #banner .main-banner .slider-nav {
+    display: none;
   }
   main #about {
     height: 637px;
@@ -1236,16 +1236,8 @@ footer .maker {
     height: 40px;
     font-size: 25px;
   }
-  main #banner .mySwiper-ban .ban1,
-main #banner .mySwiper-ban .ban2,
-main #banner .mySwiper-ban .ban3,
-main #banner .mySwiper-ban .ban4,
-main #banner .mySwiper-ban .ban5,
-main #banner .mySwiper-ban .ban6 {
-    height: 189.48px;
-  }
-  main #banner .slideshow-container {
-    height: 189.48px;
+  main #banner .main-banner .slider-for .ban {
+    height: 189px;
   }
   main #about {
     height: 478px;

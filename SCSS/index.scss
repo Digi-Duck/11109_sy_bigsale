@@ -1275,8 +1275,9 @@ footer {
                     }
                 }
                 .slider-nav{
+                    display: none;
                     .slick-dots{
-                        bottom: 90px;
+                        
                     }
                 }
             }
@@ -1580,18 +1581,17 @@ footer {
     
     main{
         #banner{
-            .mySwiper-ban{
-                .ban1,
-                .ban2,
-                .ban3,
-                .ban4,
-                .ban5,
-                .ban6 {
-                    height: 189.48px;
+            .main-banner{
+                .slider-for{
+                    .ban{
+                        height: 189px;
+                    }
                 }
-            }
-            .slideshow-container{
-                height: 189.48px;
+                .slider-nav{
+                    .slick-dots{
+                        
+                    }
+                }
             }
         }
         #about{
