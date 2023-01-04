@@ -1120,9 +1120,16 @@ main #banner .mySwiper-ban .swiper-button-prev {
   main #dessert .des-pic .none {
     display: none;
   }
-  main #dessert .des-pic img {
-    width: 45%;
-    height: 53%;
+  main #dessert .des-pic .cake {
+    width: calc((100% - 40px) / 2);
+  }
+  main #dessert .des-pic .cake img {
+    width: 100%;
+    height: 100%;
+  }
+  main #dessert .des-pic .cake:hover::after {
+    font-size: 20px;
+    padding-top: 45%;
   }
   main #dessert .des-txt {
     padding-top: 17px;

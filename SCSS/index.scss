@@ -1422,10 +1422,18 @@ footer {
                 .none{
                     display: none;
                 }
-                img{
-                    width: 45%;
-                    height: 53%;
+                .cake{
+                    width: calc((100% - 40px) / 2);
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                    &:hover::after{
+                        font-size: 20px;
+                        padding-top: 45%;
+                    }
                 }
+                
             }
             .des-txt{
                 padding-top: 17px;
