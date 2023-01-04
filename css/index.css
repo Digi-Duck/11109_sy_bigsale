@@ -6,6 +6,14 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow: hidden;
+}
+
+.load-act {
+  overflow: auto;
+}
+
 .loading {
   position: fixed;
   inset: 0 0;
@@ -305,7 +313,7 @@ main #banner .main-banner .slider-for .ban1 {
   background-image: url(../Images/rest-1.jpg);
 }
 main #banner .main-banner .slider-for .ban2 {
-  background-image: url(../Images/rest-2.jpg);
+  background-image: url(../Images/cof-pic-5.jpg);
 }
 main #banner .main-banner .slider-for .ban3 {
   background-image: url(../Images/rest-3.jpg);
@@ -314,7 +322,7 @@ main #banner .main-banner .slider-for .ban4 {
   background-image: url(../Images/rest-4.jpg);
 }
 main #banner .main-banner .slider-for .ban5 {
-  background-image: url(../Images/rest-5.jpg);
+  background-image: url(../Images/banner-5.jpg);
 }
 main #banner .main-banner .slider-for .ban6 {
   background-image: url(../Images/rest-1.jpg);

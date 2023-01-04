@@ -20,7 +20,7 @@
   <title>酉酉咖啡</title>
 </head>
 
-<body style="overflow: hidden;">
+<body >
 
   <section class="loading">
     <div class="container">
@@ -94,7 +94,7 @@
           <div class="ban ban4"></div>
           <div class="ban ban5"></div>
         </div>
-        <div class="slider slider-nav dots-move">
+        <div class="slider slider-nav">
           <div class="btn"><span></span></div>
           <div class="btn"><span></span></div>
           <div class="btn"><span></span></div>
@@ -267,7 +267,7 @@
             <img src="./Images/flaticon/instagram.png" alt="">
             <p>Instagram</p>
           </a>
-          <a href="https://www.ubereats.com/tw/store/%E9%85%89%E9%85%89%E5%92%96%E5%95%A1/rTH3EnlcVquu7aqe2MsiKw" target="_blank">
+          <a class="icons-n" href="https://www.ubereats.com/tw/store/%E9%85%89%E9%85%89%E5%92%96%E5%95%A1/rTH3EnlcVquu7aqe2MsiKw" target="_blank">
             <p>Uber Eats</p>
           </a>
         </div>
@@ -367,6 +367,7 @@
     let body = document.body;
     let w_back = document.querySelector('.whiteback')
 
+
     window.addEventListener('scroll', showNav);
     showNav();
     function showNav() {
@@ -429,26 +430,7 @@
       })
 
     })
-
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("swiper-slide");
-      let dots = document.getElementsByClassName("dot");
-
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-  
+ 
   bars.addEventListener('click',function(){
     console.log(123);
     barMenu.classList.toggle('active');
@@ -466,12 +448,12 @@
     window.onload = function() {
       setTimeout(function() {
         loading.classList.add('end');
-        body.style.overflow = 'auto';
+        body.classList.toggle('load-act');
         setTimeout(function() {
           loading.style.display = 'none';
           scroll();
         }, 300);
-      }, 8000);
+      }, 5000);
     }
   </script>
 

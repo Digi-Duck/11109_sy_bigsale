@@ -5,7 +5,7 @@
     scroll-behavior:smooth
 }
 body{
-   
+    overflow: hidden;
 }
 // <<<<<<< HEAD
 
@@ -23,7 +23,9 @@ $red: #d82121;
 $color: #F3F3F3;
 $stroke-width: 5px;
 $size: 136px;
-
+.load-act{
+    overflow: auto;
+}
 .loading{
     position: fixed;
     inset: 0 0;
@@ -320,7 +322,7 @@ main {
                     background-image: url(../Images/rest-1.jpg);
                 }
                 .ban2{
-                    background-image: url(../Images/rest-2.jpg);
+                    background-image: url(../Images/cof-pic-5.jpg);
                 }
                 .ban3{
                     background-image: url(../Images/rest-3.jpg);
@@ -329,7 +331,7 @@ main {
                     background-image: url(../Images/rest-4.jpg);
                 }
                 .ban5{
-                    background-image: url(../Images/rest-5.jpg);
+                    background-image: url(../Images/banner-5.jpg);
                 }
                 .ban6{
                     background-image: url(../Images/rest-1.jpg);
