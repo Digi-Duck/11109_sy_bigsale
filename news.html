@@ -14,24 +14,37 @@
     </style>
 </head>
 <body>
+    <div id="bar">
+        <div class="whiteback">
+        </div>
+        <i class="fa-solid fa-bars bars"></i>
+        <div class="bar-menu">
+          <span>酉酉故事</span>
+          <span>特色主打</span>
+          <span><a href="./menu.html">酉酉飲品</a></span>
+          <span><a href="./customized.html">客製化服務</a></span>
+          <span><a href="./news.html">最新消息</a></span>
+          <span><a href="">聯絡我們</a></span>
+        </div>
+    </div>
     <nav>
         <div class="bar-L">
-            <a href=""><span>酉酉故事</span></a>
-            <a href=""><span>特色主打</span></a>
-            <a href=""><span>酉酉飲品</span></a>
+          <a class="bar-hover" href="#about"><span>酉酉故事</span></a>
+          <a class="bar-hover" href=""><span>特色主打</span></a>
+          <a class="bar-hover" href="./menu.html"><span>酉酉飲品</span></a>
         </div>
         <div class="bar-logo">
-            <a href="./index.html">
-                <img src="./Images/LOGO.png" alt="">
-            </a>
+          <div class="logo-back">
+            <a href="#banner"><img src="./Images/LOGO.png" alt=""></a>
+          </div>
+    
         </div>
         <div class="bar-R">
-            <a href=""><span>客製化服務</span></a>
-            <a href=""><span>最新消息</span></a>
-            <a href=""><span>聯絡我們</span></a>
+          <a class="bar-hover" href="./customized.html"><span>客製化服務</span></a>
+          <a class="bar-hover" href="./news.html"><span>最新消息</span></a>
+          <a class="bar-hover" href="#contact"><span>聯絡我們</span></a>
         </div>
-    </nav>
-
+      </nav>
     <main>
         <div class="buttonbox">
             <div class="btn tab active"><span>所有公告</span></div>
@@ -84,11 +97,25 @@
             </div>
         </div>
     </main>
-<footer>
-    <div class="footerlocat"></div>
-</footer>
+    <footer>
+        <div class="logoTxt">
+          <img src="./Images/LOGO文字.png" alt="">
+        </div>
+        <span>copyright © yuyu__coffee All Rights Reserved.</span>
+        <div class="maker"><span>site by BigSale</span></div>
+    </footer>
 
 </body>
+
+<!-- bar -->
+<script>
+    bars.addEventListener('click',function(){
+        console.log(123);
+        barMenu.classList.toggle('active');
+        body.classList.toggle('ovhd');
+        w_back.classList.toggle('active');
+    })
+</script>
 
 <script>
     const tabs = document.querySelectorAll(".tab");

@@ -5,6 +5,73 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+.whiteback {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+
+#bar {
+  display: flex;
+}
+#bar i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #6E786D;
+  cursor: pointer;
+  position: fixed;
+  top: 11px;
+  left: 12px;
+  z-index: 14;
+  display: none;
+  transition: 1s ease;
+}
+#bar .bar-menu {
+  width: 260px;
+  height: 350px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #F6DEC3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6E786D;
+  border-radius: 10px;
+  z-index: 1;
+  display: none;
+}
+#bar .bar-menu a {
+  text-decoration: none;
+  color: #F6DEC3;
+}
+
+.active {
+  display: flex !important;
+  transition: 1s ease;
+}
+
+.ovhd {
+  overflow: hidden;
+  z-index: 99;
+}
+
 nav {
   width: 100%;
   height: 55px;
@@ -13,14 +80,16 @@ nav {
   justify-content: center;
   font-family: "Zen Maru Gothic", sans-serif;
   position: fixed;
+  opacity: 1;
   transition: 1s;
-  z-index: 1;
+  z-index: 6;
+  box-shadow: 0px 0.5px 3px 0px #565454;
 }
 nav .bar-L {
   display: flex;
   height: 100%;
   align-items: center;
-  gap: 45px;
+  gap: 30px;
   margin-right: 40px;
 }
 nav .bar-logo {
@@ -29,7 +98,24 @@ nav .bar-logo {
   height: 110px;
   padding-top: 15px;
 }
-nav .bar-logo img {
+nav .bar-logo .logo-back {
+  width: 125px;
+  height: 125px;
+  background-color: #6E786D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1.5px 2px 0px #565454;
+}
+nav .bar-logo .logo-back a {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .bar-logo .logo-back a img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -39,18 +125,36 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 10px;
 }
 nav .bar-R {
   height: 100%;
   margin-left: 40px;
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 30px;
+}
+
+nav .bar-hover:hover {
+  color: #424242;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #F6DEC3;
+  text-align: center;
+  line-height: 32px;
+  padding: 0 10px;
+}
+
+nav:hover {
+  opacity: 1;
 }
 
 .block {
   opacity: 1;
-  z-index: 2;
+  z-index: 8;
 }
 
 .buttonbox-pad {
@@ -161,6 +265,98 @@ nav .bar-R {
   display: none;
 }
 
+footer {
+  min-width: 100%;
+  height: 80px;
+  background-color: #6E786D;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 35px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+footer .logoTxt {
+  width: 136px;
+  height: 35px;
+  margin-left: 30px;
+}
+footer .logoTxt img {
+  width: 100%;
+}
+footer .maker {
+  margin-right: 30px;
+}
+
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 18px;
+  }
+  nav .bar-L {
+    margin-right: 10px;
+    gap: 10px;
+    line-height: 35px;
+  }
+  nav .bar-logo .logo-back {
+    width: 110px;
+    height: 110px;
+  }
+  nav .bar-logo .logo-back a img {
+    width: 90%;
+    height: 90%;
+  }
+  nav .bar-R {
+    margin-left: 10px;
+    gap: 10px;
+    line-height: 35px;
+  }
+  nav .bar-hover:hover {
+    line-height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  nav a {
+    font-size: 15px;
+    padding: 0 8px;
+  }
+  nav .bar-L {
+    margin-right: 10px;
+    gap: 10px;
+    line-height: 38px;
+  }
+  nav .bar-logo {
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    width: 89.72px;
+    height: 89.72px;
+  }
+  nav .bar-logo .logo-back {
+    width: 90px;
+    height: 90px;
+  }
+  nav .bar-logo .logo-back img {
+    width: 84.44px;
+    height: 84.44px;
+  }
+  nav .bar-R {
+    margin-left: 10px;
+    gap: 10px;
+    line-height: 38px;
+  }
+  nav .bar-hover:hover {
+    height: 30px;
+    padding: 0 8px;
+    line-height: 30px;
+  }
+  .none {
+    display: none;
+  }
+  .none-768 {
+    display: none !important;
+  }
+}
 @media (max-width: 768px) {
   .buttonbox {
     display: none;
@@ -257,6 +453,44 @@ nav .bar-R {
   }
 }
 @media (max-width: 640px) {
+  #bar i {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 35px;
+  }
+  #bar i:active {
+    transform: translate(1px, 1px);
+    transition: 0.1s ease;
+  }
+  .backTop {
+    display: none;
+    bottom: 100px;
+    right: 10px;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    line-height: 20px;
+  }
+  footer .logoTxt {
+    width: 97px;
+    height: 24px;
+    font-size: 12px;
+    margin: 0;
+  }
+  footer .maker span {
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 640px) {
   .container-pad .cardbox-pad {
     width: 95%;
     justify-content: center;
@@ -269,6 +503,16 @@ nav .bar-R {
   }
   .container-pad .cardbox-pad .display-none {
     display: none;
+  }
+}
+@media (max-width: 430px) {
+  #bar i {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .none-375 {
+    display: none !important;
   }
 }
 @media (max-width: 375px) {
