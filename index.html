@@ -456,7 +456,6 @@
       if(sessionStorage.getItem('load') != 5){
 
         setTimeout(function() {
-
         loading.classList.add('end');
         body.classList.toggle('load-act');
         setTimeout(function() {
@@ -466,15 +465,9 @@
       }, 8000);
       sessionStorage.setItem("load", 5);
     }else if(sessionStorage.getItem('load') == 5){
-      setTimeout(function() {
+      loading.style.display = 'none';
+      body.classList.add('load-act');
 
-loading.classList.add('end');
-body.classList.toggle('load-act');
-setTimeout(function() {
-  loading.style.display = 'none';
-  scroll();
-}, 1);
-}, 1);
     }
       }
 
