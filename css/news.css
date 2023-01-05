@@ -165,6 +165,7 @@ nav:hover {
   padding-top: 225px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .buttonbox .btn {
   width: 110px;
