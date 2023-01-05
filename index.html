@@ -44,7 +44,7 @@
   </section>
 
 
-  <img class="dog1" src="./Images/flaticon/shiba.gif" alt="">
+  <img class="dog1 " src="./Images/flaticon/shiba.gif" alt="">
 
   <div id="bar">
     <div class="whiteback">
@@ -528,13 +528,29 @@
       e=window.event||e;
 
       let whh = document.body.clientWidth;
+      let wwh = document.documentElement.clientHeight;
       // console.log(whh);
-      if(e.clientX>(whh*0.97)){
-        dog1.classList.add('.nonedog');
+
+      // console.log(e.clientY);
+      // console.log(wwh);
+      // console.log(dog.style.top);
+
+      if(e.clientX>(whh*0.95)){
+        dog.classList.add('nonedog');
+        // dog.style.left = whh*0.97+"px"; 
+        // dog.style.top = evt.getPageY(e)+"px";
+      }else if(e.clientY>(wwh*0.96)){
+        dog.classList.add('nonedog');
+        // dog.style.left = evt.getPageX(e)+20+"px"; 
+        // dog.style.top = wwh*0.96+"px";
+      }else{
+        dog.classList.remove('nonedog');
+        dog.style.left = evt.getPageX(e)+20+"px"; 
+        dog.style.top = evt.getPageY(e)+"px";
       }
 
-      dog.style.left = evt.getPageX(e)+20+"px"; 
-      dog.style.top = evt.getPageY(e)+"px";
+      // dog.style.left = evt.getPageX(e)+20+"px"; 
+      // dog.style.top = evt.getPageY(e)+"px";
 
       // console.log(e.clientX);
   }
