@@ -50,13 +50,13 @@
     <div class="whiteback">
     </div>
     <i class="fa-solid fa-bars bars"></i>
-    <div class="bar-menu">
-      <span>酉酉故事</span>
-      <span>特色主打</span>
-      <span><a href="./menu.html">酉酉飲品</a></span>
-      <span><a href="./customized.html">客製化服務</a></span>
-      <span><a href="./news.html">最新消息</a></span>
-      <span><a href="">聯絡我們</a></span>
+    <div class="bar-menu adots">
+      <span class="adot"><a  href="./index.html#about">酉酉故事</a></span>
+      <span class="adot"><a href="#cof">特色主打</a></span>
+      <span class="adot"><a href="./menu.html">酉酉飲品</a></span>
+      <span class="adot"><a href="./customized.html">客製化服務</a></span>
+      <span class="adot"><a href="./news.html">最新消息</a></span>
+      <span class="adot"><a href="">聯絡我們</a></span>
     </div>
   </div>
   <div class="backTop">
@@ -366,7 +366,9 @@
     let bars = document.querySelector('.bars');
     let barMenu = document.querySelector('.bar-menu');
     let body = document.body;
-    let w_back = document.querySelector('.whiteback')
+    let w_back = document.querySelector('.whiteback');
+    let adots = document.querySelectorAll('.adots');
+    let adot = document.querySelector('.adot');
 
 
     window.addEventListener('scroll', showNav);
@@ -441,6 +443,13 @@
     barMenu.classList.remove('active');
     w_back.classList.remove('active');
     body.classList.remove('ovhd');
+  });
+  adots.forEach(function(i){
+    i.addEventListener('click',() =>{
+       barMenu.classList.remove('active');
+       w_back.classList.remove('active');
+       body.classList.remove('ovhd');
+    })
   })
 
   
@@ -472,17 +481,6 @@
     }
       }
 
-
-    //   setTimeout(function() {
-    //     loading.classList.add('end');
-    //     body.classList.toggle('load-act');
-    //     setTimeout(function() {
-    //       loading.style.display = 'none';
-    //       scroll();
-    //     }, 300);
-    //   }, 8000);
-    //   sessionStorage.setItem("load", 5);
-    // }
 
   </script>
 

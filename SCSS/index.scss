@@ -1233,6 +1233,9 @@ footer {
 
 }
 @media (max-width:768px){
+    .dog1{
+        display: none;
+    }
     nav{
         a{
             font-size: 15px;
@@ -1573,6 +1576,19 @@ footer {
         }
     }
     
+}
+@media (max-width:500px){
+    main{
+        #contact{
+            .adres{
+                
+                padding-right: 10px;
+            }
+            .aboutus{
+                margin-left: 10px;
+            }
+        }
+    }
 }
 @media (max-width:430px){
     #bar{
