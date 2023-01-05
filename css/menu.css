@@ -156,6 +156,95 @@ nav:hover {
   z-index: 8;
 }
 
+.le-choice {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 40%;
+  left: 0%;
+}
+.le-choice .pointer-pc {
+  width: 200px;
+  height: 200px;
+  background-color: #6E786D;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: -30%;
+  transform: rotate(-80deg);
+}
+.le-choice .pointer-pc .arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F6DEC3;
+  position: absolute;
+  top: 45%;
+  left: 82%;
+}
+.le-choice .choice-list {
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  top: -3%;
+  left: 50%;
+}
+.le-choice .choice-list .btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #6E786D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0;
+  cursor: pointer;
+}
+.le-choice .choice-list .btn span {
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: "Zen Maru Gothic";
+}
+.le-choice .choice-list .btn span:hover {
+  color: #565454;
+}
+.le-choice .choice-list .btn .span-act {
+  color: #565454;
+}
+.le-choice .choice-list .btn:hover {
+  background-color: #F6DEC3;
+}
+.le-choice .choice-list .btn1 {
+  transform: translate(-200%, 0);
+}
+.le-choice .choice-list .btn2 {
+  transform: translate(-100%, 0);
+}
+.le-choice .choice-list .btn3 {
+  transform: translate(-50%, 0);
+}
+.le-choice .choice-list .btn4 {
+  transform: translate(-30%, 0);
+}
+.le-choice .choice-list .btn5 {
+  transform: translate(-30%, 0);
+}
+.le-choice .choice-list .btn6 {
+  transform: translate(-50%, 0);
+}
+.le-choice .choice-list .btn7 {
+  transform: translate(-100%, 0);
+}
+.le-choice .choice-list .btn8 {
+  transform: translate(-200%, 0);
+}
+.le-choice .choice-list .btn-act {
+  background-color: #F6DEC3;
+}
+.le-choice .pointer-mobile {
+  display: none;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -290,6 +379,9 @@ footer .maker {
 }
 
 @media (max-width: 1600px) {
+  .le-choice {
+    display: none;
+  }
   .menu-card-box {
     width: 80%;
   }

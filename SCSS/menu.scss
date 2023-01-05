@@ -167,6 +167,101 @@ nav:hover{
 }
 
 //main area
+
+.le-choice{
+    width: 300px;
+    height: 300px;
+    // background-color: aqua;
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    .pointer-pc{
+        width: 200px;
+        height: 200px;
+        background-color: #6E786D;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 20%;
+        left: -30%;
+
+        transform: rotate(-80deg);
+        .arrow{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #F6DEC3;
+            position: absolute;
+            top: 45%;
+            left: 82%;
+        }
+    }
+    .choice-list{
+        width: 100px;
+        height: 300px;
+        // background-color: blueviolet;
+
+        position: absolute;
+        top: -3%;
+        left: 50%;
+        .btn{
+            width: 70px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #6E786D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 0;
+            cursor: pointer;
+            span{
+                font-size: 30px;
+                color: #FFFFFF;
+                font-family: 'Zen Maru Gothic';
+            }
+            span:hover{
+                color: #565454;
+            }
+            .span-act{
+                color: #565454;
+            }
+        }
+        .btn:hover{
+            background-color: #F6DEC3;
+        }
+        .btn1{
+            transform: translate(-200%,0);
+        }
+        .btn2{
+            transform: translate(-100%,0);
+        }
+        .btn3{
+            transform: translate(-50%,0);
+        }
+        .btn4{
+            transform: translate(-30%,0);
+        }
+        .btn5{
+            transform: translate(-30%,0);
+        }
+        .btn6{
+            transform: translate(-50%,0);
+        }
+        .btn7{
+            transform: translate(-100%,0);
+        }
+        .btn8{
+            transform: translate(-200%,0);
+        }
+        .btn-act{
+            background-color: #F6DEC3;
+        }
+
+    }
+    .pointer-mobile{
+        display: none;
+    }
+}
 main{
     display: flex;
     justify-content: center;
@@ -331,6 +426,9 @@ footer {
 }
 
 @media (max-width:1600px){
+    .le-choice{
+        display: none;
+    }
     .menu-card-box{
         width: 80%;
         .menu-card{

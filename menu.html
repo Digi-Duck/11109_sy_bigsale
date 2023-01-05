@@ -49,6 +49,25 @@
       </nav>
 
     <main>
+
+        <div class="le-choice">
+            <div class="pointer-pc">
+                <div class="arrow"></div>
+            </div>
+            <div class="choice-list">
+                <div class="btn btn1 btn-act"><span class="choice span-act">單品</span></div>
+                <div class="btn btn2"><span class="choice">莊園</span></div>
+                <div class="btn btn3"><span class="choice">特調</span></div>
+                <div class="btn btn4"><span class="choice">精品</span></div>
+                <div class="btn btn5"><span class="choice">鮮奶</span></div>
+                <div class="btn btn6"><span class="choice">茗茶</span></div>
+                <div class="btn btn7"><span class="choice">果茶</span></div>
+                <div class="btn btn8"><span class="choice">漂浮</span></div>
+            </div>
+            <div class="pointer-mobile">
+                <div class="arrow"></div>
+            </div>
+        </div>
         <div class="menu-card-box">
             <div class="menu-card card1">
                 <div class="image"></div>
@@ -341,6 +360,362 @@
         body.classList.toggle('ovhd');
         w_back.classList.toggle('active');
     })
+</script>
+<!-- 左邊指針 -->
+<script>
+
+    let pointerPc = document.querySelector('.pointer-pc');
+    let btn1 = document.querySelector('.btn1');
+    let btn2 = document.querySelector('.btn2');
+    let btn3 = document.querySelector('.btn3');
+    let btn4 = document.querySelector('.btn4');
+    let btn5 = document.querySelector('.btn5');
+    let btn6 = document.querySelector('.btn6');
+    let btn7 = document.querySelector('.btn7');
+    let btn8 = document.querySelector('.btn8');
+
+    let sp1 = document.querySelector('.btn1 span');
+    let sp2 = document.querySelector('.btn2 span');
+    let sp3 = document.querySelector('.btn3 span');
+    let sp4 = document.querySelector('.btn4 span');
+    let sp5 = document.querySelector('.btn5 span');
+    let sp6 = document.querySelector('.btn6 span');
+    let sp7 = document.querySelector('.btn7 span');
+    let sp8 = document.querySelector('.btn8 span');
+
+
+
+    btn1.addEventListener('click',function(){
+        scroll(0,100);
+        btn1.classList.add('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.add('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(-80deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(-80deg)';
+        }, 50);
+    });
+    btn2.addEventListener('click',function(){
+        scroll(0,500);
+        btn1.classList.remove('btn-act');
+        btn2.classList.add('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.add('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(-60deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(-60deg)';
+        }, 50);
+
+    });
+    btn3.addEventListener('click',function(){
+        scroll(0,900);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.add('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.add('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(-30deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(-30deg)';
+        }, 50);
+    });
+    btn4.addEventListener('click',function(){
+        scroll(0,1300);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.add('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.add('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(-10deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(-10deg)';
+        }, 50);
+    });
+    btn5.addEventListener('click',function(){
+        scroll(0,1750);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.add('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.add('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(10deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(10deg)';
+        }, 50);
+    });
+    btn6.addEventListener('click',function(){
+        scroll(0,2200);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.add('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.add('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(30deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(30deg)';
+        }, 50);
+    });
+    btn7.addEventListener('click',function(){
+        scroll(0,2500);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.add('btn-act');
+        btn8.classList.remove('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.add('span-act');
+        sp8.classList.remove('span-act');
+        // pointerPc.style.transform = 'rotate(50deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(50deg)';
+        }, 50);
+    });
+    btn8.addEventListener('click',function(){
+        scroll(0,2500);
+        btn1.classList.remove('btn-act');
+        btn2.classList.remove('btn-act');
+        btn3.classList.remove('btn-act');
+        btn4.classList.remove('btn-act');
+        btn5.classList.remove('btn-act');
+        btn6.classList.remove('btn-act');
+        btn7.classList.remove('btn-act');
+        btn8.classList.add('btn-act');
+        sp1.classList.remove('span-act');
+        sp2.classList.remove('span-act');
+        sp3.classList.remove('span-act');
+        sp4.classList.remove('span-act');
+        sp5.classList.remove('span-act');
+        sp6.classList.remove('span-act');
+        sp7.classList.remove('span-act');
+        sp8.classList.add('span-act');
+        // pointerPc.style.transform = 'rotate(80deg)';
+        setTimeout(function () {
+            pointerPc.style.transform = 'rotate(80deg)';
+        }, 50);
+    });
+
+    window.addEventListener('scroll', function() {
+        // console.log(window.scrollY);
+        pointerPc.style.transform = `rotate(${-80+(window.scrollY/16)}deg)`;
+        if(window.scrollY>=0 && window.scrollY<100){
+            btn1.classList.add('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.add('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=500 && window.scrollY<800){
+            
+            btn1.classList.remove('btn-act');
+            btn2.classList.add('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.add('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=800 && window.scrollY<1200){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.add('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.add('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=1200 && window.scrollY<1600){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.add('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.add('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=1600 && window.scrollY<2100){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.add('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.add('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=2100 && window.scrollY<2200){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.add('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.add('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=2200 && window.scrollY<2300){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.add('btn-act');
+            btn8.classList.remove('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.add('span-act');
+            sp8.classList.remove('span-act');
+        }else if(window.scrollY>=2300 && window.scrollY<3000){
+            btn1.classList.remove('btn-act');
+            btn2.classList.remove('btn-act');
+            btn3.classList.remove('btn-act');
+            btn4.classList.remove('btn-act');
+            btn5.classList.remove('btn-act');
+            btn6.classList.remove('btn-act');
+            btn7.classList.remove('btn-act');
+            btn8.classList.add('btn-act');
+            sp1.classList.remove('span-act');
+            sp2.classList.remove('span-act');
+            sp3.classList.remove('span-act');
+            sp4.classList.remove('span-act');
+            sp5.classList.remove('span-act');
+            sp6.classList.remove('span-act');
+            sp7.classList.remove('span-act');
+            sp8.classList.add('span-act');
+        }
+    });
+
+    
+
 </script>
 
 
