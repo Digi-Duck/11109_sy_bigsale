@@ -167,6 +167,7 @@ main {
 }
 .menu-card-box .menu-card {
   display: flex;
+  margin-bottom: 30px;
 }
 .menu-card-box .menu-card img {
   width: 62%;
