@@ -173,22 +173,23 @@
       </div>
     </section>
     <section id="cof-pic" class="none-375">
-      <a class="cof-pictu example-image-link" href="./Images/rest-1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/rest-1.jpg" data-lightbox="example-set" data-title="親手打造店內的設計與改造，希望帶給大家溫暖舒適的感受">
         <div class="cof-pic1 cof-size " data-aos="zoom-out" data-aos-delay="300"data-aos-once="true" data-aos-duration="1000"></div>
       </a>
-      <a class="cof-pictu example-image-link" href="./Images/latte-love.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/latte-love.jpg" data-lightbox="example-set" data-title="來杯latté讓心情愉悅">
         <div class="cof-pic2 cof-size" data-aos="zoom-out" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000"></div>
       </a>
-      <a class="cof-pictu example-image-link" href="./Images/rest-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/rest-3.jpg" data-lightbox="example-set" data-title="希望能呈現更加舒服的環境，慢慢期待，酉蛻變，酉營業，喝杯咖啡">
         <div class="cof-pic3 cof-size" data-aos="zoom-out" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"></div>
       </a>
-      <a class="cof-pictu example-image-link" href="./Images/tea.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/tea.jpg" data-lightbox="example-set" data-title="今天豐原的天氣很涼爽，有空可以約三五好友來坐坐
+      ">
         <div class="cof-pic4 cof-size" data-aos="zoom-out" data-aos-delay="350" data-aos-once="true" data-aos-duration="1000"> </div>
       </a>
-      <a class="cof-pictu example-image-link" href="./Images/cof-pic-5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/cof-pic-5.jpg" data-lightbox="example-set" data-title="蛻變/需要時間來證明，機會/需要靠自己努力，過程/需要更多參與感">
         <div class="cof-pic5 cof-size" data-aos="zoom-out" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000"></div>
       </a>
-      <a class="cof-pictu example-image-link" href="./Images/latte-green-tea.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+      <a class="cof-pictu example-image-link" href="./Images/latte-green-tea.jpg" data-lightbox="example-set" data-title="午後時光，再忙也要和朋友相聚一下">
         <div class="cof-pic6 cof-size" data-aos="zoom-out" data-aos-delay="450" data-aos-once="true" data-aos-duration="1000"></div>
       </a>
     </section>
@@ -529,12 +530,25 @@ return this.getEvent(evt).pageY? this.getEvent(evt).pageY: this.getClienty (evt)
       e=window.event||e;
       dog.style.left = evt.getPageX(e)+20+"px"; 
       dog.style.top = evt.getPageY(e)+"px";
-      console.log(e.clientX)
+      // console.log(e.clientX);
   }
+
+  // document.scroll = function(e) {
+    
+  //   console.log(133);
+  // }
 </script>
 
 <script src="./JS/lightbox-plus-jquery.min.js"></script>
 
+<script>
+  lightbox.option({
+    // 'resizeDuration': 200,
+    // 'wrapAround': true,
+    // 'albumLabel':"NONO",
+    'showImageNumberLabel':false,
+  })
+</script>
 
 </body>
 
