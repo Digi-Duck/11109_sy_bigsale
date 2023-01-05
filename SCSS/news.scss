@@ -174,7 +174,6 @@ nav:hover{
     padding-top: 225px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
     .btn{
         width: 110px;
         height: 43px;
@@ -184,6 +183,7 @@ nav:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         span{
             font-size: 20px;
             color: #ffffff;
@@ -303,6 +303,46 @@ footer {
 
 }
 
+@media (max-width:1905px){
+    .container{
+        .cardbox{
+            width: 70%;    
+            .card{
+                width: 29%;
+            }
+            .display-none{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:1366px){
+    .container{
+        .cardbox{
+            width: 80%;    
+            .card{
+                width: 28%;
+            }
+            .display-none{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:960px){
+    .container{
+        .cardbox{
+            width: 85%;    
+            .card{
+                width: 27%;
+            }
+            .display-none{
+                display: none;
+            }
+        }
+    }
+}
+
 // nav+foo
 @media (max-width:1200px){
     nav{
@@ -383,6 +423,7 @@ footer {
         display: none !important;
     }
 }
+
 @media (max-width:768px){
     .buttonbox{
         display: none;
@@ -402,6 +443,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             span{
                 font-size: 15px;
                 color: #ffffff;
@@ -419,12 +461,14 @@ footer {
         display: none;
     }
     .container-pad{
+        // height: 900px;
         display: block;
         display: flex;
         justify-content: center;
         .cardbox-pad{
             width: 60%;    
             padding-top: 25px;
+            margin-bottom: 90px;
             display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
@@ -560,6 +604,94 @@ footer {
     }
     .none-375{
         display: none !important;
+    }
+}
+
+@media (max-width:430px){
+    .buttonbox-pad{
+        padding-top: 150px;
+        padding-left: 15px;
+        .btn{
+            width: 64px;
+            height: 23px;
+            margin: 10px 5px;
+            span{
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        .btn:hover{
+            background-color: #F6DEC3;
+        }
+        .active{
+            background-color: #F6DEC3;
+        }
+    }
+    .container{
+        display: none;
+    }
+
+    .container-pad{
+        display: block;
+        display: flex;
+        justify-content: center;
+        .cardbox-pad{
+            width: 68%;    
+            padding-top: 15px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .card{
+                width: 500px;
+                height: 130px;               
+                margin-bottom: 65px;
+                display: flex;
+                flex-direction: column;
+                .card-img{
+                    // border-radius: 20px;
+                    // background-color: darkgray;
+                    img{
+                        width: 255px;
+                        height: 120px;
+                        border-radius: 20px;
+                    }
+                }
+                .content{
+                    width: 255px;
+                    height: 130px;
+                    padding-left: 8px;
+                    display: flex;
+                    .news-class{
+                        display: flex;
+                        margin-bottom: 8px;
+                        padding-top: 5px;
+                        .label{
+                            width: 3px;
+                            height: 32px;
+                            border-radius: 20px;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                    .ellipsis3{
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding-left: 10px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2; 
+                        //行數
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                    }
+                }
+            }
+            .display-none{
+                display: none;
+            }
+        }
     }
 }
 

@@ -56,61 +56,104 @@
     {
         "id":10,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":11,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":12,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":13,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":14,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":15,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":16,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":17,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":18,
         "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
+        "img":"./Images/np-news/news1.jpg",
         "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
     },
     {
         "id":19,
-        "class":"new",
-        "img":"https://shop.mos.com.tw/resources/products/1253/image0.jpg?v=22",
-        "text":"我們推出了一系列的單品莊園級咖啡豆，歡迎諮詢或到店內參觀選購"
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":20,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":21,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":22,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":23,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":24,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":25,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
+    },
+    {
+        "id":26,
+        "class":"discount",
+        "img":"./Images/np-news/news6.jpg",
+        "text":"提供外送服務，10杯送2杯/20杯送5杯，提前預訂再送1杯，歡迎公司行號、工廠、各機..."
     }
+    
 ]
