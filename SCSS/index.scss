@@ -126,7 +126,11 @@ $size: 136px;
     width: 30px;
     height: 30px;
     position: absolute;
-    z-index: 99;
+    // position:fixed;
+    z-index: 999;
+}
+.nonedog{
+    display: none;
 }
 #bar{
     display: flex;    
