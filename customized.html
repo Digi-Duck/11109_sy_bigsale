@@ -125,8 +125,7 @@
                 </div>
                 <div class="message">
                     <span>訊息</span>
-                    <textarea id="dataValue" name="w3review" rows="4" cols="50">
-                    </textarea>
+                    <textarea id="dataValue" name="w3review" rows="4" cols="1000"></textarea>
                     <button id="submit">
                         <span>送出訊息
                             <p><i class="bi bi-send"></i></p>
@@ -233,7 +232,10 @@
         let demand = document.querySelector('#demandValue').value;
         let data = document.querySelector('#dataValue').value;
 
-        $.ajax({
+        if(name==""||phone==""||demand==""||data==""){
+            alert("請輸入所有欄位");
+        }else{
+            $.ajax({
             // url: "填入google sheet api url",
             url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
             data: {
@@ -248,16 +250,39 @@
                 }
             },
         });
+        }
+        // $.ajax({
+        //     // url: "填入google sheet api url",
+        //     url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
+        //     data: {
+        //         "name": name,
+        //         "phone": phone,
+        //         "demand": demand,
+        //         "data": data
+        //     },
+        //     success: function(response) {
+        //         if(response == "成功"){
+        //             alert("您的需求已成功傳達");
+        //         }
+        //     },
+        // });
     };
+
+
     function sendPad() {
         let name = document.querySelector('#nameValuePad').value;
         let phone = document.querySelector('#phoneValuePad').value;
         let demand = document.querySelector('#demandValuePad').value;
         let data = document.querySelector('#dataValuePad').value;
 
-        $.ajax({
-            // url: "填入google sheet api url",
-            url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
+
+
+        if(name==""||phone==""||demand==""||data==""){
+            alert("請輸入所有欄位");
+        }else{
+            $.ajax({
+                // url: "填入google sheet api url",
+                url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
             data: {
                 "name": name,
                 "phone": phone,
@@ -269,7 +294,23 @@
                     alert("您的需求已成功傳達");
                 }
             },
-        });
+            });
+        }
+        // $.ajax({
+        //     // url: "填入google sheet api url",
+        //     url: "https://script.google.com/macros/s/AKfycbw-2udT5dnLc3xdAXMdSmzY_gIOzlKPUHlKUT_DAqpfJDNL5VObWoiSyXUVB3SBiMWlnw/exec",
+        //     data: {
+        //         "name": name,
+        //         "phone": phone,
+        //         "demand": demand,
+        //         "data": data
+        //     },
+        //     success: function(response) {
+        //         if(response == "成功"){
+        //             alert("您的需求已成功傳達");
+        //         }
+        //     },
+        // });
     };
 
     sendButton.addEventListener('click', send);

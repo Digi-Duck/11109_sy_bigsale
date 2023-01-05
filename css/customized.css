@@ -362,6 +362,9 @@ nav:hover {
   border-radius: 20px;
   background-color: #6E786D;
   border: 1px solid white;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 .callboss .formbox .info-box .phone {
   width: 30%;
@@ -380,6 +383,9 @@ nav:hover {
   border-radius: 20px;
   background-color: #6E786D;
   border: 1px solid white;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 .callboss .formbox .info-box .mail {
   width: 30%;
@@ -398,6 +404,9 @@ nav:hover {
   border-radius: 20px;
   background-color: #6E786D;
   border: 1px solid white;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 .callboss .formbox .message {
   width: 80%;
@@ -425,6 +434,10 @@ nav:hover {
   border-radius: 20px;
   background-color: #6E786D;
   border: 1px solid white;
+  padding: 0 10%;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 .callboss .formbox .message #submit {
   width: 123px;
@@ -436,6 +449,7 @@ nav:hover {
   position: absolute;
   bottom: 5%;
   right: 5%;
+  cursor: pointer;
 }
 .callboss .formbox .message #submit span {
   font-size: 16px;
@@ -776,6 +790,7 @@ footer .maker {
     border: none;
     box-shadow: 1px 1px 3px 1px #504e4e;
     transform: translate(0, 120%);
+    cursor: pointer;
   }
   .callboss-pad .formbox #submit-pad span {
     font-size: 12px;
@@ -867,18 +882,17 @@ footer .maker {
     background-color: #6E786D;
     border: 1px solid white;
     margin-bottom: 20px;
+    padding-left: 11px;
+    color: #FFFFFF;
   }
   .callboss-pad .input-box .info-box .name input::-moz-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .name input::placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input {
     width: 180px;
@@ -887,18 +901,17 @@ footer .maker {
     background-color: #6E786D;
     border: 1px solid white;
     margin-bottom: 20px;
+    padding-left: 11px;
+    color: #FFFFFF;
   }
   .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input::placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input {
     width: 180px;
@@ -906,18 +919,17 @@ footer .maker {
     border-radius: 15px;
     background-color: #6E786D;
     border: 1px solid white;
+    padding-left: 11px;
+    color: #FFFFFF;
   }
   .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input::placeholder {
     color: #ffffff;
-    padding-left: 11px;
   }
 }
 @media (max-width: 699px) {
@@ -1090,18 +1102,16 @@ footer .maker {
     background-color: #F7DEC3;
     border: 1px solid #424242;
     margin-bottom: 20px;
+    color: #6E786D;
   }
   .callboss-pad .input-box .info-box .name input::-moz-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .name input::placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input {
     width: 80%;
@@ -1110,18 +1120,16 @@ footer .maker {
     background-color: #F7DEC3;
     border: 1px solid #424242;
     margin-bottom: 20px;
+    color: #6E786D;
   }
   .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .phone input::placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input {
     width: 80%;
@@ -1130,18 +1138,16 @@ footer .maker {
     background-color: #F7DEC3;
     border: 1px solid #424242;
     margin-bottom: 20px;
+    color: #6E786D;
   }
   .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
   .callboss-pad .input-box .info-box .mail input::placeholder {
     color: #7D7D7D;
-    padding-left: 11px;
   }
 }
 @media (max-width: 640px) {
@@ -1195,6 +1201,226 @@ footer .maker {
   }
   .none-375 {
     display: none !important;
+  }
+}
+@media (max-width: 430px) {
+  .tittle {
+    padding-top: 135px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tittle h1 {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .tittle h3 {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #424242;
+  }
+  .schematic {
+    display: none;
+  }
+  .schematic-mobile {
+    display: block;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .schematic-mobile .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    width: 33%;
+    height: 100%;
+  }
+  .schematic-mobile .img1 {
+    background-image: url(../Images/np-custom-ccd/cus5.jpg);
+  }
+  .schematic-mobile .img2 {
+    background-image: url(../Images/np-custom-ccd/cus2.jpg);
+  }
+  .schematic-mobile .img3 {
+    background-image: url(../Images/np-custom-ccd/cus7.jpg);
+  }
+  .venue {
+    display: none;
+  }
+  .callboss-pad {
+    display: block;
+    width: 100%;
+    height: 456px;
+    padding-top: 25px;
+    display: flex;
+    background-color: #F7DEC3;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .callboss-pad .formbox {
+    width: 80%;
+    height: 100%;
+    background-color: #F7DEC3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(8%, 0);
+  }
+  .callboss-pad .formbox #submit-pad {
+    width: 81px;
+    height: 31px;
+    background-color: #6E786D;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #504e4e;
+    transform: translate(-20%, 60%);
+  }
+  .callboss-pad .formbox #submit-pad span {
+    font-size: 12px;
+    line-height: 17.38px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .callboss-pad .formbox #submit-pad span p {
+    display: none;
+    transform: rotate(21.91deg);
+  }
+  .callboss-pad .formbox #submit-pad:hover {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+  }
+  .callboss-pad .formbox #submit-pad:active {
+    box-shadow: 1px 1px 5px 3px #634a4a;
+    background-color: #be6c6c;
+  }
+  .callboss-pad .title {
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-8%, 0);
+  }
+  .callboss-pad .title h3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    color: #424242;
+  }
+  .callboss-pad .input-box {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column-reverse;
+  }
+  .callboss-pad .input-box .message {
+    transform: translate(0, 0);
+  }
+  .callboss-pad .input-box .message input {
+    width: 255px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+  }
+  .callboss-pad .input-box .message textarea {
+    width: 255px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    padding: 10px 0 0 0;
+  }
+  .callboss-pad .input-box .message input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .message input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .callboss-pad .input-box .info-box .name input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .name input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .name input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .phone input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .phone input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input {
+    width: 255px;
+    height: 38px;
+    border-radius: 15px;
+    background-color: #F7DEC3;
+    border: 1px solid #424242;
+    margin-bottom: 20px;
+  }
+  .callboss-pad .input-box .info-box .mail input::-moz-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input:-ms-input-placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .callboss-pad .input-box .info-box .mail input::placeholder {
+    color: #7D7D7D;
+    padding-left: 11px;
+  }
+  .footerlocat {
+    margin-top: 0px;
   }
 }
 @media (max-width: 375px) {
