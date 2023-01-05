@@ -118,7 +118,7 @@
     let w_back = document.querySelector('.whiteback')
 
     bars.addEventListener('click',function(){
-        console.log(123);
+        
         barMenu.classList.toggle('active');
         body.classList.toggle('ovhd');
         w_back.classList.toggle('active');
@@ -154,7 +154,7 @@
                 newsClass = '官方公告';
                 }
 
-                console.log(cards);
+               
                 if(cards<=9){
                     content.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
 
@@ -252,7 +252,6 @@
             }else if(dataW[index].class == "announcement"){
                 newsClass = '官方公告';
             }
-            console.log(cards);
 
             if(cards<=4){
                 // contentPad.innerHTML += `<div class="card"><div class="card-img"><img src="${dataW[index].img}"alt=""></div><div class="news-class"><div class="label"><span>${newsClass}</span></div><div class="line-box"><div class="line"></div></div></div><p class="ellipsis2">${dataW[index].text}</p></div>`;
