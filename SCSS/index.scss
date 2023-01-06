@@ -190,8 +190,8 @@ $size: 136px;
     z-index:99 ;
 }
 .backTop{
-    border: 1px solid #424242;
-    border-radius: 50%;
+    border: 1px solid rgba(49, 80, 45, 0.3) !important;
+    border-radius: 50%; 
     width: 50px;
     height: 50px;
     display: flex;
@@ -206,7 +206,6 @@ $size: 136px;
     appearance: none;
     background-color: #FFFFFF;
     border-style: none;
-    box-shadow: #ADCFFF 0 -12px 6px inset;
     color: #000000;
     font-family: -apple-system,sans-serif;
     font-size: 1.2rem;
@@ -220,6 +219,7 @@ $size: 136px;
     touch-action: manipulation;
     a{
         width: 50%;
+      
         text-decoration: none;
         color: #424242;
         svg{
@@ -1011,6 +1011,8 @@ main {
                 font-size: 80px;
                 font-family: 'Island Moments', cursive;
                 padding-top: 15%;
+                display: block;
+                width: 85%;
                 
 
             }
@@ -1154,7 +1156,7 @@ main {
 
 footer {
     min-width: 100%;
-    height: 80px;
+   
     background-color: #6E786D;
     color: #fff;
     display: flex;
@@ -1172,6 +1174,13 @@ footer {
         img {
             width: 100%;
         }
+    }
+    .copyright{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .maker {
@@ -1576,7 +1585,6 @@ footer {
     }
     footer{
         flex-direction: column;
-        height: 100px;
         margin: 0 auto;
         padding-top: 15px;
         padding-bottom: 16px;
@@ -1829,7 +1837,9 @@ footer {
         display: none !important;
     }
     footer{
-        
+        .copyright{
+           
+        }
       
     }
     
