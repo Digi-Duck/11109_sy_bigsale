@@ -197,7 +197,7 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   right: 40px;
   bottom: 30px;
   cursor: pointer;
